@@ -4,6 +4,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { WelcomeComponent } from './welcome';
 import { AboutComponent } from './about';
 import { ContactComponent } from './contact';
+import {BioComponent} from "./bio";
 
 const ROUTES: Routes = [
   // Starting page = HOME.
@@ -19,8 +20,12 @@ const ROUTES: Routes = [
         component: AboutComponent,
       },
       {
-        path: 'contact',
-        component: ContactComponent,
+         path: 'contact',
+         component: ContactComponent,
+      },
+      {
+         path: 'bio',
+         component: BioComponent
   }
 ];
 // @ts-ignore

@@ -1,13 +1,14 @@
 
 #copyright  {
+   text-align: center;
    position: absolute;
-   bottom: 10px;
-   left: 48%;
+   bottom: 0;
+   left: 50%;
+   transform: translate(-50%, 0);
    font-family: "Times New Roman", serif;
-   font-size: 15px;
-   margin: 1px;
+   font-size: 11px;
    background: transparent;
-   color: white;
+   color: rgba(220, 220, 220, 0.91);
 }
 
 .topNav {
@@ -18,9 +19,9 @@
 
 .nav-link a {
    float: left;
-   padding: 12px 20px 12px 20px;
-   font-family: Arial, serif;
-   font-size: 24px;
+   padding: 10px 15px 10px 15px;
+   font-family: "Century Gothic", serif;
+   font-size: 1.2vw;
    text-decoration: none;
    color: white;
    cursor: pointer;
@@ -28,27 +29,50 @@
 
 .nav-link-edge a  {
    float: left;
-   padding: 12px 20px 12px 20px;
-   font-family: Arial, serif;
-   font-size: 24px;
+   padding: 10px 15px 10px 15px;
+   font-family: "Century Gothic", serif;
+   font-size: 1.2vw;
    text-decoration: none;
    color: #ffffff;
    cursor: pointer;
 }
 
 .nav-link-edge a:hover  {
-   background-color: rgba(0, 184, 171, 0.95);
+   color: rgba(0, 252, 255, 0.75);
 }
 
 .nav-link a:hover {
-   color: rgba(0, 184, 171, 0.95);
+   color: rgba(0, 252, 255, 0.75);
 }
 
 .topNav #active a {
   color: rgb(255, 255, 255);
-  background-color: rgba(0, 184, 171, 0.5);
+  background-color: rgba(0, 252, 255, 0.75);
 }
 
 .topNav #active a:hover {
   color: black;
+}
+
+@media only screen and (max-width: 1400px) {
+   .nav-link a {
+      float: left;
+      padding: 10px 15px 10px 15px;
+      font-family: "Century Gothic", serif;
+      font-size: 1.5vw;
+      text-decoration: none;
+      color: white;
+      cursor: pointer;
+   }
+
+   .nav-link-edge a  {
+      float: left;
+      padding: 10px 15px 10px 15px;
+      font-family: "Century Gothic", serif;
+      font-size: 1.5vw;
+      text-decoration: none;
+      color: #ffffff;
+      cursor: pointer;
+   }
+
 }

@@ -14,7 +14,7 @@ export class ContactComponent implements OnInit {
   contactMeText;
 
   constructor()   {
-     this.imageBackground = './assets/images/DrinkMoreCoffee.png';
+     this.imageBackground = './assets/images/Vacation-img.png';
      this.bgHeight = 100;
      this.bgWidth = 100;
      this.contactMeText = "";

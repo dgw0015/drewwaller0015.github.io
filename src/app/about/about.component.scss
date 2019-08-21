@@ -5,15 +5,62 @@
 }
 
 .about-bg   {
-  width: 100%;
   height: 100%;
 }
 
-.header-txt   {
-   position: absolute;
-   top: 8px;
-   left: 38%;
-   color: aqua;
-   font-family: Arial, serif;
-   font-size: 2.5vw;
+.resume-link i  {
+  color: #d70000;
+  margin: 5px 6px 0 3px;
+  font-size: 30px;
+}
+
+.resume-link  {
+  position: absolute;
+  top: 6px;
+  right: 20px;
+  margin: 0 4px 0 3px;
+  font-family: "Century Gothic", serif;
+  font-size: 1.05vw;
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
+
+.resume-link:hover {
+  color: rgba(0, 252, 255, 0.8);
+}
+
+.flip-tile1  {
+  position: absolute;
+  top: 20%;
+  left: 8%;
+  background: rgba(0, 0, 0, 0.50);
+  height: 17vw;
+  width: 17vw;
+
+}
+
+.front-tile2  {
+  position: absolute;
+  top: 20%;
+  left: 30%;
+  background: rgba(0, 0 , 0, 0.50);
+  height: 8vw;
+  width: 8vw;
+}
+
+.flip-tile3 {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  height: 8vw;
+  width: 8vw;
+}
+
+.flip-tile4 {
+  position: absolute;
+  top: 20%;
+  left: 65%;
+  height: 8vw;
+  width: 8vw;
 }
