@@ -8,10 +8,13 @@ import {Component, OnInit} from '@angular/core';
 })
 // @ts-ignore
 export class ContactComponent implements OnInit {
-  contact_bg: string;
+  bgHeight;
+  bgWidth;
+  contactMeText;
 
   constructor()   {
-    this.contact_bg = './assets/images/AppleProducts.png'
+     this.contactMeText = "";
+
   }
 
   ngOnInit(): void {
