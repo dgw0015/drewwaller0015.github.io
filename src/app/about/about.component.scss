@@ -1,12 +1,10 @@
 
+
 .header-block  {
    width: 100%;
    background-color: transparent;
 }
 
-.about-bg   {
-  height: 100%;
-}
 
 .resume-link i  {
   color: #d70000;
@@ -15,7 +13,7 @@
 }
 
 .resume-link  {
-  position: absolute;
+  position: fixed;
   top: 6px;
   right: 20px;
   margin: 0 4px 0 3px;
@@ -28,39 +26,4 @@
 
 .resume-link:hover {
   color: rgba(0, 252, 255, 0.8);
-}
-
-.flip-tile1  {
-  position: absolute;
-  top: 20%;
-  left: 8%;
-  background: rgba(0, 0, 0, 0.50);
-  height: 17vw;
-  width: 17vw;
-
-}
-
-.front-tile2  {
-  position: absolute;
-  top: 20%;
-  left: 30%;
-  background: rgba(0, 0 , 0, 0.50);
-  height: 8vw;
-  width: 8vw;
-}
-
-.flip-tile3 {
-  position: absolute;
-  top: 20%;
-  left: 50%;
-  height: 8vw;
-  width: 8vw;
-}
-
-.flip-tile4 {
-  position: absolute;
-  top: 20%;
-  left: 65%;
-  height: 8vw;
-  width: 8vw;
 }

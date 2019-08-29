@@ -1,7 +1,8 @@
 
+
 #copyright  {
    text-align: center;
-   position: absolute;
+   position: fixed;
    bottom: 0;
    left: 50%;
    transform: translate(-50%, 0);
@@ -11,68 +12,168 @@
    color: rgba(220, 220, 220, 0.91);
 }
 
-.topNav {
-   position: fixed;
+.topNavImg {
+   float: left;
+   font-family: Arial, serif;
+   font-size: 1.2vw;
+   border-bottom: 2px solid rgba(204, 204, 204, 0.12);
+   border-right: 2px solid rgba(204, 204, 204, 0.12);
    background-color: transparent;
-   width: 100%;
+   width: 15.5%;
+   height: 40%;
 }
 
-.nav-link a {
+.head-shot  {
    float: left;
-   padding: 10px 15px 10px 15px;
-   font-family: "Century Gothic", serif;
-   font-size: 1.2vw;
-   text-decoration: none;
+   margin-top: 5%;
+   margin-left: 3.8vw;
+   margin-bottom: 0;
+   padding-bottom: 0;
+   border-radius: 50%;
+   border: 2px solid rgba(235, 235, 235, 0.85);
+}
+
+#welcome-text {
+   float: left;
+   margin: 6px 1vw 0 2vw;
+   font-family: Arial, serif;
+   font-size: 2.1vw;
+   color: rgb(255, 255, 255);
+   font-weight: lighter;
+}
+
+#welcome-text p   {
+   text-align: center;
+   font-size: 1vw;
+   font-family: Arial, serif;
    color: white;
-   cursor: pointer;
 }
 
-.nav-link-edge a  {
+#welcome-text hr  {
+   margin: 2px 0 8px 0;
+   border: 0.8px solid #0ec7f4;
+}
+
+#sub-text   {
+   margin-top: 5px;
+   margin-bottom: 0;
+   padding-bottom: 0;
+}
+
+#andSign {
+   margin: 3px 0 0 1px;
+   padding: 0;
+}
+
+#secondSub-txt {
+   margin: 3px;
+}
+
+.sideNav {
+   position: absolute;
+   top: 40.2%;
+   width: 15.5%;
+   height: 60%;
+   border-right: 2px solid rgba(204, 204, 204, 0.12);
+}
+
+.nav-link i {
    float: left;
-   padding: 10px 15px 10px 15px;
-   font-family: "Century Gothic", serif;
-   font-size: 1.2vw;
-   text-decoration: none;
-   color: #ffffff;
+   color: white;
+   font-size: 1vw;
+   padding-left: 1vw;
+}
+
+.nav-link  {
+   text-align: center;
+   padding: 8px 0 8px 0;
+   font-family: Arial, serif;
+   font-size: 0.8vw;
+   font-weight: lighter;
+   color: white;
+   background: transparent;
+   width: 100%;
+   height: 5%;
+   border-bottom: 2px solid rgba(204, 204, 204, 0.12);
+   transition: 0.2s;
+}
+
+.nav-link:hover {
    cursor: pointer;
+   color: white;
+   background-color: red;
 }
 
-.nav-link-edge a:hover  {
-   color: rgba(0, 252, 255, 0.75);
+
+
+#active {
+   color: white;
+   background: red;
 }
 
-.nav-link a:hover {
-   color: rgba(0, 252, 255, 0.75);
+.tabContent {
+   position: absolute;
+   top: 20%;
+   left: 55%;
+   color: white;
+   text-align: center;
+   font-family: "Century Gothic", sans-serif;
+   font-size: 2vw;
+
+   transform: translate(-50%, -50%);
 }
 
-.topNav #active a {
-  color: rgb(255, 255, 255);
-  background-color: rgba(0, 252, 255, 0.75);
+/*------------------------------------
+ Social Media Links and Their Styling.
+ ------------------------------------*/
+.facebook-link {
+
+   cursor: pointer;
+
 }
 
-.topNav #active a:hover {
-  color: black;
+.instagram-link {
+   cursor: pointer;
+
+}
+
+.linkedIn-link  {
+   cursor: pointer;
+   border-radius: 15%;
+}
+
+.handshake-link {
+   cursor: pointer;
+   border-radius: 15%;
 }
 
 @media only screen and (max-width: 1400px) {
-   .nav-link a {
+
+   .topNavImg {
       float: left;
-      padding: 10px 15px 10px 15px;
-      font-family: "Century Gothic", serif;
-      font-size: 1.5vw;
-      text-decoration: none;
-      color: white;
-      cursor: pointer;
+      font-family: Arial, serif;
+      font-size: 1.2vw;
+      border-bottom: 2px solid rgba(204, 204, 204, 0.12);
+      border-right: 2px solid rgba(204, 204, 204, 0.12);
+      background-color: transparent;
+      width: 15%;
+      height: 45.8%;
    }
 
-   .nav-link-edge a  {
-      float: left;
-      padding: 10px 15px 10px 15px;
-      font-family: "Century Gothic", serif;
-      font-size: 1.5vw;
-      text-decoration: none;
-      color: #ffffff;
-      cursor: pointer;
+   .sideNav {
+      position: absolute;
+      top: 46%;
+      width: 15%;
+      height: 54%;
+      border-right: 2px solid rgba(204, 204, 204, 0.12);
+   }
+
+   .head-shot  {
+      margin-left: 3.9vw;
+   }
+
+   #welcome-text  {
+      margin-left: 1.9vw;
    }
 
 }

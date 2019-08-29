@@ -1,4 +1,6 @@
-import {Component, OnInit} from '@angular/core';
+import { Component, OnInit, Renderer2 } from '@angular/core';
+import { HostListener } from "@angular/core";
+
 
 // @ts-ignore
 @Component({
@@ -7,21 +9,34 @@ import {Component, OnInit} from '@angular/core';
   styleUrls: ['./about.component.scss']
 })
 // @ts-ignore
-export class AboutComponent implements OnInit   {
-   loveWhatYouDo;
-   loveWhatYouDoText;
-   educationText;
-   experienceText;
-   skillsText;
+export class AboutComponent implements OnInit   {loveWhatYouDoText: string;
+   screenHeight: any;
+   screenWidth: any;
+   onMobileDevice: boolean;
+   resumeDownloadLink: string;
 
-   constructor()  {
-      this.loveWhatYouDo = './assets/images/LoveYourCareer.png';
-      this.loveWhatYouDoText = 'Why I Love What I Do';
-      this.educationText = 'My Education';
-      this.experienceText = 'My Experience & Journey Into Computing';
-      this.skillsText = 'My Skills';
+   constructor(private renderer: Renderer2)  {
+      this.loveWhatYouDoText = 'Why I Love Computer Science';
+      this.onResize();
+      this.resumeDownloadLink = './assets/Drew G Waller 2019 Resume.pdf'
+   }
+
+   @HostListener('window:resize', ['$event'])
+   onResize(event?)  {
+      this.screenHeight = window.innerHeight;
+      this.screenWidth = window.innerWidth;
    }
 
    ngOnInit(): void {
+      this.onResize();
    }
+
+   // getScreenStatus() {
+   //    if (this.screenWidth <= 400 || this.screenHeight <= 600)   {
+   //       this.onMobileDevice = true;
+   //    }
+   // }
+
+
+
 }

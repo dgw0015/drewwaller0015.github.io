@@ -4,10 +4,11 @@ import { Routes, RouterModule } from '@angular/router';
 import { WelcomeComponent } from './welcome';
 import { AboutComponent } from './about';
 import { ContactComponent } from './contact';
-import {BioComponent} from "./bio";
+import { ExperienceComponent } from "./experience";
+import { SkillsComponent } from "./skills";
+import { EducationComponent } from "./education";
 
 const ROUTES: Routes = [
-  // Starting page = HOME.
   {
         path: '', redirectTo: 'welcome', pathMatch: 'full'
       },
@@ -21,11 +22,20 @@ const ROUTES: Routes = [
       },
       {
          path: 'contact',
-         component: ContactComponent,
+         component: ContactComponent
       },
       {
-         path: 'bio',
-         component: BioComponent
+         path: 'experience',
+         component: ExperienceComponent,
+      },
+      {
+         path: 'education',
+         component: EducationComponent,
+      },
+      {
+         path: 'skills',
+         component: SkillsComponent
+
   }
 ];
 // @ts-ignore

@@ -1,22 +1,14 @@
 <!-- Background image of the welcome screen. -->
+<!--<div class="bg-img">-->
+<!--   <img [src] = homeBg alt="Computer and notepad"-->
+<!--        [style.width.%] = 'imageWidth'-->
+<!--        [style.height.%] = 'imageHeight'/>-->
+<!--</div>-->
 
-<div class="bg-img">
-   <img [src] = homeBg alt="Computer and notepad"
-        [style.width.%] = 'imageWidth'
-        [style.height.%] = 'imageHeight'/>
-   <h1 id="welcome-text">{{myName}}</h1>
-   <p id="sub-text">{{subText}}</p>
-</div>
-
-<div class="description-box">
+<div class="description-box" id="Home">
    <p class="welcome-msg-header">Why I Created This Site</p>
    <p>{{welcomeBox_text}}</p>
 </div>
 
 
-<div>
-   <!-- creates circular portrait image -->
-   <img [src] ='selfPortrait' alt="Portrait image of Drew" class="head-shot"
-        [style.width.vw] = 'selfImgWidth'
-        [style.height.vw] = selfImgHeight />
-</div>
+
