@@ -1,5 +1,4 @@
 
-
 #copyright  {
    text-align: center;
    position: fixed;
@@ -52,6 +51,7 @@
 #welcome-text hr  {
    margin: 2px 0 8px 0;
    border: 0.8px solid #0ec7f4;
+   color: #0ec7f4;
 }
 
 #sub-text   {
@@ -77,7 +77,7 @@
    border-right: 2px solid rgba(204, 204, 204, 0.12);
 }
 
-.nav-link i {
+.nav-links i {
    float: left;
    color: white;
    font-size: 1vw;
@@ -104,22 +104,20 @@
    background-color: red;
 }
 
-
-
 #active {
    color: white;
    background: red;
 }
 
-.tabContent {
+
+.tabContent h3 {
    position: absolute;
    top: 20%;
    left: 55%;
    color: white;
    text-align: center;
-   font-family: "Century Gothic", sans-serif;
+   font-family: Arial, sans-serif;
    font-size: 2vw;
-
    transform: translate(-50%, -50%);
 }
 
@@ -151,29 +149,61 @@
 
    .topNavImg {
       float: left;
-      font-family: Arial, serif;
-      font-size: 1.2vw;
+      color: white;
       border-bottom: 2px solid rgba(204, 204, 204, 0.12);
       border-right: 2px solid rgba(204, 204, 204, 0.12);
       background-color: transparent;
       width: 15%;
-      height: 45.8%;
+      height: 37%;
    }
 
    .sideNav {
       position: absolute;
-      top: 46%;
+      top: 37.2%;
       width: 15%;
-      height: 54%;
+      height: 62%;
       border-right: 2px solid rgba(204, 204, 204, 0.12);
    }
 
-   .head-shot  {
+   .nav-link  {
+      font-family: Arial, serif;
+      font-size: 1vw;
+      font-weight: lighter;
+   }
+
+   .nav-link i {
+      font-size: 1.2vw;
+   }
+
+   .head-shot {
       margin-left: 3.9vw;
    }
 
-   #welcome-text  {
+   #welcome-text {
       margin-left: 1.9vw;
    }
 
+   h3 {
+      position: absolute;
+      top: 20%;
+      left: 55%;
+      color: white;
+      text-align: center;
+      font-family: Arial, sans-serif;
+      font-size: 2vw;
+      transform: translate(-50%, -50%);
+   }
 }
+
+   @media only screen and (max-height: 500px)   {
+
+      .head-shot  {
+         visibility: hidden;
+      }
+
+      #welcome-text  {
+         position: absolute;
+         top: 5%;
+         left: inherit;
+      }
+   }
