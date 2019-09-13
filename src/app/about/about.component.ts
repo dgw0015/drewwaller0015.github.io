@@ -1,7 +1,6 @@
 import { Component, OnInit, Renderer2 } from '@angular/core';
 import { HostListener } from "@angular/core";
 
-
 // @ts-ignore
 @Component({
    selector: 'app-about',
@@ -10,15 +9,23 @@ import { HostListener } from "@angular/core";
 })
 // @ts-ignore
 export class AboutComponent implements OnInit   {loveWhatYouDoText: string;
+   aboutBg: string;
+   myStory: string;
+   selfPortrait: string;
+   selfImgWidth: number;
+   selfImgHeight: number;
    screenHeight: any;
    screenWidth: any;
    onMobileDevice: boolean;
-   resumeDownloadLink: string;
 
    constructor(private renderer: Renderer2)  {
-      this.loveWhatYouDoText = 'Why I Love Computer Science';
+      this.aboutBg = './assets/images/iPad.png';
       this.onResize();
-      this.resumeDownloadLink = './assets/Drew G Waller 2019 Resume.pdf'
+      this.selfPortrait = './assets/images/Headshot.jpg';
+      this.selfImgWidth = 11.5;
+      this.selfImgHeight = 11.5;
+      this.myStory = 'I am Drew Waller, I am 27 and a senior at Auburn University. I will be graduating in May 2020 with a bachelors of science' +
+          ' majoring in computer science with a minor in business.';
    }
 
    @HostListener('window:resize', ['$event'])

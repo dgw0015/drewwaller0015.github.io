@@ -6,8 +6,36 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./experience.component.scss']
 })
 export class ExperienceComponent implements OnInit {
+  google: string;
+  pcDark: string;
+  crackedPC: string;
+  resumeDownloadLink: string;
+  winnDixieExp: string;
+  columbiaBankExp: string;
+  autoExp: string;
+  aviationExp: string;
+  moveToAl_penAirExp: string;
+  cokeExp: string;
+  auburnPersonalTrainerExp: string;
+  hotelAtAUExp: string;
+  internshipExp: string;
 
-  constructor() { }
+
+  constructor() {
+    this.google = './assets/images/GoogleMonitor.png';
+    this.pcDark = './assets/images/PCWithPurple.png';
+    this.resumeDownloadLink = './assets/Drew G Waller 2019 Resume.pdf';
+    this.winnDixieExp = 'Winn-Dixie...';
+    this.columbiaBankExp = 'Columbia Bank ...';
+    this.autoExp = 'auto exp...';
+    this.aviationExp = 'TIMCO ...';
+    this.moveToAl_penAirExp = 'PenAir FCU . . .';
+    this.cokeExp = 'Coca Cola Bottling Consolidated';
+    this.auburnPersonalTrainerExp = 'NASM certified personal trainer at Maxx Fitness';
+    this.hotelAtAUExp = 'Bartender at the Auburn hotel...';
+    this.internshipExp = 'J.B. Hunt Transportation... '
+    this.crackedPC = './assets/images/CrackedComputerOnChair.png';
+  }
 
   ngOnInit() {
   }

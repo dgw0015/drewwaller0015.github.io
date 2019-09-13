@@ -3,7 +3,9 @@
 @import "~font-awesome/scss/mixins";
 
 body, html  {
-  height: 100%;
   margin: 0;
-  background-image: linear-gradient(to right, #003339 62%, #795d4e);
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.89);
 }
