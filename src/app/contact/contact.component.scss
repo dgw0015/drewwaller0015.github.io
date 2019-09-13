@@ -1,7 +1,51 @@
 
-.page-bg {
+.contact-bg {
    height: 100%;
-   margin: 0;
 }
+
+.social-mediaBox  {
+   position: absolute;
+   bottom: 20px;
+   width: 99.8%;
+   height: 60px;
+}
+
+.facebook-link  {
+   float: left;
+   font-size: 1.1vw;
+   margin-left: 37%;
+   margin-top: 10px;
+   color: white;
+}
+
+.instagram-link {
+   float: left;
+   font-size: 1.1vw;
+   margin-top: 10px;
+   margin-left: 7vw;
+   color: white;
+}
+
+.linkedIn-link  {
+   float: left;
+   font-size: 1.1vw;
+   margin-top: 10px;
+   margin-left: 7vw;
+   color: white;
+}
+
+.googlePlus-link  {
+   float: left;
+   font-size: 1.1vw;
+   margin-top: 10px;
+   margin-left: 7vw;
+   color: white;
+}
+
+.link a:hover {
+   font-size: 1.3vw;
+   color: greenyellow;
+}
+
 
 

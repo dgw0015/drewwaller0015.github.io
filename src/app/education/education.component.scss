@@ -1,0 +1,56 @@
+.education-bg {
+   height: 100%;
+}
+
+.auburnLogo {
+   padding: 1.5vw;
+}
+
+.nav-links  {
+   background-color: rgba(0, 0, 0, 0.9);
+}
+
+h3  {
+   position: absolute;
+   top: 10%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   font-family: Arial, serif;
+   color: greenyellow;
+   font-size: 3vw;
+   font-weight: lighter;
+}
+
+.educationBox  {
+   position: absolute;
+   top: 18.3%;
+   left: 10%;
+   width: 80%;
+   height: 70%;
+   background: rgba(0, 0, 0, 0.70);
+   border-radius: 25px;
+}
+
+@media only screen and(max-width: 1400px) {
+
+   .educationBox  {
+      position: absolute;
+      top: 22%;
+      left: 10%;
+      width: 80%;
+      height: 70%;
+      background: rgba(0, 0, 0, 0.70);
+   }
+
+   h3  {
+      position: absolute;
+      top: 13%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+   }
+
+
+
+}
+

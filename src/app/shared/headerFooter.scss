@@ -1,209 +1,61 @@
 
-#copyright  {
-   text-align: center;
-   position: fixed;
-   bottom: 0;
-   left: 50%;
-   transform: translate(-50%, 0);
-   font-family: "Times New Roman", serif;
-   font-size: 11px;
-   background: transparent;
-   color: rgba(220, 220, 220, 0.91);
-}
-
-.topNavImg {
-   float: left;
-   font-family: Arial, serif;
-   font-size: 1.2vw;
-   border-bottom: 2px solid rgba(204, 204, 204, 0.12);
-   border-right: 2px solid rgba(204, 204, 204, 0.12);
-   background-color: transparent;
-   width: 15.5%;
-   height: 40%;
-}
-
 .head-shot  {
-   float: left;
-   margin-top: 5%;
-   margin-left: 3.8vw;
-   margin-bottom: 0;
-   padding-bottom: 0;
-   border-radius: 50%;
-   border: 2px solid rgba(235, 235, 235, 0.85);
-}
-
-#welcome-text {
-   float: left;
-   margin: 6px 1vw 0 2vw;
-   font-family: Arial, serif;
-   font-size: 2.1vw;
-   color: rgb(255, 255, 255);
-   font-weight: lighter;
-}
-
-#welcome-text p   {
-   text-align: center;
-   font-size: 1vw;
-   font-family: Arial, serif;
-   color: white;
-}
-
-#welcome-text hr  {
-   margin: 2px 0 8px 0;
-   border: 0.8px solid #0ec7f4;
-   color: #0ec7f4;
-}
-
-#sub-text   {
-   margin-top: 5px;
-   margin-bottom: 0;
-   padding-bottom: 0;
-}
-
-#andSign {
-   margin: 3px 0 0 1px;
-   padding: 0;
-}
-
-#secondSub-txt {
-   margin: 3px;
-}
-
-.sideNav {
    position: absolute;
-   top: 40.2%;
-   width: 15.5%;
-   height: 60%;
-   border-right: 2px solid rgba(204, 204, 204, 0.12);
-}
-
-.nav-links i {
-   float: left;
-   color: white;
-   font-size: 1vw;
-   padding-left: 1vw;
-}
-
-.nav-link  {
-   text-align: center;
-   padding: 8px 0 8px 0;
-   font-family: Arial, serif;
-   font-size: 0.8vw;
-   font-weight: lighter;
-   color: white;
-   background: transparent;
-   width: 100%;
-   height: 5%;
-   border-bottom: 2px solid rgba(204, 204, 204, 0.12);
-   transition: 0.2s;
-}
-
-.nav-link:hover {
-   cursor: pointer;
-   color: white;
-   background-color: red;
-}
-
-#active {
-   color: white;
-   background: red;
-}
-
-
-.tabContent h3 {
-   position: absolute;
-   top: 20%;
-   left: 55%;
-   color: white;
-   text-align: center;
-   font-family: Arial, sans-serif;
-   font-size: 2vw;
+   top: 50%;
+   left: 50%;
    transform: translate(-50%, -50%);
+   border-radius: 50%;
+   border: 2px solid rgba(3, 3, 3, 0.68);
 }
 
-/*------------------------------------
- Social Media Links and Their Styling.
- ------------------------------------*/
-.facebook-link {
+.nav-links  {
+   position: absolute;
+   top: 0;
+   left: 26.5%;
+   background: transparent;
+   width: 47%;
+   height: 50px;
+   font-family: "Century Gothic", sans-serif;
+   font-size: 1.4vw;
+}
 
+.nav-links a  {
+   text-decoration: none;
+}
+
+a  {
+   float: left;
+   text-align: center;
+   padding: 9px 1vw 0 1vw;
+   color: white;
+}
+
+a:hover   {
    cursor: pointer;
-
+   font-size: 1.45vw;
+   color: darkred;
 }
 
-.instagram-link {
-   cursor: pointer;
-
+#active  {
+   color: greenyellow;
+   text-decoration: underline;
 }
 
-.linkedIn-link  {
-   cursor: pointer;
-   border-radius: 15%;
-}
+@media only screen and(max-width: 1400px) {
 
-.handshake-link {
-   cursor: pointer;
-   border-radius: 15%;
-}
-
-@media only screen and (max-width: 1400px) {
-
-   .topNavImg {
-      float: left;
-      color: white;
-      border-bottom: 2px solid rgba(204, 204, 204, 0.12);
-      border-right: 2px solid rgba(204, 204, 204, 0.12);
-      background-color: transparent;
-      width: 15%;
-      height: 37%;
-   }
-
-   .sideNav {
+   .nav-links {
       position: absolute;
-      top: 37.2%;
-      width: 15%;
-      height: 62%;
-      border-right: 2px solid rgba(204, 204, 204, 0.12);
+      top: 0;
+      left: 25%;
+      background: transparent;
+      width: 50%;
+      height: 50px;
+      font-family: "Century Gothic", sans-serif;
+      font-size: 1.6vw;
    }
 
-   .nav-link  {
-      font-family: Arial, serif;
-      font-size: 1vw;
-      font-weight: lighter;
+   a:hover  {
+      font-size: 1.65vw;
    }
 
-   .nav-link i {
-      font-size: 1.2vw;
-   }
-
-   .head-shot {
-      margin-left: 3.9vw;
-   }
-
-   #welcome-text {
-      margin-left: 1.9vw;
-   }
-
-   h3 {
-      position: absolute;
-      top: 20%;
-      left: 55%;
-      color: white;
-      text-align: center;
-      font-family: Arial, sans-serif;
-      font-size: 2vw;
-      transform: translate(-50%, -50%);
-   }
 }
-
-   @media only screen and (max-height: 500px)   {
-
-      .head-shot  {
-         visibility: hidden;
-      }
-
-      #welcome-text  {
-         position: absolute;
-         top: 5%;
-         left: inherit;
-      }
-   }

@@ -6,8 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./education.component.scss']
 })
 export class EducationComponent implements OnInit {
+  pageBg: string;
+  auburnLogo: string;
 
-  constructor() { }
+
+  constructor() {
+    this.pageBg = './assets/images/DrinkMoreCoffee.png';
+    this.auburnLogo = './assets/image_icons/auburnLogo.png'
+  }
 
   ngOnInit() {
   }

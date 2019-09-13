@@ -1,14 +1,35 @@
-<!-- Background image of the welcome screen. -->
-<!--<div class="bg-img">-->
-<!--   <img [src] = homeBg alt="Computer and notepad"-->
-<!--        [style.width.%] = 'imageWidth'-->
-<!--        [style.height.%] = 'imageHeight'/>-->
-<!--</div>-->
-
-<div class="description-box" id="Home">
-   <p class="welcome-msg-header">Why I Created This Site</p>
-   <p>{{welcomeBox_text}}</p>
+<div class="homePage-bg">
+   <img [src] = 'mountains' alt="Tablet Background Image"
+        [style.width.%] = 100
+        [style.height.%] = 100 />
 </div>
 
+<div class="center-txtBox">
+   <h1 id="welcome-text">{{myName}}</h1>
+   <hr>
+   <p id="sub-text">{{subText}}</p>
+</div>
 
+<div class="social-mediaBox">
 
+   <div class="link">
+      <a class="facebook-link" target="_blank" href="https://www.facebook.com/drew.waller.73">
+         <i class="fa fa-facebook"></i>
+      </a>
+   </div>
+   <div class="link">
+      <a class="instagram-link" target="_blank" href="https://www.instagram.com/dwaller_45/">
+         <i class="fa fa-instagram"></i>
+      </a>
+   </div>
+   <div class="link">
+      <a class="linkedIn-link" target="_blank" href="https://www.linkedin.com/in/drew-waller-100371192/">
+         <i class="fa fa-linkedin"></i>
+      </a>
+   </div>
+   <div class="link">
+      <a class="googlePlus-link" target="_blank" href="https://aboutme.google.com/?hl=en">
+         <i class="fa fa-google-plus"></i>
+      </a>
+   </div>
+</div>

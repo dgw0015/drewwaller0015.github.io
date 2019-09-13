@@ -1,0 +1,280 @@
+* {box-sizing:border-box}
+
+.skills-bg  {
+   height: 100%;
+   margin: 0;
+   padding: 0;
+}
+
+.skills-bg2 {
+   height: 100%;
+   margin: 0;
+   padding: 0;
+}
+
+.pg-heading  {
+   position: absolute;
+   top: -1.2%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   font-family: Arial, serif;
+   font-weight: lighter;
+   font-size: 3vw;
+   color: greenyellow;
+}
+
+.skillsBox  {
+   position: absolute;
+   top: 15%;
+   left: 10%;
+   width: 80%;
+   background-color: rgba(0, 0, 0, 0.70);
+   margin: 0;
+   padding: 0;
+   border-radius: 25px;
+}
+
+.skillsBox h4   {
+   position: relative;
+   margin: 0;
+   padding: 3vw 5px 3vw 1vw;
+   font-family: Arial, serif;
+   font-size: 1.5vw;
+   font-weight: lighter;
+   text-align: left;
+   text-decoration: underline;
+   color: white;
+}
+
+.skillsBox p   {
+   margin: 0;
+   padding-left: 2vw;
+   font-family: Arial, serif;
+   font-size: 1vw;
+   font-weight: lighter;
+   color: white;
+}
+
+.skillsBox .otherSkills   {
+   position: relative;
+   margin: 0;
+   padding: 3vw 5px 3vw 1vw;
+   font-family: Arial, serif;
+   font-size: 1.5vw;
+   font-weight: lighter;
+   text-align: left;
+   text-decoration: underline;
+   color: white;
+}
+
+.container  {
+   position: relative;
+   left: 2%;
+   width: 95%;
+   background-color: #555373;
+   border-radius: 25px;
+   margin-bottom: 1.5vw;
+   border: 1px solid #e8e8e8;
+}
+
+.skills  {
+   text-align: right;
+   padding-top: 0.3vw;
+   padding-bottom: 0.3vw;
+   color: white;
+   font-family: Arial, serif;
+   font-size: .8vw;
+}
+
+.quote  {
+   position: absolute;
+   top: 215%;
+   left: 20%;
+   width: 60%;
+   text-align: center;
+   font-family: Arial, serif;
+   color: white;
+   font-size: 1vw;
+   background-color: rgba(0, 0, 0, 0.70);
+   border: 1px solid white;
+}
+
+.java {
+   width: 95%;
+   background-color: dodgerblue;
+   border-radius: 25px;
+   padding-right: 1.1vw;
+}
+
+.python  {
+   width: 85%;
+   background-color: dodgerblue;
+   border-radius: 25px;
+   padding-right: 1.1vw;
+}
+
+.cpp  {
+   width: 85%;
+   background-color: dodgerblue;
+   border-radius: 25px;
+   padding-right: 1.1vw;
+}
+
+.cSharpe   {
+   width: 90%;
+   background-color: dodgerblue;
+   border-radius: 25px;
+   padding-right: 1.1vw;
+}
+
+.angular {
+   width: 90%;
+   background-color: darkblue;
+   border-radius: 25px;
+   padding-right: 1.1vw;
+}
+
+.react   {
+   width: 95%;
+   background-color: darkblue;
+   border-radius: 25px;
+   padding-right: 1.1vw;
+}
+
+.javascript {
+   width: 90%;
+   background-color: darkblue;
+   border-radius: 25px;
+   padding-right: 1.1vw;
+   color: white;
+}
+
+.typescript {
+   width: 90%;
+   background-color: darkblue;
+   border-radius: 25px;
+   padding-right: 1.1vw;
+}
+
+.html   {
+   width: 95%;
+   background-color: darkorange;
+   border-radius: 25px;
+   padding-right: 1.1vw;
+   color: black;
+}
+
+.styleSheets   {
+   width: 95%;
+   background-color: darkorange;
+   border-radius: 25px;
+   padding-right: 1.1vw;
+   color: black;
+}
+
+.xml  {
+   width: 80%;
+   background-color: darkorange;
+   border-radius: 25px;
+   padding-right: 1.1vw;
+   color: black;
+}
+
+.docker  {
+   width: 70%;
+   background-color: dodgerblue;
+   border-radius: 25px;
+   padding-right: 1.1vw;
+}
+
+.kubernetes {
+   width: 60%;
+   background-color: dodgerblue;
+   border-radius: 25px;
+   padding-right: 1.1vw;
+}
+
+.minikube   {
+   width: 60%;
+   background-color: darkblue;
+   border-radius: 25px;
+   padding-right: 1.1vw;
+}
+
+.database  {
+   width: 85%;
+   background-color: darkblue;
+   border-radius: 25px;
+   padding-right: 1.1vw;
+}
+
+.swagger {
+   width: 90%;
+   background-color: darkblue;
+   border-radius: 25px;
+   padding-right: 1.1vw;
+}
+
+.UX  {
+   width: 80%;
+   background-color: darkorange;
+   border-radius: 25px;
+   padding-right: 1.1vw;
+   color: black;
+}
+
+.powerShell {
+   width: 70%;
+   background-color: darkorange;
+   border-radius: 25px;
+   padding-right: 1.1vw;
+   color: black;
+}
+
+.linux   {
+   width: 75%;
+   background-color: darkorange;
+   border-radius: 25px;
+   padding-right: 1.1vw;
+   color: black;
+}
+
+@media only screen and(max-width: 1400px) {
+
+   .skillsBox  {
+      position: absolute;
+      top: 19%;
+      left: 10%;
+      width: 80%;
+      background-color: rgba(0, 0, 0, 0.70);
+      margin: 0;
+      padding: 0;
+      border-radius: 25px;
+   }
+
+   .pg-heading {
+      font-size: 3.3vw;
+   }
+
+   .skills  {
+      text-align: right;
+      padding-top: 0.3vw;
+      padding-bottom: 0.3vw;
+      color: white;
+      font-family: Arial, serif;
+      font-size: 1vw;
+   }
+
+   .quote  {
+      position: absolute;
+      top: 245%;
+      left: 20%;
+      width: 60%;
+      text-align: center;
+      font-family: Arial, serif;
+      color: white;
+      font-size: 1vw;
+      background-color: rgba(0, 0, 0, 0.70);
+      border: 1px solid white;
+   }
+}
