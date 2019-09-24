@@ -25,7 +25,8 @@ export class ExperienceComponent implements OnInit {
     this.google = './assets/images/GoogleMonitor.png';
     this.pcDark = './assets/images/PCWithPurple.png';
     this.resumeDownloadLink = './assets/Drew G Waller 2019 Resume.pdf';
-    this.winnDixieExp = 'Winn-Dixie...';
+    this.winnDixieExp = 'I worked at Winn-Dixie for my last two years of high school. Started as a cashier, then was promoted many times from,' +
+        ' cashier, customer service lead, in-store coordinator, and frontend manager.';
     this.columbiaBankExp = 'Columbia Bank ...';
     this.autoExp = 'auto exp...';
     this.aviationExp = 'TIMCO ...';
@@ -33,7 +34,7 @@ export class ExperienceComponent implements OnInit {
     this.cokeExp = 'Coca Cola Bottling Consolidated';
     this.auburnPersonalTrainerExp = 'NASM certified personal trainer at Maxx Fitness';
     this.hotelAtAUExp = 'Bartender at the Auburn hotel...';
-    this.internshipExp = 'J.B. Hunt Transportation... '
+    this.internshipExp = 'J.B. Hunt Transportation... ';
     this.crackedPC = './assets/images/CrackedComputerOnChair.png';
   }
 

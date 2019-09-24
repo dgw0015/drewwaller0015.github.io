@@ -41,27 +41,27 @@
 
  h3   {
     position: absolute;
-    top: 8%;
+    top: 6.5%;
     left: 10%;
     width: 80%;
     color: greenyellow;
     font-family: Arial, serif;
     text-align: center;
-    font-size: 2.8vw;
+    font-size: 3vw;
     font-weight: lighter;
 }
 
 .timeline {
    position: absolute;
-   top: 19.2%;
-   left: 10%;
-   width: 80%;
+   top: 18.25%;
+   left: 5%;
+   width: 90%;
    padding-top: 3.5vw;
    padding-bottom: 3.5vw;
    font-family: Arial, serif;
    background: rgba(0, 0, 0, 0.60);
    margin: 0 auto;
-   border-bottom: 1px solid white;
+   border-bottom: 1px solid greenyellow;
    border-radius: 25px;
 }
 
@@ -78,10 +78,13 @@
 }
 
 .container  {
-   padding: 10px 40px;
+   padding: 10px 10px 10px 20px;
    position: relative;
    background-color: inherit;
    width: 50%;
+   border-radius: 25px;
+   border-left: 1px solid greenyellow;
+   border-right: 1px solid greenyellow;
 }
 
 .container::after {
@@ -116,6 +119,7 @@
    border: medium solid white;
    border-width: 10px 0 10px 10px;
    border-color: transparent transparent transparent greenyellow;
+   transform: rotate(180deg);
 }
 
 .right::before {
@@ -129,6 +133,7 @@
    border: medium solid white;
    border-width: 10px 10px 10px 0;
    border-color: transparent greenyellow transparent transparent;
+   transform: rotate(180deg);
 }
 
 .right::after  {
@@ -136,23 +141,22 @@
 }
 
 .content {
-   padding: 3px 25px;
-   background-color: white;
+   padding: 3px 15px;
    position: relative;
    border-radius: 6px;
    font-family: Arial, serif;
+   color: white;
 }
 
 .content h2 {
+   text-align: center;
    margin-top: 0;
-   padding-top: 10px;
    font-size: 1.8vw;
    font-weight: lighter;
 }
 
 .content p {
-   padding: 0 10px 5px 0;
-   font-size: 1vw;
+   font-size: 1.1vw;
 }
 
 .social-mediaBox  {
@@ -203,7 +207,7 @@
 }
 
 
-@media only screen and (max-width: 1400px) {
+@media screen and (max-width: 1400px) {
 
    .resume-link {
       font-size: 1.2vw;
@@ -211,14 +215,14 @@
 
    h3   {
       position: absolute;
-      top: 17.4%;
+      top: 16.9%;
       left: 10%;
       width: 80%;
       color: greenyellow;
       font-family: Arial, serif;
       font-weight: lighter;
       text-align: center;
-      font-size: 2.8vw;
+      font-size: 3vw;
       padding: 0;
       margin: 0;
    }
@@ -232,6 +236,10 @@
       font-family: Arial, serif;
       background: rgba(0, 0, 0, 0.51);
       margin: 0 auto;
+   }
+
+   .content h2 {
+      font-size: 2.3vw;
    }
 
    .social-mediaBox  {

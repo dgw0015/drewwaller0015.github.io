@@ -26,30 +26,30 @@
 .skillsBox  {
    position: absolute;
    top: 15%;
-   left: 10%;
-   width: 80%;
-   background-color: rgba(0, 0, 0, 0.70);
+   left: 5%;
+   width: 90%;
+   background-color: rgba(0, 0, 0, 0.65);
    margin: 0;
-   padding: 0;
+   padding-bottom: 50px;
    border-radius: 25px;
+   border: 1px solid rgba(170, 170, 170, 0.55);
 }
 
 .skillsBox h4   {
    position: relative;
    margin: 0;
-   padding: 3vw 5px 3vw 1vw;
+   padding: 4vw 5px 3vw 3vw;
    font-family: Arial, serif;
    font-size: 1.5vw;
    font-weight: lighter;
    text-align: left;
-   text-decoration: underline;
    color: white;
 }
 
 .skillsBox p   {
    margin: 0;
-   padding-left: 2vw;
-   font-family: Arial, serif;
+   padding-left: 8vw;
+   font-family: "Century Gothic", serif;
    font-size: 1vw;
    font-weight: lighter;
    color: white;
@@ -58,23 +58,21 @@
 .skillsBox .otherSkills   {
    position: relative;
    margin: 0;
-   padding: 3vw 5px 3vw 1vw;
+   padding: 1.5vw 5px 3vw 3vw;
    font-family: Arial, serif;
    font-size: 1.5vw;
    font-weight: lighter;
    text-align: left;
-   text-decoration: underline;
    color: white;
 }
 
 .container  {
    position: relative;
-   left: 2%;
-   width: 95%;
+   left: 10%;
+   width: 80%;
    background-color: #555373;
    border-radius: 25px;
-   margin-bottom: 1.5vw;
-   border: 1px solid #e8e8e8;
+   margin-bottom: 1.8vw;
 }
 
 .skills  {
@@ -88,15 +86,16 @@
 
 .quote  {
    position: absolute;
-   top: 215%;
+   top: 236%;
    left: 20%;
    width: 60%;
    text-align: center;
    font-family: Arial, serif;
    color: white;
-   font-size: 1vw;
-   background-color: rgba(0, 0, 0, 0.70);
-   border: 1px solid white;
+   font-size: 1.2vw;
+   line-height: 1.8vw;
+   background-color: rgba(0, 0, 0, 0.85);
+   padding: 1.5vw 2vw 0 2vw;
 }
 
 .java {
@@ -129,21 +128,21 @@
 
 .angular {
    width: 90%;
-   background-color: darkblue;
+   background-color: dodgerblue;
    border-radius: 25px;
    padding-right: 1.1vw;
 }
 
 .react   {
    width: 95%;
-   background-color: darkblue;
+   background-color: dodgerblue;
    border-radius: 25px;
    padding-right: 1.1vw;
 }
 
 .javascript {
    width: 90%;
-   background-color: darkblue;
+   background-color: dodgerblue;
    border-radius: 25px;
    padding-right: 1.1vw;
    color: white;
@@ -151,33 +150,33 @@
 
 .typescript {
    width: 90%;
-   background-color: darkblue;
+   background-color: dodgerblue;
    border-radius: 25px;
    padding-right: 1.1vw;
 }
 
 .html   {
    width: 95%;
-   background-color: darkorange;
+   background-color: dodgerblue;
    border-radius: 25px;
    padding-right: 1.1vw;
-   color: black;
+   color: white;
 }
 
 .styleSheets   {
    width: 95%;
-   background-color: darkorange;
+   background-color: dodgerblue;
    border-radius: 25px;
    padding-right: 1.1vw;
-   color: black;
+   color: white;
 }
 
 .xml  {
    width: 80%;
-   background-color: darkorange;
+   background-color: dodgerblue;
    border-radius: 25px;
    padding-right: 1.1vw;
-   color: black;
+   color: white;
 }
 
 .docker  {
@@ -196,59 +195,59 @@
 
 .minikube   {
    width: 60%;
-   background-color: darkblue;
+   background-color: dodgerblue;
    border-radius: 25px;
    padding-right: 1.1vw;
 }
 
 .database  {
    width: 85%;
-   background-color: darkblue;
+   background-color: dodgerblue;
    border-radius: 25px;
    padding-right: 1.1vw;
 }
 
 .swagger {
    width: 90%;
-   background-color: darkblue;
+   background-color: dodgerblue;
    border-radius: 25px;
    padding-right: 1.1vw;
 }
 
 .UX  {
    width: 80%;
-   background-color: darkorange;
+   background-color: dodgerblue;
    border-radius: 25px;
    padding-right: 1.1vw;
-   color: black;
+   color: white;
 }
 
 .powerShell {
    width: 70%;
-   background-color: darkorange;
+   background-color: dodgerblue;
    border-radius: 25px;
    padding-right: 1.1vw;
-   color: black;
+   color: white;
 }
 
 .linux   {
    width: 75%;
-   background-color: darkorange;
+   background-color: dodgerblue;
    border-radius: 25px;
    padding-right: 1.1vw;
-   color: black;
+   color: white;
 }
 
-@media only screen and(max-width: 1400px) {
+@media screen and(max-width: 1300px) {
 
    .skillsBox  {
       position: absolute;
       top: 19%;
-      left: 10%;
-      width: 80%;
+      left: 5%;
+      width: 90%;
       background-color: rgba(0, 0, 0, 0.70);
       margin: 0;
-      padding: 0;
+      padding-bottom: 20px;
       border-radius: 25px;
    }
 
@@ -267,14 +266,19 @@
 
    .quote  {
       position: absolute;
-      top: 245%;
-      left: 20%;
-      width: 60%;
+      top: 268%;
+      left: 16%;
+      width: 65%;
       text-align: center;
       font-family: Arial, serif;
       color: white;
-      font-size: 1vw;
+      font-size: 1.2vw;
+      line-height: 1.5vw;
       background-color: rgba(0, 0, 0, 0.70);
-      border: 1px solid white;
+      padding-top: 0;
+      margin: 0;
+   }
+   .quote p {
+      text-align: center;
    }
 }

@@ -56,19 +56,25 @@ h4  {
 }
 
 .story-body p {
-  padding: .5vw 0 .5vw 2vw;
+  padding: 1vw 2vw .5vw 3vw;
   color: white;
   font-family: Arial, serif;
-  font-size: .9vw;
+  font-size: 1vw;
+  line-height: 1.4vw;
 }
 
 @media only screen and (max-width: 1400px) {
 
   .story-body p {
-    padding: .5vw 0 .5vw 2vw;
+    padding: 1vw 2vw .5vw 3vw;
     color: white;
     font-family: Arial, serif;
-    font-size: 1vw;
+    font-size: 1.1vw;
+    line-height: 1.5vw;
+  }
+
+  .aboutMe-txtBox {
+    height: 75%;
   }
 
 
