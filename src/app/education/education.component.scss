@@ -1,9 +1,12 @@
 .education-bg {
-   height: 100%;
+   width: 100%;
+   height: auto;
+   position: fixed;
+   z-index: -1;
 }
 
 .auburnLogo {
-   padding: 1.5vw;
+   margin-left: 5%;
 }
 
 .nav-links  {
@@ -12,7 +15,7 @@
 
 h3  {
    position: absolute;
-   top: 10%;
+   top: 6.8%;
    left: 50%;
    transform: translate(-50%, -50%);
    font-family: Arial, serif;
@@ -23,33 +26,62 @@ h3  {
 
 .educationBox  {
    position: absolute;
-   top: 18.3%;
+   top: 15%;
    left: 10%;
    width: 80%;
-   height: 70%;
+   height: 80%;
+   color: white;
    background: rgba(0, 0, 0, 0.70);
    border-radius: 25px;
+   font-family: Arial, serif;
+   text-align: left;
 }
+
+.educationBox h4  {
+   font-size: 1.75vw;
+   text-decoration: underline;
+   text-decoration-color: #adff2f;
+   font-weight: lighter;
+   margin: 3vw 0 .5vw 5%;
+   padding: 0;
+}
+
+p  {
+   margin: 0 0 0 5%;
+   padding: 3px;
+   font-size: 1vw;
+}
+
+.AU h4   {
+   margin-bottom: 20px;
+}
+
 
 @media only screen and(max-width: 1400px) {
 
    .educationBox  {
       position: absolute;
-      top: 22%;
+      top: 17%;
       left: 10%;
       width: 80%;
-      height: 70%;
+      height: 80%;
       background: rgba(0, 0, 0, 0.70);
    }
 
    h3  {
       position: absolute;
-      top: 13%;
+      top: 8%;
       left: 50%;
       transform: translate(-50%, -50%);
-
    }
 
+   .educationBox h4  {
+      margin: 2vw 0 .3vw 5%;
+   }
+
+   .educationBox p   {
+      font-size: 1vw;
+   }
 
 
 }

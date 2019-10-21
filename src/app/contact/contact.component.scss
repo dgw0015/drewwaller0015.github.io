@@ -1,51 +1,232 @@
 
 .contact-bg {
-   height: 100%;
+   width: 100%;
+   height: auto;
+   position: fixed;
+   z-index: -1;
+}
+
+.pageContent-overlay {
+   position: absolute;
+   top: 8%;
+   left: 5%;
+   width: 90%;
+   height: 88%;
+   background-color: rgba(0, 0, 0, 0.8);
+   border-radius: 25px;
+   border: 1px solid #646464;
+}
+
+.inputBox   {
+   float: left;
+   margin: 1px;
+   width: 60%;
+   height: 90%;
+   font-family: Arial, serif;
+   font-size: 1vw;
+   color: white;
+}
+
+.pageContent-overlay h3 {
+   text-align: center;
+   font-family: Arial, serif;
+   font-size: 2.7vw;
+   font-weight: lighter;
+   color: greenyellow;
+   margin: 0;
+   padding-top: 2px;
+}
+
+
+.inputBox label {
+   font-size: 1.1vw;
+   font-weight: lighter;
+   margin-left: 5%;
+}
+
+.inputBox input, select, textarea  {
+   margin-left: 5%;
+   margin-top: 3px;
+}
+
+#contact-method  {
+   font-family: Arial, serif;
+   font-size: 1vw;
+   width: 30%;
+   padding: .3vw;
+   background-color: rgba(255, 255, 255, 0.75);
+   border-radius: 5px;
+   cursor: pointer;
+}
+
+option[value=opt] {
+   background-color: #c2c2c3;
+   font-family: Arial, serif;
+   font-size: 1vw;
+   color: black;
+   cursor: pointer;
+}
+
+#name, #phoneNumber, #email  {
+   text-align: left;
+   font-family: Arial, serif;
+   font-size: 1vw;
+   width: 50%;
+   background-color: rgba(255, 255, 255, 0.75);
+   box-sizing: border-box;
+   border: none;
+   margin-top: 2px;
+   margin-bottom: 1vw;
+   padding: .4vw;
+   resize: vertical;
+   border-radius: 5px;
+   color: black;
+}
+
+textarea  {
+   font-family: Arial, serif;
+   font-size: .9vw;
+   border: 1px solid darkgray;
+   border-radius: 5px;
+   box-sizing: border-box;
+   padding: 10px;
+   margin-top: 2px;
+   resize: vertical;
+   background-color: rgba(255, 255, 255, 0.75);
+   color: black;
+}
+
+#subject {
+   width: 90%;
+   height: 12vw;
+}
+
+#submit-btn   {
+   background-color: greenyellow;
+   font-family: Arial, serif;
+   font-size: 1vw;
+   width: auto;
+   margin-top: .5vw;
+   padding: .7vw 1.1vw .7vw 1.1vw;
+   color: black;
+   border: none;
+   box-shadow: 0 5px #757575;
+   border-radius: 8px;
+}
+
+#submit-btn:hover   {
+   background-color: #9be22a;
+   cursor: pointer;
+}
+
+#submit-btn:active {
+   background-color: #6ea11e;
+   box-shadow: 0 3px whitesmoke;
+   transform: translateY(4px);
+}
+
+select:hover   {
+   cursor: pointer;
+}
+
+.myInfo-right  {
+   position: absolute;
+   top: 8.5%;
+   right: 5%;
+   width: 30%;
+   height: 40%;
+   text-align: center;
+   font-family: Arial, serif;
+   font-size: 1vw;
+   font-weight: lighter;
+   color: white;
+}
+
+h4  {
+   font-size: 1.4vw;
+   margin: 6% 0 15px 0;
+   font-weight: lighter;
+   text-decoration: underline;
+   text-decoration-color: greenyellow;
+}
+
+.contactInfo p  {
+   font-size: 1vw;
+   margin: 0;
+   padding: 5px;
 }
 
 .social-mediaBox  {
    position: absolute;
-   bottom: 20px;
+   bottom: 1px;
+   margin-bottom: 3vw;
    width: 99.8%;
-   height: 60px;
+   height: 34px;
 }
 
 .facebook-link  {
    float: left;
-   font-size: 1.1vw;
-   margin-left: 37%;
-   margin-top: 10px;
+   font-size: 1.4vw;
+   margin-left: 25%;
    color: white;
 }
 
 .instagram-link {
    float: left;
-   font-size: 1.1vw;
-   margin-top: 10px;
-   margin-left: 7vw;
+   font-size: 1.4vw;
+   margin-left: 3vw;
    color: white;
 }
 
 .linkedIn-link  {
    float: left;
-   font-size: 1.1vw;
-   margin-top: 10px;
-   margin-left: 7vw;
+   font-size: 1.4vw;
+   margin-left: 3vw;
    color: white;
 }
 
 .googlePlus-link  {
    float: left;
-   font-size: 1.1vw;
-   margin-top: 10px;
-   margin-left: 7vw;
+   font-size: 1.4vw;
+   margin-left: 3vw;
    color: white;
 }
 
 .link a:hover {
-   font-size: 1.3vw;
+   font-size: 1.5vw;
    color: greenyellow;
 }
 
+@media screen and (max-width: 1300px)  {
 
+   #subject {
+      height: 10vw;
+   }
 
+   .social-mediaBox  {
+      margin-bottom: 0;
+   }
+
+   .facebook-link  {
+      font-size: 1.5vw;
+
+   }
+
+   .instagram-link {
+      font-size: 1.5vw;
+   }
+
+   .linkedIn-link  {
+      font-size: 1.5vw;
+   }
+
+   .googlePlus-link  {
+      font-size: 1.5vw;
+   }
+
+   .link a:hover {
+      font-size: 1.6vw;
+      color: greenyellow;
+   }
+
+}

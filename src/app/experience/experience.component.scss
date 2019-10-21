@@ -4,6 +4,8 @@
 
 .experience-bg {
    height: 100%;
+   position: fixed;
+   z-index: -1;
 }
 
 .bg-2 {
@@ -78,6 +80,7 @@
 }
 
 .container  {
+   margin-bottom: 2vw;
    padding: 10px 10px 10px 20px;
    position: relative;
    background-color: inherit;
@@ -159,54 +162,6 @@
    font-size: 1.1vw;
 }
 
-.social-mediaBox  {
-   position: absolute;
-   top: 280%;
-   left: 10%;
-   width: 80%;
-   height: 9.3vw;
-   background-color: rgba(0, 0, 0, 0.51);
-   padding-top: 3.8vw;
-}
-
-.facebook-link  {
-   float: left;
-   font-size: 1.2vw;
-   margin-left: 35%;
-   margin-top: 10px;
-   color: white;
-}
-
-.instagram-link {
-   float: left;
-   font-size: 1.2vw;
-   margin-top: 10px;
-   margin-left: 7vw;
-   color: white;
-}
-
-.linkedIn-link  {
-   float: left;
-   font-size: 1.2vw;
-   margin-top: 10px;
-   margin-left: 7vw;
-   color: white;
-}
-
-.googlePlus-link  {
-   float: left;
-   font-size: 1.2vw;
-   margin-top: 10px;
-   margin-left: 7vw;
-   color: white;
-}
-
-.link a:hover {
-   font-size: 1.3vw;
-   color: greenyellow;
-}
-
-
 @media screen and (max-width: 1400px) {
 
    .resume-link {
@@ -215,7 +170,7 @@
 
    h3   {
       position: absolute;
-      top: 16.9%;
+      top: 17%;
       left: 10%;
       width: 80%;
       color: greenyellow;
@@ -229,7 +184,7 @@
 
    .timeline {
       position: absolute;
-      top: 23.15%;
+      top: 22.8%;
       left: 10%;
       width: 80%;
       padding-top: 3.5vw;
@@ -242,46 +197,7 @@
       font-size: 2.3vw;
    }
 
-   .social-mediaBox  {
-      position: absolute;
-      top: 181%;
-      left: 10%;
-      width: 80%;
-      height: 9.3vw;
-      background-color: rgba(0, 0, 0, 0.51);
-      padding-top: 3.8vw;
-   }
 
-   .facebook-link  {
-      font-size: 1.4vw;
-   }
-
-   .instagram-link {
-      font-size: 1.4vw;
-   }
-
-   .linkedIn-link  {
-      font-size: 1.4vw;
-   }
-
-   .googlePlus-link  {
-      font-size: 1.4vw;
-   }
-
-   .link a:hover {
-      font-size: 1.48vw;
-      color: greenyellow;
-   }
-
-   .social-mediaBox  {
-      position: absolute;
-      top: 280%;
-      left: 10%;
-      width: 80%;
-      height: 9.3vw;
-      background-color: rgba(0, 0, 0, 0.51);
-      padding-top: 3.8vw;
-   }
 
 }
 

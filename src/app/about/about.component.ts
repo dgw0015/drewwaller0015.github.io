@@ -19,11 +19,11 @@ export class AboutComponent implements OnInit   {
    onMobileDevice: boolean;
 
    constructor(private renderer: Renderer2)  {
-      this.aboutBg = './assets/images/iPad.png';
+      this.aboutBg = './assets/images/Lightning.png';
       this.onResize();
       this.selfPortrait = './assets/images/headshot.jpg';
-      this.selfImgWidth = 11.5;
-      this.selfImgHeight = 11.5;
+      this.selfImgWidth = 12.5;
+      this.selfImgHeight = 12.5;
       this.myStory = 'I am Drew Waller, I am 27 and a senior at Auburn University. I will be graduating in May 2020 with a bachelors of science' +
           ' majoring in computer science with a minor in business. I am sure the first thing that you notice is that I am much older than your average' +
           ' senior in college. This is because after I graduated from I school at 18 I had no clue what I wanted to do for the rest of my life. So' +
