@@ -1,61 +1,116 @@
-
-.head-shot  {
-   position: absolute;
-   top: 50%;
-   left: 50%;
-   transform: translate(-50%, -50%);
-   border-radius: 50%;
-   border: 2px solid rgba(3, 3, 3, 0.68);
-}
-
-.nav-links  {
+.header  {
    position: absolute;
    top: 0;
-   left: 26.5%;
-   background: transparent;
-   width: 47%;
-   height: 50px;
-   font-family: "Century Gothic", sans-serif;
-   font-size: 1.4vw;
+   width: 100%;
+   height: 100px;
+   margin: 0;
+   padding: 0;
+   background-color: transparent;
+   z-index: 1;
 }
 
-.nav-links a  {
-   text-decoration: none;
-}
-
-a  {
+.header .open-btn  {
    float: left;
-   text-align: center;
-   padding: 9px 1vw 0 1vw;
+   padding: .5vw 0 1vw 1.2vw;
+   color: white;
+   font-size: 2.1vw;
+}
+
+i:hover  {
+   cursor: pointer;
+   color: yellowgreen;
+   font-size: 2.3vw;
+}
+
+.overlay {
+   height: 0;
+   width: 100%;
+   position: fixed;
+   z-index: 2;
+   left: 0;
+   top: 0;
+   background-color: rgba(0, 0, 0, 0.81);
+   overflow-x: hidden;
+   transition: 0.5s;
+}
+
+.overlay a {
+   padding: 8px;
+   text-decoration: none;
+   font-size: 1.5vw;
+   color: #818181;
+   display: block;
+   transition: 0.3s;
+}
+
+.display-3  {
+   font-size: 3.5vw;
    color: white;
 }
 
-a:hover   {
+.display-3:hover  {
+   color: aqua;
    cursor: pointer;
-   font-size: 1.45vw;
-   color: darkred;
 }
 
-#active  {
+.overlay .close-btn  {
+   position: absolute;
+   top: 0;
+   right: 45px;
+   font-size: 4vw;
+   color: white;
+}
+
+.overlay .nav-links .link  {
+   width: 15%;
+   margin-left: 42.5%;
+   text-decoration: none;
+}
+
+.overlay .nav-links  {
+   position: absolute;
+   top: 8%;
+   width: 100%;
+   text-align: center;
+   margin-top: 30px;
+   color: white;
+}
+
+#active .display-3  {
    color: greenyellow;
-   text-decoration: underline;
+   text-decoration: dotted;
 }
 
-@media only screen and(max-width: 1400px) {
 
-   .nav-links {
-      position: absolute;
-      top: 0;
-      left: 25%;
-      background: transparent;
-      width: 50%;
-      height: 50px;
-      font-family: "Century Gothic", sans-serif;
-      font-size: 1.6vw;
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+@media screen and (max-height: 450px) {
+
+   .overlay a {
+      font-size: 20px
    }
 
-   a:hover  {
-      font-size: 1.65vw;
+   .overlay .close-btn {
+      font-size: 40px;
+      top: 15px;
+      right: 35px;
    }
-
 }
+
+//@media only screen and(max-width: 1400px) {
+//
+//   .nav-links {
+//      position: absolute;
+//      top: 0;
+//      left: 25%;
+//      background: transparent;
+//      width: 50%;
+//      height: 50px;
+//      font-family: "Century Gothic", sans-serif;
+//      font-size: 1.6vw;
+//   }
+//
+//   a:hover  {
+//      font-size: 1.65vw;
+//   }
+//
+//}

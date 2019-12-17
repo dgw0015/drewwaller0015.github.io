@@ -1,151 +1,244 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Renderer2 } from '@angular/core';
 
 
 // @ts-ignore
 @Component({
    selector: 'app-header',
    template: `       
-      <!--Screen when the Home page is the active page.-->
-      <div class="nav-links" *ngIf="getActive() === 'home'">
-         <a class="nav-link" id="active" [routerLink]="['/welcome']">Home
-         </a>
-         <a class="nav-link" target="_self"
-            [routerLink]="['/about']" (click)="setActive('about')">About
-         </a>
-         <a class="nav-link" target="_self" 
-            [routerLink]="['/education']" (click)="setActive('education')">Education
-           </a>
-         <a class="nav-link" target="_self"
-            [routerLink]="['/experience']" (click)="setActive('experience')">Experience
-         </a>
-         <a class="nav-link" target="_self"
-            [routerLink]="['./skills']" (click)="setActive('skills')">Skills
-         </a>
-         <a class="nav-link" target="_self"
-            [routerLink]="['/contact']" (click)="setActive('contact')">Contact
-         </a>
-      </div>
+             
+       <div id="fullNav" class="overlay">
+          <a href="javascript:void(0)" class="close-btn" 
+             (click)="closeNav('fullNav')">&times;</a>
 
-      <!--Screen when the About page is the active page.-->
-      <div class="nav-links" *ngIf="getActive() === 'about'">
-         <a class="nav-link" [routerLink]="['/welcome']" (click)="setActive('home')">Home
-         </a>
-            
-         <a class="nav-link" id="active" [routerLink]="['/about']">About
-         </a>
+          <!--Screen when the Home page is the active page.-->
+          <div class="nav-links" *ngIf="getActive() === 'home'">
+             <div class="link" >
+               <a target="_self" id="active"
+                  [routerLink]="['/welcome']" (click)="setActive('home')"><h1 class="display-3">Home</h1>
+               </a>
+             </div>
+             <div class="link">
+               <a target="_self"
+                   [routerLink]="['/about']" (click)="setActive('about')"><h1 class="display-3">About</h1>
+               </a>
+             </div>
+             <div class="link">
+                <a target="_self"
+                   [routerLink]="['/education']" (click)="setActive('education')"><h1 class="display-3">Education</h1>
+                </a>
+             </div>
+             <div class="link">
+                <a target="_self"
+                   [routerLink]="['/experience']" (click)="setActive('experience')"><h1 class="display-3">Experience</h1>
+                </a>
+             </div>
+             <div class="link">
+                <a target="_self"
+                   [routerLink]="['./skills']" (click)="setActive('skills')"><h1 class="display-3">Skills</h1>
+                </a>
+             </div>
+             <div class="link">
+                <a target="_self"
+                   [routerLink]="['/contact']" (click)="setActive('contact')"><h1 class="display-3">Contact</h1>
+                </a>
+             </div>
+          </div>
 
-         <a class="nav-link" [routerLink]="['/education']" (click)="setActive('education')">Education
-         </a>
-            
-         <a class="nav-link" [routerLink]="['/experience']" (click)="setActive('experience')">Experience
-         </a>
-            
-         <a class="nav-link" [routerLink]="['./skills']" (click)="setActive('skills')">Skills
-         </a>
-            
-         <a class="nav-link" [routerLink]="['/contact']" (click)="setActive('contact')">Contact
-         </a>
-      </div>
-         
-      <!--Screen when the Education page is the active page.-->
-      <div class="nav-links" *ngIf="getActive() === 'education'">
-         <a class="nav-link" [routerLink]="['/welcome']" (click)="setActive('home')">Home
-         </a>
+          <!--Screen when the About page is the active page.-->
+          <div class="nav-links" *ngIf="getActive() === 'about'">
+             <div class="link">
+                <a [routerLink]="['/welcome']" (click)="setActive('home')"><h1 class="display-3">Home</h1>
+                </a>
+             </div>
+             <div class="link" >
+                <a target="_self" id="active"
+                   [routerLink]="['/about']"><h1 class="display-3">About</h1>
+                </a>
+             </div>
+             <div class="link">
+                <a target="_self"
+                   [routerLink]="['/education']" (click)="setActive('education')"><h1 class="display-3">Education</h1>
+                </a>
+             </div>
+             <div class="link">
+                <a target="_self"
+                   [routerLink]="['/experience']" (click)="setActive('experience')"><h1 class="display-3">Experience</h1>
+                </a>
+             </div>
+             <div class="link">
+                <a target="_self"
+                   [routerLink]="['./skills']" (click)="setActive('skills')"><h1 class="display-3">Skills</h1>
+                </a>
+             </div>
+             <div class="link">
+                <a target="_self"
+                   [routerLink]="['/contact']" (click)="setActive('contact')"><h1 class="display-3">Contact</h1>
+                </a>
+             </div>
+          </div>
 
-         <a class="nav-link" [routerLink]="['/about']" (click)="setActive('about')">About
-         </a>
+          <!--Screen when the Education page is the active page.-->
+          <div class="nav-links" *ngIf="getActive() === 'education'">
+             <div class="link">
+                <a [routerLink]="['/welcome']" (click)="setActive('home')"><h1 class="display-3">Home</h1>
+                </a>
+             </div>
+             <div class="link">
+                <a target="_self"
+                   [routerLink]="['/about']" (click)="setActive('about')"><h1 class="display-3">About</h1>
+                </a>
+             </div>
+             <div class="link">
+                <a target="_self" id="active"
+                   [routerLink]="['/education']"><h1 class="display-3">Education</h1>
+                </a>
+             </div>
+             <div class="link">
+                <a target="_self"
+                   [routerLink]="['/experience']" (click)="setActive('experience')"><h1 class="display-3">Experience</h1>
+                </a>
+             </div>
+             <div class="link">
+                <a target="_self"
+                   [routerLink]="['./skills']" (click)="setActive('skills')"><h1 class="display-3">Skills</h1>
+                </a>
+             </div>
+             <div class="link">
+                <a target="_self"
+                   [routerLink]="['/contact']" (click)="setActive('contact')"><h1 class="display-3">Contact</h1>
+                </a>
+             </div>
+          </div>
 
-         <a class="nav-link" id="active" [routerLink]="['/education']">Education
-         </a>
+          <!--Screen when the Experience page is the active page.-->
+          <div class="nav-links" *ngIf="getActive() === 'experience'">
+             <div class="link">
+                <a [routerLink]="['/welcome']" (click)="setActive('home')"><h1 class="display-3">Home</h1>
+                </a>
+             </div>
+             <div class="link">
+                <a target="_self"
+                   [routerLink]="['/about']" (click)="setActive('about')"><h1 class="display-3">About</h1>
+                </a>
+             </div>
+             <div class="link">
+                <a target="_self"
+                   [routerLink]="['/education']" (click)="setActive('education')"><h1 class="display-3">Education</h1>
+                </a>
+             </div>
+             <div class="link">
+                <a target="_self" id="active"
+                   [routerLink]="['/experience']"><h1 class="display-3">Experience</h1>
+                </a>
+             </div>
+             <div class="link">
+                <a target="_self"
+                   [routerLink]="['./skills']" (click)="setActive('skills')"><h1 class="display-3">Skills</h1>
+                </a>
+             </div>
+             <div class="link">
+                <a target="_self"
+                   [routerLink]="['/contact']" (click)="setActive('contact')"><h1 class="display-3">Contact</h1>
+                </a>
+             </div>
+          </div>
 
-         <a class="nav-link" [routerLink]="['/experience']" (click)="setActive('experience')">Experience
-         </a>
+          <!--Screen when the Skills page is the active page.-->
+          <div class="nav-links" *ngIf="getActive() === 'skills'">
+             <div class="link">
+                <a [routerLink]="['/welcome']" (click)="setActive('home')"><h1 class="display-3">Home</h1>
+                </a>
+             </div>
+             <div class="link">
+                <a target="_self"
+                   [routerLink]="['/about']" (click)="setActive('about')"><h1 class="display-3">About</h1>
+                </a>
+             </div>
+             <div class="link">
+                <a target="_self"
+                   [routerLink]="['/education']" (click)="setActive('education')"><h1 class="display-3">Education</h1>
+                </a>
+             </div>
+             <div class="link">
+                <a target="_self"
+                   [routerLink]="['/experience']" (click)="setActive('experience')"><h1 class="display-3">Experience</h1>
+                </a>
+             </div>
+             <div class="link">
+                <a target="_self" id="active"
+                   [routerLink]="['./skills']"><h1 class="display-3">Skills</h1>
+                </a>
+             </div>
+             <div class="link">
+                <a target="_self"
+                   [routerLink]="['/contact']" (click)="setActive('contact')"><h1 class="display-3">Contact</h1>
+                </a>
+             </div>
+          </div>
 
-         <a class="nav-link" [routerLink]="['./skills']" (click)="setActive('skills')">Skills
-         </a>
+          <!--Screen when Contact is the active page.-->
+          <div class="nav-links" *ngIf="getActive() === 'contact'">
+             <div class="link">
+                <a [routerLink]="['/welcome']" (click)="setActive('home')"><h1 class="display-3">Home</h1>
+                </a>
+             </div>
+             <div class="link">
+                <a target="_self"
+                   [routerLink]="['/about']" (click)="setActive('about')"><h1 class="display-3">About</h1>
+                </a>
+             </div>
+             <div class="link">
+                <a target="_self"
+                   [routerLink]="['/education']" (click)="setActive('education')"><h1 class="display-3">Education</h1>
+                </a>
+             </div>
+             <div class="link">
+                <a target="_self"
+                   [routerLink]="['/experience']" (click)="setActive('experience')"><h1 class="display-3">Experience</h1>
+                </a>
+             </div>
+             <div class="link">
+                <a target="_self"
+                   [routerLink]="['./skills']" (click)="setActive('skills')"><h1 class="display-3">Skills</h1>
+                </a>
+             </div>
+             <div class="link">
+                <a target="_self" id="active"
+                   [routerLink]="['/contact']"><h1 class="display-3">Contact</h1>
+                </a>
+             </div>
+          </div>
+       </div>
+       <div class="header">
+          <div class="open-btn" (click)="openNav('fullNav')"><i class="fas fa-bars"></i></div>
+       </div>
 
-         <a class="nav-link" [routerLink]="['/contact']" (click)="setActive('contact')">Contact
-         </a>
-      </div>
-
-      <!--Screen when the Experience page is the active page.-->
-      <div class="nav-links" *ngIf="getActive() === 'experience'">
-         <a class="nav-link" [routerLink]="['/welcome']" (click)="setActive('home')">Home
-         </a>
-            
-         <a class="nav-link" [routerLink]="['/about']" (click)="setActive('about')">About
-         </a>
-
-         <a class="nav-link" [routerLink]="['/education']" (click)="setActive('education')">Education
-         </a>
-            
-         <a class="nav-link" id="active" [routerLink]="['/experience']">Experience
-         </a>
-            
-         <a class="nav-link" [routerLink]="['./skills']" (click)="setActive('skills')">Skills
-         </a>
-            
-         <a class="nav-link" [routerLink]="['/contact']" (click)="setActive('contact')">Contact
-         </a>
-      </div>
-
-      <!--Screen when the Skills page is the active page.-->
-      <div class="nav-links" *ngIf="getActive() === 'skills'">
-         <a class="nav-link" [routerLink]="['/welcome']" (click)="setActive('home')">Home
-         </a>
-            
-         <a class="nav-link" [routerLink]="['/about']" (click)="setActive('about')">About
-         </a>
-
-         <a class="nav-link" [routerLink]="['/education']" (click)="setActive('education')">Education
-         </a>
-         
-         <a class="nav-link" [routerLink]="['/experience']" (click)="setActive('experience')">Experience
-         </a>
-         
-         <a class="nav-link" id="active" [routerLink]="['./skills']">Skills
-         </a>
-            
-         <a class="nav-link" [routerLink]="['/contact']" (click)="setActive('contact')">Contact
-         </a>
-      </div>
-
-      <!--Screen when Contact is the active page.-->
-      <div class="nav-links" *ngIf="getActive() === 'contact'">
-         <a class="nav-link" [routerLink]="['/welcome']" (click)="setActive('home')">Home
-         </a>
-            
-         <a class="nav-link" [routerLink]="['/about']" (click)="setActive('about')">About
-         </a>
-         
-         <a class="nav-link" [routerLink]="['/education']" (click)="setActive('education')">Education
-         </a>
-            
-         <a class="nav-link" [routerLink]="['/experience']" (click)="setActive('experience')">Experience
-         </a>
-            
-         <a class="nav-link" [routerLink]="['./skills']" (click)="setActive('skills')">Skills
-         </a>
-            
-         <a class="nav-link" id="active" [routerLink]="['/contact']">Contact
-         </a>
-      </div>
-       
    `,
    styleUrls: ['./headerFooter.scss']
 })
 export class HeaderComponent implements OnInit  {
    active: string;
 
-   constructor() {
+   constructor(private renderer: Renderer2) {
    }
 
    ngOnInit(): void {
       this.active = 'home';
    }
 
+   closeNav(nav: string): void  {
+      const element: HTMLElement = document.getElementById(nav);
+      this.renderer.setStyle(element, 'height', '0');
+   }
+
+   openNav(nav: string): void   {
+      const element: HTMLElement = document.getElementById(nav);
+      this.renderer.setStyle(element, 'height', '100%');
+   }
+
    setActive(activePg: string): void {
       this.active = activePg;
+      this.closeNav('nav');
    }
 
    getActive(): string {
@@ -153,3 +246,4 @@ export class HeaderComponent implements OnInit  {
    }
 
 }
+

@@ -1,7 +1,10 @@
 /* Styles the background image on the welcome component page. */
 
-.homePage-bg  {
+.home-bg  {
+  position: fixed;
   height: 100%;
+  width: 100%;
+  z-index: -2;
 }
 
 .center-txtBox  {
@@ -42,19 +45,20 @@ hr {
   bottom: 20px;
   width: 99.8%;
   height: 60px;
+  z-index: 0;
 }
 
 .facebook-link  {
   float: left;
-  font-size: 1.1vw;
-  margin-left: 37%;
+  font-size: 1.5vw;
+  margin-left: 32.2%;
   margin-top: 10px;
   color: white;
 }
 
 .instagram-link {
   float: left;
-  font-size: 1.1vw;
+  font-size: 1.5vw;
   margin-top: 10px;
   margin-left: 7vw;
   color: white;
@@ -62,7 +66,7 @@ hr {
 
 .linkedIn-link  {
   float: left;
-  font-size: 1.1vw;
+  font-size: 1.5vw;
   margin-top: 10px;
   margin-left: 7vw;
   color: white;
@@ -70,14 +74,21 @@ hr {
 
 .googlePlus-link  {
   float: left;
-  font-size: 1.1vw;
+  font-size: 1.5vw;
+  margin-top: 10px;
+  margin-left: 7vw;
+  color: white;
+}
+
+.github-link  {
+  float: left;
+  font-size: 1.5vw;
   margin-top: 10px;
   margin-left: 7vw;
   color: white;
 }
 
 .link a:hover {
-  font-size: 1.3vw;
   color: greenyellow;
 }
 
@@ -109,16 +120,6 @@ hr {
   }
 
 }
-
-
-
-
-
-
-
-
-
-
 
 
 
