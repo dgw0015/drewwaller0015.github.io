@@ -12,8 +12,6 @@
   top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-family: "Century Gothic", serif;
-  font-weight: lighter;
   text-align: center;
   margin: 0;
   padding: 0;
@@ -26,18 +24,24 @@
   font-size: 1vw;
 }
 
-#welcome-text  {
+.display-2  {
   margin-bottom: 0;
   padding-bottom: 0;
-  font-size: 4.5vw;
-  font-weight: lighter;
+  font-size: 6vw;
   color: white;
 }
 
 hr {
+  margin: -5px 0 -5px -1.5vw;
+  padding: 0;
+  border: 2.5px solid #57d2de;
+  width: 108%;
+}
+
+.center-txtBox .lead {
+  font-size: 1.75vw;
   margin: 0;
   padding: 0;
-  border: 1px solid greenyellow;
 }
 
 .social-mediaBox  {
@@ -50,7 +54,7 @@ hr {
 
 .facebook-link  {
   float: left;
-  font-size: 1.5vw;
+  font-size: 2.2vw;
   margin-left: 32.2%;
   margin-top: 10px;
   color: white;
@@ -58,7 +62,7 @@ hr {
 
 .instagram-link {
   float: left;
-  font-size: 1.5vw;
+  font-size: 2.2vw;
   margin-top: 10px;
   margin-left: 7vw;
   color: white;
@@ -66,7 +70,7 @@ hr {
 
 .linkedIn-link  {
   float: left;
-  font-size: 1.5vw;
+  font-size: 2.2vw;
   margin-top: 10px;
   margin-left: 7vw;
   color: white;
@@ -74,50 +78,27 @@ hr {
 
 .googlePlus-link  {
   float: left;
-  font-size: 1.5vw;
+  font-size: 2.2vw;
   margin-top: 10px;
   margin-left: 7vw;
   color: white;
 }
 
-.github-link  {
+.github-link {
   float: left;
-  font-size: 1.5vw;
+  font-size: 2.2vw;
   margin-top: 10px;
   margin-left: 7vw;
   color: white;
 }
 
 .link a:hover {
-  color: greenyellow;
+  color: aqua;
 }
 
 @media only screen and (max-width: 1400px) {
 
-  .center-txtBox p {
-    font-size: 1.3vw;
-  }
 
-  .facebook-link  {
-    font-size: 1.2vw;
-  }
-
-  .instagram-link {
-    font-size: 1.2vw;
-  }
-
-  .linkedIn-link  {
-    font-size: 1.2vw;
-  }
-
-  .googlePlus-link  {
-    font-size: 1.2vw;
-  }
-
-  .link a:hover {
-    font-size: 1.4vw;
-    color: greenyellow;
-  }
 
 }
 

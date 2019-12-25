@@ -1,230 +1,364 @@
-*  {
-   box-sizing: border-box;
-}
 
 .experience-bg {
-   height: 100%;
    position: fixed;
+   width: 100%;
+   height: 100%;
+   z-index: -2;
+}
+
+.overlay {
+   position: absolute;
+   top: 0;
+   width: 100%;
+   height: 400%;
+   background-color: rgba(0, 0, 0, 0.63);
    z-index: -1;
-}
-
-.bg-2 {
-   height: 100%;
-}
-
-.bg-3 {
-   height: 100%;
 }
 
 #pdf-icon  {
    color: red;
-   font-weight: bold;
-   margin: 5px 6px 0 3px;
-   font-size: 1.5vw;
+   margin: 3px 6px 0 3px;
+   font-size: 2vw;
+   z-index: 1;
 }
 
 .resume-link  {
    position: absolute;
-   top: 6px;
-   right: 20px;
+   top: 5px;
+   right: 17vw;
    margin: 0 4px 0 3px;
-   font-family: "Century Gothic", serif;
-   font-size: 1.1vw;
-   font-weight: normal;
+   font-family: "Calibri Light", serif;
+   font-size: 1.5vw;
    text-decoration: none;
    color: white;
    cursor: pointer;
+   z-index: 1;
 }
 
 .resume-link:hover {
-   color: greenyellow;
-   font-size: 1.15vw;
+   color: aqua;
 }
 
- h3   {
-    position: absolute;
-    top: 6.5%;
-    left: 10%;
-    width: 80%;
-    color: greenyellow;
-    font-family: Arial, serif;
-    text-align: center;
-    font-size: 3vw;
-    font-weight: lighter;
-}
-
-.timeline {
+.social-mediaBox  {
    position: absolute;
-   top: 18.25%;
-   left: 5%;
-   width: 90%;
-   padding-top: 3.5vw;
-   padding-bottom: 3.5vw;
-   font-family: Arial, serif;
-   background: rgba(0, 0, 0, 0.60);
-   margin: 0 auto;
-   border-bottom: 1px solid greenyellow;
-   border-radius: 25px;
-}
-
-/* The vertical timeline. */
-.timeline::after  {
-   content: '';
-   position: absolute;
-   width: 6px;
-   background-color: white;
-   top: 0;
-   bottom: 0;
-   left: 50%;
-   margin-left: -3px;
-}
-
-.container  {
-   margin-bottom: 2vw;
-   padding: 10px 10px 10px 20px;
-   position: relative;
-   background-color: inherit;
-   width: 50%;
-   border-radius: 25px;
-   border-left: 1px solid greenyellow;
-   border-right: 1px solid greenyellow;
-}
-
-.container::after {
-   content: '';
-   position: absolute;
-   width: 25px;
-   height: 25px;
-   right: -17px;
-   background-color: greenyellow;
-   top: 15px;
-   border: 4px solid white;
-   border-radius: 50%;
+   top: 0.5vw;
+   left: 82%;
+   width: 17%;
+   height: 4vw;
+   margin: 0;
+   padding: 0;
    z-index: 1;
 }
 
-.left {
-   left: 0;
-}
-
-.right   {
-   left: 50%;
-}
-
-.left::before {
-   content: " ";
-   height: 0;
-   position: absolute;
-   top: 22px;
-   width: 0;
-   z-index: 1;
-   right: 30px;
-   border: medium solid white;
-   border-width: 10px 0 10px 10px;
-   border-color: transparent transparent transparent greenyellow;
-   transform: rotate(180deg);
-}
-
-.right::before {
-   content: " ";
-   height: 0;
-   position: absolute;
-   top: 22px;
-   width: 0;
-   z-index: 1;
-   left: 30px;
-   border: medium solid white;
-   border-width: 10px 10px 10px 0;
-   border-color: transparent greenyellow transparent transparent;
-   transform: rotate(180deg);
-}
-
-.right::after  {
-   left: -16px;
-}
-
-.content {
-   padding: 3px 15px;
-   position: relative;
-   border-radius: 6px;
-   font-family: Arial, serif;
+.facebook-link  {
+   float: left;
+   font-size: 1.75vw;
+   margin-left: 1.5vw;
    color: white;
 }
 
-.content h2 {
-   text-align: center;
-   margin-top: 0;
-   font-size: 1.8vw;
-   font-weight: lighter;
+.facebook-link:hover {
+   color: #295093;
+   cursor: pointer;
 }
 
-.content p {
-   font-size: 1.1vw;
+.instagram-link {
+   float: left;
+   font-size: 1.75vw;
+   margin-left: 1.5vw;
+   color: white;
+}
+
+.instagram-link:hover   {
+   color: deeppink;
+   cursor: pointer;
+}
+
+.linkedIn-link  {
+   float: left;
+   font-size: 1.75vw;
+   margin-left: 1.5vw;
+   color: white;
+}
+
+.linkedIn-link:hover {
+   color: #0271ae;
+   cursor: pointer;
+}
+
+.googlePlus-link  {
+   float: left;
+   font-size: 1.75vw;
+   margin-left: 1.5vw;
+   color: white;
+}
+
+.googlePlus-link:hover  {
+   color: #d64c3f;
+   cursor: pointer;
+}
+
+.github-link  {
+   float: left;
+   font-size: 1.75vw;
+   margin-left: 1.5vw;
+   margin-right: 0;
+   padding: 0;
+   color: white;
+}
+
+.github-link:hover   {
+   color: darkgrey;
+   cursor: pointer;
+}
+
+/* The flip box container */
+.flip-box {
+   background-color: transparent;
+   width: 50%;
+   height: 17vw;
+   margin-left: 25%;
+   border: 1px solid white;
+   perspective: 1000px;
+}
+
+/*  position the front and back side */
+.flip-box-inner {
+   position: relative;
+   width: 100%;
+   height: 100%;
+   text-align: center;
+   transition: transform 0.8s;
+   transform-style: preserve-3d;
+}
+
+
+/* Position the front and back side */
+.flip-box-front, .flip-box-back {
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   backface-visibility: hidden;
+}
+
+/* Style the front side */
+.flip-box-front {
+   background-color: white;
+   color: black;
+}
+
+/* Style the back side */
+.flip-box-back {
+   background-color: black;
+   padding: 1vw;
+   transform: rotateY(180deg);
+}
+
+.display-1  {
+   text-align: center;
+   color: white;
+   font-size: 4.5vw;
+   padding: .5vw 0 3vw 0;
+}
+
+.display-3  {
+   text-align: center;
+   color: black;
+   font-size: 3vw;
+   margin: 0;
+   padding-top: 4vw;
+}
+
+.lead {
+   text-align: center;
+   color: black;
+   font-size: 1.3vw;
+}
+
+#front-flipArrow  {
+   font-size: 2vw;
+   padding: 3vw 1vw 0 0;
+   float: right;
+}
+
+#front-flipArrow:hover  {
+   cursor: pointer;
+   color: aqua;
+}
+
+#back-flipArrow  {
+   font-size: 2vw;
+   color: white;
+   padding: 2.5vw 0 0 0;
+   float: right;
+}
+
+#back-flipArrow:hover  {
+   cursor: pointer;
+   color: aqua;
+}
+
+#front-flipArrow2  {
+   font-size: 2vw;
+   padding: 3vw 1vw 0 0;
+   float: right;
+}
+
+#front-flipArrow2:hover  {
+   cursor: pointer;
+   color: aqua;
+}
+
+#back-flipArrow2  {
+   color: white;
+   font-size: 2vw;
+   padding: .25vw 0 0 0;
+   float: right;
+}
+
+#back-flipArrow2:hover  {
+   cursor: pointer;
+   color: aqua;
+}
+
+#front-flipArrow3  {
+   font-size: 2vw;
+   padding: 3vw 1vw 0 0;
+   float: right;
+}
+
+#front-flipArrow3:hover  {
+   cursor: pointer;
+   color: aqua;
+}
+
+#back-flipArrow3  {
+   color: white;
+   font-size: 2vw;
+   padding: 1.5vw 0 0 0;
+   float: right;
+}
+
+#back-flipArrow3:hover  {
+   cursor: pointer;
+   color: aqua;
+}
+
+#front-flipArrow4  {
+   font-size: 2vw;
+   padding: 3vw 1vw 0 0;
+   float: right;
+}
+
+#front-flipArrow4:hover  {
+   cursor: pointer;
+   color: aqua;
+}
+
+#back-flipArrow4  {
+   font-size: 2vw;
+   color: white;
+   padding: .3vw 0 0 0;
+   float: right;
+}
+
+#back-flipArrow4:hover  {
+   cursor: pointer;
+   color: aqua;
+}
+
+#front-flipArrow5  {
+   font-size: 2vw;
+   padding: 3vw 1vw 0 0;
+   float: right;
+}
+
+#front-flipArrow5:hover  {
+   cursor: pointer;
+   color: aqua;
+}
+
+#back-flipArrow5  {
+   font-size: 2vw;
+   color: white;
+   padding: 0;
+   float: right;
+}
+
+#back-flipArrow5:hover  {
+   cursor: pointer;
+   color: aqua;
+}
+
+#front-flipArrow6  {
+   font-size: 2vw;
+   padding: 3vw 1vw 0 0;
+   float: right;
+}
+
+#front-flipArrow6:hover  {
+   cursor: pointer;
+   color: aqua;
+}
+
+#back-flipArrow6  {
+   font-size: 2vw;
+   color: white;
+   padding: 0;
+   float: right;
+}
+
+#back-flipArrow6:hover  {
+   cursor: pointer;
+   color: aqua;
+}
+
+#front-flipArrow7  {
+   font-size: 2vw;
+   padding: 3vw 1vw 0 0;
+   float: right;
+}
+
+#front-flipArrow7:hover  {
+   cursor: pointer;
+   color: aqua;
+}
+
+#back-flipArrow7  {
+   font-size: 2vw;
+   color: white;
+   padding: 0;
+   float: right;
+}
+
+#back-flipArrow7:hover  {
+   cursor: pointer;
+   color: aqua;
+}
+
+#front-flipArrow8  {
+   font-size: 2vw;
+   padding: 3vw 1vw 0 0;
+   float: right;
+}
+
+#front-flipArrow8:hover  {
+   cursor: pointer;
+   color: aqua;
+}
+
+#back-flipArrow8  {
+   font-size: 2vw;
+   color: white;
+   padding: .1vw 0 0 0;
+   float: right;
+}
+
+#back-flipArrow8:hover  {
+   cursor: pointer;
+   color: aqua;
 }
 
 @media screen and (max-width: 1400px) {
 
-   .resume-link {
-      font-size: 1.2vw;
-   }
-
-   h3   {
-      position: absolute;
-      top: 17%;
-      left: 10%;
-      width: 80%;
-      color: greenyellow;
-      font-family: Arial, serif;
-      font-weight: lighter;
-      text-align: center;
-      font-size: 3vw;
-      padding: 0;
-      margin: 0;
-   }
-
-   .timeline {
-      position: absolute;
-      top: 22.8%;
-      left: 10%;
-      width: 80%;
-      padding-top: 3.5vw;
-      font-family: Arial, serif;
-      background: rgba(0, 0, 0, 0.51);
-      margin: 0 auto;
-   }
-
-   .content h2 {
-      font-size: 2.3vw;
-   }
-
-
-
-}
-
-
-@media screen and (max-width: 600px) {
-
-   .timeline::after {
-      left: 31px;
-   }
-
-   .container {
-      width: 100%;
-      padding-left: 70px;
-      padding-right: 25px;
-   }
-
-   .container::before {
-      left: 60px;
-      border-width: 10px 10px 10px 0;
-      border-color: transparent white transparent transparent;
-   }
-
-   .left::after, .right::after {
-      left: 15px;
-   }
-
-   .right {
-      left: 0;
-   }
 }

@@ -8,11 +8,14 @@ import { Component, OnInit } from '@angular/core';
 export class EducationComponent implements OnInit {
   pageBg: string;
   auburnLogo: string;
-
+  ccLogo: string;
+  stadium: string;
 
   constructor() {
     this.pageBg = './assets/images/DrinkMoreCoffee.png';
-    this.auburnLogo = './assets/image_icons/auburnLogo.png'
+    this.auburnLogo = './assets/image_icons/auburnLogo.png';
+    this.stadium = './assets/images/stadium.png';
+    this.ccLogo = './assets/images/cc-logo.png';
   }
 
   ngOnInit() {

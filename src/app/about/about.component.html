@@ -1,23 +1,13 @@
-
-
-
-<div class="aboutPage-bg">
-   <img [src] = 'aboutBg' alt="Lightning storm" class="aboutPage-bg"
-        [style.height.%] = 100
-        [style.width.%] = 100 />
-</div>
+<div class="overlay"></div>
+<img [src] = 'aboutBg' alt="Lightning storm" class="aboutPage-bg" />
 
 <div class="aboutMe-txtBox">
-   <h1>Hi, Welcome to My Website</h1>
-   <hr>
+   <h1 class="display-4">About Me</h1>
 
    <!-- creates circular portrait image -->
-   <img [src] ='selfPortrait' alt="Portrait image of Drew" class="head-shot"
-        [style.width.vw] = 'selfImgWidth'
-        [style.height.vw] = selfImgHeight />
+   <img [src] ='selfPortrait' alt="Portrait image of Drew" class="head-shot"/>
 
    <div class="story-body">
-      <h4>A Little More About Me</h4>
-      <p>{{myStory}}</p>
+      <p class="lead">{{myStory}}</p>
    </div>
 </div>

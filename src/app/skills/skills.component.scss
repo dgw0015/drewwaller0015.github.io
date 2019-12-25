@@ -1,269 +1,55 @@
-* {box-sizing:border-box}
-
-.skills-bg  {
-   height: 100%;
-   position: fixed;
+.overlay {
+   position: absolute;
+   top: 0;
+   width: 100%;
+   height: 220%;
+   background-color: rgba(0, 0, 0, 0.76);
    z-index: -1;
 }
 
-.pg-heading  {
-   position: absolute;
-   top: -1.2%;
-   left: 50%;
-   transform: translate(-50%, -50%);
-   font-family: Arial, serif;
-   font-weight: lighter;
-   font-size: 3vw;
-   color: greenyellow;
+.cnn  {
+   position: fixed;
+   top: 0;
+   width: 100%;
+   height: 100%;
+   z-index: -2;
+}
+
+.display-1  {
+   text-align: center;
+   color: white;
+   font-size: 4.5vw;
+   padding: 1vw;
+}
+
+.blockquote {
+   text-align: center;
+   color: white;
+   font-size: 2.2vw;
+   padding: 1.5vw 0 0 0;
+}
+
+hr {
+   margin: -1vw 0 0 25%;
+   width: 50%;
+   border: 1px solid #525252;
 }
 
 .skillsBox  {
-   position: absolute;
-   top: 10%;
-   left: 5%;
-   width: 90%;
-   background-color: rgba(0, 0, 0, 0.65);
-   margin-bottom: 3vw;
-   padding-bottom: 50px;
-   border-radius: 25px;
-   border: 1px solid rgba(170, 170, 170, 0.55);
-}
-
-.skillsBox h4   {
    position: relative;
-   margin: 0;
-   padding: 4vw 5px 3vw 3vw;
-   font-family: Arial, serif;
-   font-size: 1.5vw;
-   font-weight: lighter;
-   text-align: left;
-   color: white;
-}
-
-.skillsBox p   {
-   margin: 0;
-   padding-left: 8vw;
-   font-family: "Century Gothic", serif;
-   font-size: 1vw;
-   font-weight: lighter;
-   color: white;
-}
-
-.skillsBox .otherSkills   {
-   position: relative;
-   margin: 0;
-   padding: 1.5vw 5px 3vw 3vw;
-   font-family: Arial, serif;
-   font-size: 1.5vw;
-   font-weight: lighter;
-   text-align: left;
-   color: white;
-}
-
-.container  {
-   position: relative;
-   left: 10%;
    width: 80%;
-   background-color: #555373;
-   border-radius: 25px;
-   margin-bottom: 1.8vw;
+   height: auto;
+   margin-left: 10%;
 }
 
-.skills  {
-   text-align: right;
-   padding-top: 0.3vw;
-   padding-bottom: 0.3vw;
-   color: white;
-   font-family: Arial, serif;
-   font-size: .8vw;
-}
-
-.quote  {
-   position: relative;
-   width: 100%;
-   text-align: center;
-   margin-bottom: 1vw;
-}
-
-.quote p {
-   font-family: Arial, serif;
-   color: white;
-   font-size: 1.05vw;
-   line-height: 1.8vw;
-   padding: 3vw 12vw 1vw 12vw;
-}
-
-.java {
-   width: 95%;
-   background-color: dodgerblue;
-   border-radius: 25px;
-   padding-right: 1.1vw;
-}
-
-.python  {
-   width: 85%;
-   background-color: dodgerblue;
-   border-radius: 25px;
-   padding-right: 1.1vw;
-}
-
-.cpp  {
-   width: 85%;
-   background-color: dodgerblue;
-   border-radius: 25px;
-   padding-right: 1.1vw;
-}
-
-.cSharpe   {
-   width: 90%;
-   background-color: dodgerblue;
-   border-radius: 25px;
-   padding-right: 1.1vw;
-}
-
-.angular {
-   width: 90%;
-   background-color: dodgerblue;
-   border-radius: 25px;
-   padding-right: 1.1vw;
-}
-
-.react   {
-   width: 95%;
-   background-color: dodgerblue;
-   border-radius: 25px;
-   padding-right: 1.1vw;
-}
-
-.javascript {
-   width: 90%;
-   background-color: dodgerblue;
-   border-radius: 25px;
-   padding-right: 1.1vw;
+.lead   {
+   margin: 1.5vw 0 .2vw 0;
+   font-size: 1.3vw;
    color: white;
 }
 
-.typescript {
-   width: 90%;
-   background-color: dodgerblue;
-   border-radius: 25px;
-   padding-right: 1.1vw;
-}
+// Styling for larger desktop screens.
+@media screen and(min-width: 1400px) {
 
-.html   {
-   width: 95%;
-   background-color: dodgerblue;
-   border-radius: 25px;
-   padding-right: 1.1vw;
-   color: white;
-}
 
-.styleSheets   {
-   width: 95%;
-   background-color: dodgerblue;
-   border-radius: 25px;
-   padding-right: 1.1vw;
-   color: white;
-}
-
-.xml  {
-   width: 80%;
-   background-color: dodgerblue;
-   border-radius: 25px;
-   padding-right: 1.1vw;
-   color: white;
-}
-
-.docker  {
-   width: 70%;
-   background-color: dodgerblue;
-   border-radius: 25px;
-   padding-right: 1.1vw;
-}
-
-.kubernetes {
-   width: 60%;
-   background-color: dodgerblue;
-   border-radius: 25px;
-   padding-right: 1.1vw;
-}
-
-.minikube   {
-   width: 60%;
-   background-color: dodgerblue;
-   border-radius: 25px;
-   padding-right: 1.1vw;
-}
-
-.database  {
-   width: 85%;
-   background-color: dodgerblue;
-   border-radius: 25px;
-   padding-right: 1.1vw;
-}
-
-.swagger {
-   width: 90%;
-   background-color: dodgerblue;
-   border-radius: 25px;
-   padding-right: 1.1vw;
-}
-
-.UX  {
-   width: 80%;
-   background-color: dodgerblue;
-   border-radius: 25px;
-   padding-right: 1.1vw;
-   color: white;
-}
-
-.powerShell {
-   width: 70%;
-   background-color: dodgerblue;
-   border-radius: 25px;
-   padding-right: 1.1vw;
-   color: white;
-}
-
-.linux   {
-   width: 75%;
-   background-color: dodgerblue;
-   border-radius: 25px;
-   padding-right: 1.1vw;
-   color: white;
-}
-
-@media screen and(max-width: 1300px) {
-
-   .skillsBox  {
-      position: absolute;
-      top: 12%;
-      left: 5%;
-      width: 90%;
-      background-color: rgba(0, 0, 0, 0.70);
-      margin-bottom: 4vw;
-      padding-bottom: 20px;
-      border-radius: 25px;
-   }
-
-   .pg-heading {
-      font-size: 3.3vw;
-   }
-
-   .skills  {
-      text-align: right;
-      padding-top: 0.3vw;
-      padding-bottom: 0.3vw;
-      color: white;
-      font-family: Arial, serif;
-      font-size: 1vw;
-   }
-
-   .quote p {
-      font-family: Arial, serif;
-      color: white;
-      font-size: 1.1vw;
-      line-height: 1.8vw;
-      padding: 3vw 12vw 1vw 12vw;
-   }
 }

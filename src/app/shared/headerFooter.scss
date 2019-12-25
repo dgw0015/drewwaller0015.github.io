@@ -11,21 +11,22 @@
 
 .header .open-btn  {
    float: left;
-   padding: .5vw 0 1vw 1.2vw;
+   margin: 0 0 0 1vw;
+   padding: 0;
    color: white;
-   font-size: 2.1vw;
+   font-size: 2vw;
 }
 
-i:hover  {
+.header .open-btn:hover {
    cursor: pointer;
-   color: yellowgreen;
-   font-size: 2.3vw;
+   color: #57d2de;
 }
 
 .overlay {
    height: 0;
    width: 100%;
    position: fixed;
+   text-align: center;
    z-index: 2;
    left: 0;
    top: 0;
@@ -38,19 +39,33 @@ i:hover  {
    padding: 8px;
    text-decoration: none;
    font-size: 1.5vw;
-   color: #818181;
    display: block;
    transition: 0.3s;
 }
 
 .display-3  {
-   font-size: 3.5vw;
+   text-align: center;
+   font-size: 4vw;
    color: white;
 }
 
 .display-3:hover  {
    color: aqua;
    cursor: pointer;
+ }
+
+.open-btn i {
+   float: left;
+   margin: 0;
+   padding: .9vw 0 0 0;
+   font-size: 2vw;
+}
+
+.header .open-btn .display-4  {
+   float: left;
+   margin: 0.4vw 0 0 0.5vw;
+   padding: 0;
+   font-size: 2.2vw;
 }
 
 .overlay .close-btn  {
@@ -61,9 +76,13 @@ i:hover  {
    color: white;
 }
 
+.overlay .close-btn:hover  {
+   color: #57d2de;
+   cursor: pointer;
+}
+
 .overlay .nav-links .link  {
-   width: 15%;
-   margin-left: 42.5%;
+   width: 100%;
    text-decoration: none;
 }
 
@@ -78,39 +97,18 @@ i:hover  {
 
 #active .display-3  {
    color: greenyellow;
-   text-decoration: dotted;
 }
-
 
 /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
 @media screen and (max-height: 450px) {
 
-   .overlay a {
-      font-size: 20px
-   }
-
-   .overlay .close-btn {
-      font-size: 40px;
-      top: 15px;
-      right: 35px;
-   }
+   //.overlay a {
+   //   font-size: 20px
+   //}
+   //
+   //.overlay .close-btn {
+   //   font-size: 40px;
+   //   top: 15px;
+   //   right: 35px;
+   //}
 }
-
-//@media only screen and(max-width: 1400px) {
-//
-//   .nav-links {
-//      position: absolute;
-//      top: 0;
-//      left: 25%;
-//      background: transparent;
-//      width: 50%;
-//      height: 50px;
-//      font-family: "Century Gothic", sans-serif;
-//      font-size: 1.6vw;
-//   }
-//
-//   a:hover  {
-//      font-size: 1.65vw;
-//   }
-//
-//}

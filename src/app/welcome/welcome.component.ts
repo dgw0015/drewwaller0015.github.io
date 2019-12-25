@@ -14,8 +14,8 @@ export class WelcomeComponent implements OnInit{
 
    constructor()  {
       this.myName = 'Drew Waller';
-      this.subText = 'Web Designer & Software Engineer';
-      this.mountains = './assets/images/Mountains.png';
+      this.subText = 'Software Engineer & Computer Scientist';
+      this.mountains = './assets/images/ai-brain2.png';
    }
 
    ngOnInit(): void {
