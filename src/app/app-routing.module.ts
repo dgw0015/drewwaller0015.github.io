@@ -36,7 +36,7 @@ const ROUTES: Routes = [
          path: 'skills',
          component: SkillsComponent
 
-  }
+      }
 ];
 // @ts-ignore
 @NgModule({

@@ -33,8 +33,13 @@ import { Component, OnInit, Renderer2 } from '@angular/core';
                 </a>
              </div>
              <div class="link">
+               <a target="_self"
+                  [routerLink]="['./skills']" (click)="setActive('skills')"><h1 class="display-3">Skills</h1>
+               </a>
+             </div>
+             <div class="link">
                 <a target="_self"
-                   [routerLink]="['./skills']" (click)="setActive('skills')"><h1 class="display-3">Skills</h1>
+                   [routerLink]="['./contact']" (click)="setActive('contact')"><h1 class="display-3">Contact</h1>
                 </a>
              </div>
           </div>
@@ -65,6 +70,11 @@ import { Component, OnInit, Renderer2 } from '@angular/core';
                    [routerLink]="['./skills']" (click)="setActive('skills')"><h1 class="display-3">Skills</h1>
                 </a>
              </div>
+             <div class="link">
+                <a target="_self"
+                   [routerLink]="['./contact']" (click)="setActive('contact')"><h1 class="display-3">Contact</h1>
+                </a>
+             </div>
           </div>
 
           <!--Screen when the Education page is the active page.-->
@@ -91,6 +101,11 @@ import { Component, OnInit, Renderer2 } from '@angular/core';
              <div class="link">
                 <a target="_self"
                    [routerLink]="['./skills']" (click)="setActive('skills')"><h1 class="display-3">Skills</h1>
+                </a>
+             </div>
+             <div class="link">
+                <a target="_self"
+                   [routerLink]="['./contact']" (click)="setActive('contact')"><h1 class="display-3">Contact</h1>
                 </a>
              </div>
           </div>
@@ -121,6 +136,11 @@ import { Component, OnInit, Renderer2 } from '@angular/core';
                    [routerLink]="['./skills']" (click)="setActive('skills')"><h1 class="display-3">Skills</h1>
                 </a>
              </div>
+             <div class="link">
+                <a target="_self"
+                   [routerLink]="['./contact']" (click)="setActive('contact')"><h1 class="display-3">Contact</h1>
+                </a>
+             </div>
           </div>
 
           <!--Screen when the Skills page is the active page.-->
@@ -149,8 +169,47 @@ import { Component, OnInit, Renderer2 } from '@angular/core';
                    [routerLink]="['./skills']"><h1 class="display-3">Skills</h1>
                 </a>
              </div>
+             <div class="link">
+                <a target="_self"
+                   [routerLink]="['./contact']" (click)="setActive('contact')"><h1 class="display-3">Contact</h1>
+                </a>
+             </div>
+          </div>
+
+          <!--Screen when the Contact page is the active page.-->
+          <div class="nav-links" *ngIf="getActive() === 'contact'">
+             <div class="link">
+                <a [routerLink]="['/welcome']" (click)="setActive('home')"><h1 class="display-3">Home</h1>
+                </a>
+             </div>
+             <div class="link">
+                <a target="_self"
+                   [routerLink]="['/about']" (click)="setActive('about')"><h1 class="display-3">About</h1>
+                </a>
+             </div>
+             <div class="link">
+                <a target="_self"
+                   [routerLink]="['/education']" (click)="setActive('education')"><h1 class="display-3">Education</h1>
+                </a>
+             </div>
+             <div class="link">
+                <a target="_self"
+                   [routerLink]="['/experience']" (click)="setActive('experience')"><h1 class="display-3">Experience</h1>
+                </a>
+             </div>
+             <div class="link">
+                <a target="_self"
+                   [routerLink]="['./skills']" (click)="setActive('skills')"><h1 class="display-3">Skills</h1>
+                </a>
+             </div>
+             <div class="link">
+                <a target="_self" id="active"
+                   [routerLink]="['./contact']"><h1 class="display-3">Contact</h1>
+                </a>
+             </div>
           </div>
        </div>
+       
        <div class="header">
           <div class="open-btn" (click)="openNav('fullNav')">
              <i class="fas fa-bars"></i>

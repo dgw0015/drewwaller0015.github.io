@@ -11,9 +11,8 @@ export class ContactComponent implements OnInit {
   contact_bg: string;
 
 
-
   constructor()   {
-    this.contact_bg = './assets/images/AppleProducts.png';
+    this.contact_bg = './assets/images/PCWithPurple.png';
   }
 
   ngOnInit(): void {

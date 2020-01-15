@@ -54,7 +54,7 @@ hr {
 
 .facebook-link  {
   float: left;
-  font-size: 2.2vw;
+  font-size: 1.8vw;
   margin-left: 32.2%;
   margin-top: 10px;
   color: white;
@@ -62,7 +62,7 @@ hr {
 
 .instagram-link {
   float: left;
-  font-size: 2.2vw;
+  font-size: 1.8vw;
   margin-top: 10px;
   margin-left: 7vw;
   color: white;
@@ -70,7 +70,7 @@ hr {
 
 .linkedIn-link  {
   float: left;
-  font-size: 2.2vw;
+  font-size: 1.8vw;
   margin-top: 10px;
   margin-left: 7vw;
   color: white;
@@ -78,7 +78,7 @@ hr {
 
 .googlePlus-link  {
   float: left;
-  font-size: 2.2vw;
+  font-size: 1.8vw;
   margin-top: 10px;
   margin-left: 7vw;
   color: white;
@@ -86,7 +86,7 @@ hr {
 
 .github-link {
   float: left;
-  font-size: 2.2vw;
+  font-size: 1.8vw;
   margin-top: 10px;
   margin-left: 7vw;
   color: white;
@@ -98,6 +98,10 @@ hr {
 
 @media only screen and (max-width: 1400px) {
 
+  .social-mediaBox  {
+    position: absolute;
+    bottom: 5px;
+  }
 
 
 }

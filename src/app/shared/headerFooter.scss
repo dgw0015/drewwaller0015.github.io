@@ -86,9 +86,15 @@
    text-decoration: none;
 }
 
+// stops the links from having a width of 100% and activating when they are not actually clicked.
+.overlay .nav-links .link a   {
+   width: 20%;
+   margin-left: 40%;
+}
+
 .overlay .nav-links  {
    position: absolute;
-   top: 8%;
+   top: 6%;
    width: 100%;
    text-align: center;
    margin-top: 30px;
@@ -99,16 +105,24 @@
    color: greenyellow;
 }
 
+@media screen and (max-width: 1300px)  {
+
+   .overlay .nav-links  {
+      position: absolute;
+      top: 1%;
+   }
+}
+
 /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
 @media screen and (max-height: 450px) {
 
-   //.overlay a {
-   //   font-size: 20px
-   //}
-   //
-   //.overlay .close-btn {
-   //   font-size: 40px;
-   //   top: 15px;
-   //   right: 35px;
-   //}
+   .overlay a {
+      font-size: 20px
+   }
+
+   .overlay .close-btn {
+      font-size: 40px;
+      top: 15px;
+      right: 35px;
+   }
 }

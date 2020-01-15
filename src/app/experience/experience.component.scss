@@ -151,6 +151,7 @@
 .flip-box-back {
    background-color: black;
    padding: 1vw;
+   border-right: 1px solid white;
    transform: rotateY(180deg);
 }
 
@@ -281,7 +282,7 @@
 #back-flipArrow5  {
    font-size: 2vw;
    color: white;
-   padding: 0;
+   padding: 1.8vw 0 0 0;
    float: right;
 }
 
@@ -359,6 +360,9 @@
    color: aqua;
 }
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1300px) {
 
+   #back-flipArrow5  {
+      padding: 0;
+   }
 }

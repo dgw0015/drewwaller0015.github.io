@@ -25,7 +25,7 @@
 
 .educationBox  {
    position: absolute;
-   top: 7vw;
+   top: 9vw;
    left: 5%;
    width: 90%;
    height: auto;
@@ -66,7 +66,7 @@
 
 .auburnLogo {
    position: absolute;
-   top: 23.5vw;
+   top: 25.5vw;
    left: 31%;
    width: 4vw;
    height: auto;
@@ -81,7 +81,7 @@
 
 .cc-logo {
    position: absolute;
-   top: 20%;
+   top: 11.5vw;
    left: 55.5%;
    width: 10vw;
    height: auto;
@@ -169,6 +169,21 @@
 
    .stadium {
       height: 38.6vw;
+   }
+
+   .educationBox  {
+      position: absolute;
+      top: 7vw;
+   }
+
+   .cc-logo {
+      position: absolute;
+      top: 10vw;
+   }
+
+   .auburnLogo {
+      position: absolute;
+      top: 23vw;
    }
 
 }
