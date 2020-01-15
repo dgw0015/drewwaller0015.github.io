@@ -1,0 +1,55 @@
+.overlay {
+   position: absolute;
+   top: 0;
+   width: 100%;
+   height: 220%;
+   background-color: rgba(0, 0, 0, 0.76);
+   z-index: -1;
+}
+
+.cnn  {
+   position: fixed;
+   top: 0;
+   width: 100%;
+   height: 100%;
+   z-index: -2;
+}
+
+.display-1  {
+   text-align: center;
+   color: white;
+   font-size: 4.5vw;
+   padding: 1vw;
+}
+
+.blockquote {
+   text-align: center;
+   color: white;
+   font-size: 2.2vw;
+   padding: 1.5vw 0 0 0;
+}
+
+hr {
+   margin: -1vw 0 0 25%;
+   width: 50%;
+   border: 1px solid #525252;
+}
+
+.skillsBox  {
+   position: relative;
+   width: 80%;
+   height: auto;
+   margin-left: 10%;
+}
+
+.lead   {
+   margin: 1.5vw 0 .2vw 0;
+   font-size: 1.3vw;
+   color: white;
+}
+
+// Styling for larger desktop screens.
+@media screen and(min-width: 1400px) {
+
+
+}

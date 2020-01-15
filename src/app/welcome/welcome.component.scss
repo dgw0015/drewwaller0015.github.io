@@ -1,0 +1,111 @@
+/* Styles the background image on the welcome component page. */
+
+.home-bg  {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  z-index: -2;
+}
+
+.center-txtBox  {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+.center-txtBox p  {
+  margin-top: 0.5vw;
+  padding: 0;
+  font-size: 1vw;
+}
+
+.display-2  {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  font-size: 6vw;
+  color: white;
+}
+
+hr {
+  margin: -5px 0 -5px -1.5vw;
+  padding: 0;
+  border: 2.5px solid #57d2de;
+  width: 108%;
+}
+
+.center-txtBox .lead {
+  font-size: 1.75vw;
+  margin: 0;
+  padding: 0;
+}
+
+.social-mediaBox  {
+  position: absolute;
+  bottom: 20px;
+  width: 99.8%;
+  height: 60px;
+  z-index: 0;
+}
+
+.facebook-link  {
+  float: left;
+  font-size: 1.8vw;
+  margin-left: 32.2%;
+  margin-top: 10px;
+  color: white;
+}
+
+.instagram-link {
+  float: left;
+  font-size: 1.8vw;
+  margin-top: 10px;
+  margin-left: 7vw;
+  color: white;
+}
+
+.linkedIn-link  {
+  float: left;
+  font-size: 1.8vw;
+  margin-top: 10px;
+  margin-left: 7vw;
+  color: white;
+}
+
+.googlePlus-link  {
+  float: left;
+  font-size: 1.8vw;
+  margin-top: 10px;
+  margin-left: 7vw;
+  color: white;
+}
+
+.github-link {
+  float: left;
+  font-size: 1.8vw;
+  margin-top: 10px;
+  margin-left: 7vw;
+  color: white;
+}
+
+.link a:hover {
+  color: aqua;
+}
+
+@media only screen and (max-width: 1400px) {
+
+  .social-mediaBox  {
+    position: absolute;
+    bottom: 5px;
+  }
+
+
+}
+
+
+
+

@@ -1,0 +1,368 @@
+
+.experience-bg {
+   position: fixed;
+   width: 100%;
+   height: 100%;
+   z-index: -2;
+}
+
+.overlay {
+   position: absolute;
+   top: 0;
+   width: 100%;
+   height: 400%;
+   background-color: rgba(0, 0, 0, 0.63);
+   z-index: -1;
+}
+
+#pdf-icon  {
+   color: red;
+   margin: 3px 6px 0 3px;
+   font-size: 2vw;
+   z-index: 1;
+}
+
+.resume-link  {
+   position: absolute;
+   top: 5px;
+   right: 17vw;
+   margin: 0 4px 0 3px;
+   font-family: "Calibri Light", serif;
+   font-size: 1.5vw;
+   text-decoration: none;
+   color: white;
+   cursor: pointer;
+   z-index: 1;
+}
+
+.resume-link:hover {
+   color: aqua;
+}
+
+.social-mediaBox  {
+   position: absolute;
+   top: 0.5vw;
+   left: 82%;
+   width: 17%;
+   height: 4vw;
+   margin: 0;
+   padding: 0;
+   z-index: 1;
+}
+
+.facebook-link  {
+   float: left;
+   font-size: 1.75vw;
+   margin-left: 1.5vw;
+   color: white;
+}
+
+.facebook-link:hover {
+   color: #295093;
+   cursor: pointer;
+}
+
+.instagram-link {
+   float: left;
+   font-size: 1.75vw;
+   margin-left: 1.5vw;
+   color: white;
+}
+
+.instagram-link:hover   {
+   color: deeppink;
+   cursor: pointer;
+}
+
+.linkedIn-link  {
+   float: left;
+   font-size: 1.75vw;
+   margin-left: 1.5vw;
+   color: white;
+}
+
+.linkedIn-link:hover {
+   color: #0271ae;
+   cursor: pointer;
+}
+
+.googlePlus-link  {
+   float: left;
+   font-size: 1.75vw;
+   margin-left: 1.5vw;
+   color: white;
+}
+
+.googlePlus-link:hover  {
+   color: #d64c3f;
+   cursor: pointer;
+}
+
+.github-link  {
+   float: left;
+   font-size: 1.75vw;
+   margin-left: 1.5vw;
+   margin-right: 0;
+   padding: 0;
+   color: white;
+}
+
+.github-link:hover   {
+   color: darkgrey;
+   cursor: pointer;
+}
+
+/* The flip box container */
+.flip-box {
+   background-color: transparent;
+   width: 50%;
+   height: 17vw;
+   margin-left: 25%;
+   border: 1px solid white;
+   perspective: 1000px;
+}
+
+/*  position the front and back side */
+.flip-box-inner {
+   position: relative;
+   width: 100%;
+   height: 100%;
+   text-align: center;
+   transition: transform 0.8s;
+   transform-style: preserve-3d;
+}
+
+
+/* Position the front and back side */
+.flip-box-front, .flip-box-back {
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   backface-visibility: hidden;
+}
+
+/* Style the front side */
+.flip-box-front {
+   background-color: white;
+   color: black;
+}
+
+/* Style the back side */
+.flip-box-back {
+   background-color: black;
+   padding: 1vw;
+   border-right: 1px solid white;
+   transform: rotateY(180deg);
+}
+
+.display-1  {
+   text-align: center;
+   color: white;
+   font-size: 4.5vw;
+   padding: .5vw 0 3vw 0;
+}
+
+.display-3  {
+   text-align: center;
+   color: black;
+   font-size: 3vw;
+   margin: 0;
+   padding-top: 4vw;
+}
+
+.lead {
+   text-align: center;
+   color: black;
+   font-size: 1.3vw;
+}
+
+#front-flipArrow  {
+   font-size: 2vw;
+   padding: 3vw 1vw 0 0;
+   float: right;
+}
+
+#front-flipArrow:hover  {
+   cursor: pointer;
+   color: aqua;
+}
+
+#back-flipArrow  {
+   font-size: 2vw;
+   color: white;
+   padding: 2.5vw 0 0 0;
+   float: right;
+}
+
+#back-flipArrow:hover  {
+   cursor: pointer;
+   color: aqua;
+}
+
+#front-flipArrow2  {
+   font-size: 2vw;
+   padding: 3vw 1vw 0 0;
+   float: right;
+}
+
+#front-flipArrow2:hover  {
+   cursor: pointer;
+   color: aqua;
+}
+
+#back-flipArrow2  {
+   color: white;
+   font-size: 2vw;
+   padding: .25vw 0 0 0;
+   float: right;
+}
+
+#back-flipArrow2:hover  {
+   cursor: pointer;
+   color: aqua;
+}
+
+#front-flipArrow3  {
+   font-size: 2vw;
+   padding: 3vw 1vw 0 0;
+   float: right;
+}
+
+#front-flipArrow3:hover  {
+   cursor: pointer;
+   color: aqua;
+}
+
+#back-flipArrow3  {
+   color: white;
+   font-size: 2vw;
+   padding: 1.5vw 0 0 0;
+   float: right;
+}
+
+#back-flipArrow3:hover  {
+   cursor: pointer;
+   color: aqua;
+}
+
+#front-flipArrow4  {
+   font-size: 2vw;
+   padding: 3vw 1vw 0 0;
+   float: right;
+}
+
+#front-flipArrow4:hover  {
+   cursor: pointer;
+   color: aqua;
+}
+
+#back-flipArrow4  {
+   font-size: 2vw;
+   color: white;
+   padding: .3vw 0 0 0;
+   float: right;
+}
+
+#back-flipArrow4:hover  {
+   cursor: pointer;
+   color: aqua;
+}
+
+#front-flipArrow5  {
+   font-size: 2vw;
+   padding: 3vw 1vw 0 0;
+   float: right;
+}
+
+#front-flipArrow5:hover  {
+   cursor: pointer;
+   color: aqua;
+}
+
+#back-flipArrow5  {
+   font-size: 2vw;
+   color: white;
+   padding: 1.8vw 0 0 0;
+   float: right;
+}
+
+#back-flipArrow5:hover  {
+   cursor: pointer;
+   color: aqua;
+}
+
+#front-flipArrow6  {
+   font-size: 2vw;
+   padding: 3vw 1vw 0 0;
+   float: right;
+}
+
+#front-flipArrow6:hover  {
+   cursor: pointer;
+   color: aqua;
+}
+
+#back-flipArrow6  {
+   font-size: 2vw;
+   color: white;
+   padding: 0;
+   float: right;
+}
+
+#back-flipArrow6:hover  {
+   cursor: pointer;
+   color: aqua;
+}
+
+#front-flipArrow7  {
+   font-size: 2vw;
+   padding: 3vw 1vw 0 0;
+   float: right;
+}
+
+#front-flipArrow7:hover  {
+   cursor: pointer;
+   color: aqua;
+}
+
+#back-flipArrow7  {
+   font-size: 2vw;
+   color: white;
+   padding: 0;
+   float: right;
+}
+
+#back-flipArrow7:hover  {
+   cursor: pointer;
+   color: aqua;
+}
+
+#front-flipArrow8  {
+   font-size: 2vw;
+   padding: 3vw 1vw 0 0;
+   float: right;
+}
+
+#front-flipArrow8:hover  {
+   cursor: pointer;
+   color: aqua;
+}
+
+#back-flipArrow8  {
+   font-size: 2vw;
+   color: white;
+   padding: .1vw 0 0 0;
+   float: right;
+}
+
+#back-flipArrow8:hover  {
+   cursor: pointer;
+   color: aqua;
+}
+
+@media screen and (max-width: 1300px) {
+
+   #back-flipArrow5  {
+      padding: 0;
+   }
+}
