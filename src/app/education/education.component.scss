@@ -52,6 +52,7 @@
    text-align: left;
    color: white;
    text-decoration: underline;
+   text-decoration-style: dotted;
    text-decoration-color: orangered;
    padding: .5vw 0 1vw .5vw;
    font-size: 3vw;
@@ -107,48 +108,28 @@
    float: left;
    font-size: 1.75vw;
    margin-left: 1.5vw;
-   color: white;
-}
-
-.facebook-link:hover {
    color: #295093;
-   cursor: pointer;
 }
 
 .instagram-link {
    float: left;
    font-size: 1.75vw;
    margin-left: 1.5vw;
-   color: white;
-}
-
-.instagram-link:hover   {
    color: deeppink;
-   cursor: pointer;
 }
 
 .linkedIn-link  {
    float: left;
    font-size: 1.75vw;
    margin-left: 1.5vw;
-   color: white;
-}
-
-.linkedIn-link:hover {
    color: #0271ae;
-   cursor: pointer;
 }
 
 .googlePlus-link  {
    float: left;
    font-size: 1.75vw;
    margin-left: 1.5vw;
-   color: white;
-}
-
-.googlePlus-link:hover  {
-   color: #d64c3f;
-   cursor: pointer;
+   color: red;
 }
 
 .github-link  {
@@ -157,14 +138,19 @@
    margin-left: 1.5vw;
    margin-right: 0;
    padding: 0;
-   color: white;
+   color: darkgray;
 }
 
-.github-link:hover   {
-   color: darkgrey;
+a:hover   {
+   color: white;
    cursor: pointer;
 }
 
+li {
+   color: white;
+}
+
+/* Styling for smaller computer devices. */
 @media only screen and(max-width: 1300px) {
 
    .stadium {
@@ -184,6 +170,183 @@
    .auburnLogo {
       position: absolute;
       top: 23vw;
+   }
+}
+
+/* Styling for cellular devices. */
+@media only screen and(max-width: 700px) {
+
+   .mobile-tablet-container .card .card-body .display-2 {
+      position: absolute;
+      top: 2px;
+      right: 3vw;
+      color: white;
+      margin: 0;
+      padding: 0;
+      font-size: 11vw;
+   }
+
+   .card-img-top  {
+      width: 100%;
+      height: 85vw;
+   }
+
+   .card {
+      position: relative;
+      width: 100%;
+   }
+
+   .mobile-tablet-container .card .card-body .card-title {
+      text-align: center;
+      font-size: 8.75vw;
+      margin-bottom: -10px;
+      padding-bottom: 0;
+   }
+
+   .mobile-tablet-container .card .card-body {
+      font-size: 4.5vw;
+      margin-bottom: -45px;
+   }
+
+   li {
+      color: black;
+   }
+
+   .links   {
+      position: relative;
+      width: 100%;
+      height: auto;
+      margin: 0 0 1.5vw 0;
+      padding: 1vw;
+   }
+
+   .links .facebook-link   {
+      font-size: 11vw;
+      color: #295093;
+      margin-left: 9vw;
+      padding: 2vw;
+   }
+
+   .links .instagram-link  {
+      font-size: 11vw;
+      color: deeppink;
+      padding: 2vw;
+   }
+
+   .links .linkedIn-link   {
+      font-size: 11vw;
+      color: #0271ae;
+      padding: 2vw;
+   }
+
+   .links .googlePlus-link {
+      font-size: 11vw;
+      color: red;
+      padding: 2vw;
+   }
+
+   .links .github-link  {
+      font-size: 11vw;
+      color: darkgray;
+      padding: 2vw;
+   }
+
+   .links .AU-link   {
+      width: 32%;
+      margin: 0 4.6% 1vw 4.6%;
+      padding: 1vw;
+   }
+
+   .links .cc-link  {
+      width: 54%;
+      padding: 1vw;
+   }
+}
+
+/* Styling for tablet devices. */
+@media only screen and(max-width: 1030px) and(min-height: 1000px) {
+
+   .card-img-top  {
+      width: 100%;
+      height: 80vw;
+   }
+
+   .mobile-tablet-container .card .card-body .display-2 {
+      position: absolute;
+      top: 2px;
+      right: 3vw;
+      color: white;
+      margin: 0;
+      padding: 0;
+      font-size: 11vw;
+   }
+
+   .mobile-tablet-container .card .card-body .card-title {
+      font-size: 9vw;
+      text-align: center;
+      margin-bottom: -10px;
+      padding-bottom: 0;
+   }
+
+   .mobile-tablet-container .card .card-body {
+      font-size: 5vw;
+      margin: 1vw 2vw 1vw 4vw;
+   }
+
+   li {
+      color: black;
+   }
+
+   .links   {
+      position: relative;
+      width: 100%;
+      height: auto;
+      margin-top: 0;
+   }
+
+   .links .facebook-link   {
+      font-size: 10vw;
+      color: #295093;
+      padding: 1vw 2vw 15px 2vw;
+      margin-left: 11vw;
+   }
+
+   .links .instagram-link  {
+      font-size: 10vw;
+      color: deeppink;
+      padding: 1vw 2vw 15px 2vw;
+   }
+
+   .links .linkedIn-link   {
+      font-size: 10vw;
+      color: #0271ae;
+      padding: 1vw 2vw 15px 2vw;
+   }
+
+   .links .googlePlus-link {
+      font-size: 10vw;
+      color: red;
+      padding: 1vw 2vw 15px 2vw;
+   }
+
+   .links .github-link  {
+      font-size: 10vw;
+      color: darkgray;
+      padding: 1vw 2vw 15px 2vw;
+   }
+
+   .links .AU-link   {
+      width: 32%;
+      height: auto;
+      margin: -20px 4.6% 1vw 4.6%;
+      padding: 1vw;
+   }
+
+   .links .cc-link  {
+      width: 54%;
+      height: auto;
+      margin: 0 0 1vw 0;
+      padding: 1vw;
    }
 
 }

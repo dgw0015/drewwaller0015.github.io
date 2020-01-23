@@ -2,7 +2,7 @@
    position: absolute;
    top: 0;
    width: 100%;
-   height: 220%;
+   height: 108vw;
    background-color: rgba(0, 0, 0, 0.76);
    z-index: -1;
 }
@@ -22,34 +22,223 @@
    padding: 1vw;
 }
 
-.blockquote {
+#title {
    text-align: center;
    color: white;
-   font-size: 2.2vw;
-   padding: 1.5vw 0 0 0;
-}
-
-hr {
-   margin: -1vw 0 0 25%;
-   width: 50%;
-   border: 1px solid #525252;
+   font-size: 2.5vw;
+   padding: 2vw 0 1vw 0;
+   text-decoration: underline;
+   text-decoration-style: dotted;
+   text-decoration-color: #6a666b;
 }
 
 .skillsBox  {
    position: relative;
-   width: 80%;
+   width: 85%;
    height: auto;
-   margin-left: 10%;
+   margin-left: 7.5%;
 }
 
 .lead   {
-   margin: 1.5vw 0 .2vw 0;
+   margin: 1.25vw 0 .2vw 0;
    font-size: 1.3vw;
    color: white;
 }
 
-// Styling for larger desktop screens.
-@media screen and(min-width: 1400px) {
+.social-mediaBox  {
+   position: absolute;
+   top: 1vw;
+   left: 82%;
+   width: 17%;
+   height: 4vw;
+   margin: 0;
+   padding: 0;
+   z-index: 1;
+}
 
+.facebook-link  {
+   float: left;
+   font-size: 1.75vw;
+   margin-left: 1.5vw;
+   color: #295093;
+}
+
+.instagram-link {
+   float: left;
+   font-size: 1.75vw;
+   margin-left: 1.5vw;
+   color: deeppink;
+}
+
+.linkedIn-link  {
+   float: left;
+   font-size: 1.75vw;
+   margin-left: 1.5vw;
+   color: #0271ae;
+}
+
+.googlePlus-link  {
+   float: left;
+   font-size: 1.75vw;
+   margin-left: 1.5vw;
+   color: red;
+}
+
+.github-link  {
+   float: left;
+   font-size: 1.75vw;
+   margin-left: 1.5vw;
+   margin-right: 0;
+   padding: 0;
+   color: darkgray;
+}
+
+a:hover   {
+   color: white;
+   cursor: pointer;
+}
+
+.quoteBox   {
+   position: relative;
+   width: 100%;
+   height: auto;
+}
+
+.quoteBox .lead   {
+   text-align: center;
+   font-size: 1.75vw;
+   height: auto;
+   margin: 6vw 15% 3vw 15%;
+}
+
+/* Styling for smaller desktop screens. */
+@media only screen and(max-width: 1300px) {
+
+   .overlay {
+      height: 138vw
+   }
+
+   #title   {
+      font-size: 3vw;
+   }
+
+   .lead {
+      font-size: 1.4vw;
+      padding: 1.1vw 0.1vw 0;
+   }
 
 }
+
+/* Styling for mobile devices. */
+@media only screen and(max-width: 1100px)  {
+
+   .mobile-overlay   {
+      position: fixed;
+      top: 30vw;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      background-color: rgba(0, 0, 0, 0.40);
+   }
+   .mobileBanner  {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      height: 30vw;
+      z-index: -2;
+   }
+   .mobileBg-img   {
+      position: fixed;
+      top: 30vw;
+      width: 100%;
+      height: 95%;
+      z-index: -2;
+   }
+
+   .mobile-container .display-1 {
+      text-align: center;
+      padding: 11vw 0 4vw 0;
+      font-size: 14vw;
+   }
+
+   #sub-title  {
+      text-align: center;
+      margin: 2vw 0 4vw 0;
+      font-size: 7.5vw;
+   }
+
+   .mobileSkill-bars {
+      position: relative;
+      width: 96%;
+      height: auto;
+      margin-left: 2%;
+      padding-bottom: 1vw;
+   }
+
+   .mobileSkill-bars .lead {
+      font-size: 4.5vw;
+      margin-top: 10px;
+   }
+
+   .mobile-container .quoteBox   {
+      position: relative;
+      width: 100%;
+      height: auto;
+      margin: 0;
+      padding: 1.5vw;
+   }
+
+   .mobile-container .quoteBox .lead   {
+      margin: 7vw .25vw 45px .25vw;
+      padding: 0;
+      font-size: 4.5vw;
+   }
+
+   .mobile-container .links   {
+      position: relative;
+      width: 100%;
+      height: 18vw;
+      margin: 0;
+      padding: .5vw;
+      background-color: rgba(0, 0, 0, 0.50);
+   }
+
+   .links .facebook-link   {
+      font-size: 10vw;
+      color: #295093;
+      padding: 1vw 2vw 15px 2vw;
+      margin-left: 11vw;
+   }
+
+   .links .instagram-link  {
+      font-size: 10vw;
+      color: deeppink;
+      padding: 1vw 2vw 15px 2vw;
+   }
+
+   .links .linkedIn-link   {
+      font-size: 10vw;
+      color: #0271ae;
+      padding: 1vw 2vw 15px 2vw;
+   }
+
+   .links .googlePlus-link {
+      font-size: 10vw;
+      color: red;
+      padding: 1vw 2vw 15px 2vw;
+   }
+
+   .links .github-link  {
+      font-size: 10vw;
+      color: darkgray;
+      padding: 1vw 2vw 15px 2vw;
+   }
+
+}
+
+/* Large tablet devices. */
+@media only screen and(max-width: 1030px) and(min-height: 1000px) {
+   
+}
+
+

@@ -11,6 +11,8 @@ export class AboutComponent implements OnInit   {
    aboutBg: string;
    myStory: string;
    selfPortrait: string;
+   screenWidth: number;
+   screenHeight: number;
 
    constructor()  {
       this.aboutBg = './assets/images/cool-ai-face.png';
@@ -29,8 +31,20 @@ export class AboutComponent implements OnInit   {
    }
 
    ngOnInit(): void {
+      this.screenWidth = innerWidth;
+      this.screenHeight = innerHeight;
    }
 
+   /* Returns the screen width at page load time.*/
+
+   getScreenWidth(): number   {
+      return this.screenWidth;
+   }
+
+   /* Returns the screen height at page load time.*/
+   getScreenHeight(): number  {
+      return this.screenHeight;
+   }
 
 
 }

@@ -1,15 +1,14 @@
+<!--Container for the screen whenever the screen size is larger than a tablet or iPad.-->
+<div *ngIf="getScreenSize() >= 1075" class="container">
 
-<img [src] = 'mountains' class="home-bg" alt="Tablet Background Image" />
-
-
-<div class="center-txtBox">
-   <h1 class="display-2">{{myName}}</h1>
-   <hr>
-   <p class="lead">{{subText}}</p>
-</div>
+   <img [src] = 'mountains' class="home-bg" alt="Tablet Background Image" />
+   <div class="center-txtBox">
+      <h1 class="display-2">{{myName}}</h1>
+      <hr class="desktop">
+      <p class="lead">{{subText}}</p>
+   </div>
 
    <div class="social-mediaBox">
-
       <div class="link">
          <a class="facebook-link" target="_blank" href="https://www.facebook.com/drew.waller.73">
             <i class="fab fa-facebook"></i>
@@ -36,3 +35,86 @@
          </a>
       </div>
    </div>
+</div>
+
+<!--Screen for the screen on mobile devices.-->
+<div *ngIf="getScreenSize() < 600" class="mobile-container">
+   <img [src]="mobileBg" alt="abstract picture with reds, blues, and yellows" class="mobile-bg"/>
+
+   <div class="jumbotron">
+      <h1 class="display-4" id="mobile">Hi, I am<br>Drew Waller</h1>
+      <hr class="my-4">
+      <p class="lead">Software Engineer<br>&<br>Computer Scientist</p>
+   </div>
+
+   <div class="social-mediaBox">
+      <div class="link">
+         <a class="facebook-link" target="_blank" href="https://www.facebook.com/drew.waller.73">
+            <i class="fab fa-facebook"></i>
+         </a>
+      </div>
+      <div class="link">
+         <a class="instagram-link" target="_blank" href="https://www.instagram.com/dwaller_45/">
+            <i class="fab fa-instagram"></i>
+         </a>
+      </div>
+      <div class="link">
+         <a class="linkedIn-link" target="_blank" href="https://www.linkedin.com/in/drew-waller-100371192/">
+            <i class="fab fa-linkedin"></i>
+         </a>
+      </div>
+      <div class="link">
+         <a class="googlePlus-link" target="_blank" href="https://aboutme.google.com/?hl=en">
+            <i class="fab fa-google-plus"></i>
+         </a>
+      </div>
+      <div class="link">
+         <a class="github-link" target="_blank" href="https://github.com/dgw0015">
+            <i class="fab fa-github"></i>
+         </a>
+      </div>
+   </div>
+
+</div>
+
+<!--Screen for tablet devices.-->
+<div *ngIf="getScreenSize() > 600 && getScreenHeight() > 1000" class="tablet-container">
+   <img [src]="tabletBg" alt="abstract picture with reds, blues, and yellows" class="tablet-bg" />
+
+   <div class="jumbotron">
+      <h1 class="display-4" id="tablets">Hi, I am Drew Waller</h1>
+      <hr class="my-4">
+      <p class="lead">Software Engineer & Computer Scientist</p>
+   </div>
+
+   <div class="social-mediaBox">
+      <div class="link">
+         <a class="facebook-link" target="_blank" href="https://www.facebook.com/drew.waller.73">
+            <i class="fab fa-facebook"></i>
+         </a>
+      </div>
+      <div class="link">
+         <a class="instagram-link" target="_blank" href="https://www.instagram.com/dwaller_45/">
+            <i class="fab fa-instagram"></i>
+         </a>
+      </div>
+      <div class="link">
+         <a class="linkedIn-link" target="_blank" href="https://www.linkedin.com/in/drew-waller-100371192/">
+            <i class="fab fa-linkedin"></i>
+         </a>
+      </div>
+      <div class="link">
+         <a class="googlePlus-link" target="_blank" href="https://aboutme.google.com/?hl=en">
+            <i class="fab fa-google-plus"></i>
+         </a>
+      </div>
+      <div class="link">
+         <a class="github-link" target="_blank" href="https://github.com/dgw0015">
+            <i class="fab fa-github"></i>
+         </a>
+      </div>
+   </div>
+
+</div>
+
+

@@ -10,7 +10,7 @@
    position: absolute;
    top: 0;
    width: 100%;
-   height: 400%;
+   height: 172vw;
    background-color: rgba(0, 0, 0, 0.63);
    z-index: -1;
 }
@@ -54,11 +54,11 @@
    float: left;
    font-size: 1.75vw;
    margin-left: 1.5vw;
-   color: white;
+   color: #295093;
 }
 
 .facebook-link:hover {
-   color: #295093;
+   color: white;
    cursor: pointer;
 }
 
@@ -66,11 +66,11 @@
    float: left;
    font-size: 1.75vw;
    margin-left: 1.5vw;
-   color: white;
+   color: deeppink;
 }
 
 .instagram-link:hover   {
-   color: deeppink;
+   color: white;
    cursor: pointer;
 }
 
@@ -78,11 +78,11 @@
    float: left;
    font-size: 1.75vw;
    margin-left: 1.5vw;
-   color: white;
+   color: #0271ae;
 }
 
 .linkedIn-link:hover {
-   color: #0271ae;
+   color: white;
    cursor: pointer;
 }
 
@@ -90,11 +90,11 @@
    float: left;
    font-size: 1.75vw;
    margin-left: 1.5vw;
-   color: white;
+   color: red;
 }
 
 .googlePlus-link:hover  {
-   color: #d64c3f;
+   color: white;
    cursor: pointer;
 }
 
@@ -104,11 +104,11 @@
    margin-left: 1.5vw;
    margin-right: 0;
    padding: 0;
-   color: white;
+   color: darkgray;
 }
 
 .github-link:hover   {
-   color: darkgrey;
+   color: white;
    cursor: pointer;
 }
 
@@ -360,9 +360,105 @@
    color: aqua;
 }
 
-@media screen and (max-width: 1300px) {
+/* Smaller computer screens*/
+@media only screen and (max-width: 1300px) {
+
+   .overlay {
+      height: 182vw;
+   }
 
    #back-flipArrow5  {
       padding: 0;
+   }
+}
+
+/* Mobile devices */
+@media only screen and(max-width: 1100px)   {
+
+   .mobileDevices-bg  {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      height: 218vw;
+      z-index: -2;
+   }
+
+   .mobileDevice-container .display-1  {
+      text-align: center;
+      color: white;
+      font-size: 12vw;
+      margin-top: 12vw;
+      margin-bottom: 4vw;
+   }
+
+   .card  {
+      background: transparent;
+   }
+
+   .card-header   {
+      padding-bottom: .25vw;
+   }
+
+   .card-body  {
+      background-color: white;
+      border-radius: 25px;
+      margin: 0 8px 0 8px;
+   }
+
+   .socialMedia-links   {
+      position: relative;
+      width: 100%;
+      height: auto;
+      margin: 10px 0 0 0;
+      padding: 5px;
+   }
+
+   .socialMedia-links a i  {
+      font-size: 10vw;
+      margin-bottom: 10px;
+      padding: 2.5vw;
+      background: transparent;
+   }
+
+   .socialMedia-links .facebook-link   {
+      margin-left: 8.5vw;
+   }
+
+   i  {
+      border-bottom: 1px solid white;
+   }
+}
+
+/* large tablet devices*/
+@media only screen and(min-height: 1000px) and(max-width: 1050px)  {
+
+   .mobileDevices-bg  {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -2;
+   }
+
+   .card-header   {
+      padding-bottom: 1vw;
+   }
+
+   .mb-0 .btn {
+      font-size: 4vw;
+      border-radius: 15px;
+   }
+
+   .card-body  {
+      margin: 0 8px 0 8px;
+      font-size: 4vw;
+   }
+
+   .socialMedia-links a   {
+      margin-bottom: 3.5vw;
+   }
+
+   i  {
+      border-bottom: 2px solid white;
    }
 }

@@ -11,7 +11,7 @@
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.35);
+  background-color: rgba(0, 0, 0, 0.45);
   z-index: -1;
 }
 
@@ -25,7 +25,7 @@
 
 .head-shot  {
   position: absolute;
-  top: 35%;
+  top: 32%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 17vw;
@@ -38,7 +38,7 @@
 .story-body {
   width: 98%;
   position: absolute;
-  top: 60%;
+  top: 54%;
   left: 1%;
   background-color: rgba(0, 0, 0, 0.52);
   border-radius: 25px;
@@ -49,18 +49,244 @@
   color: white;
   font-family: Arial, serif;
   font-size: 1.2vw;
-  line-height: 2vw;
 }
 
+.social-mediaBox  {
+  position: absolute;
+  top: 1vw;
+  left: 82%;
+  width: 17%;
+  height: 4vw;
+  margin: 0;
+  padding: 0;
+  z-index: 1;
+}
+
+.facebook-link  {
+  float: left;
+  font-size: 2vw;
+  margin-left: 1.5vw;
+  color: #295093;
+}
+
+.instagram-link {
+  float: left;
+  font-size: 2vw;
+  margin-left: 1.5vw;
+  color: deeppink;
+}
+
+.linkedIn-link  {
+  float: left;
+  font-size: 2vw;
+  margin-left: 1.5vw;
+  color: #0271ae;
+}
+
+.googlePlus-link  {
+  float: left;
+  font-size: 2vw;
+  margin-left: 1.5vw;
+  color: red;
+}
+
+.github-link  {
+  float: left;
+  font-size: 2vw;
+  margin-left: 1.5vw;
+  margin-right: 0;
+  padding: 0;
+  color: darkgray;
+}
+
+a:hover {
+  color: white;
+  cursor: pointer;
+}
+
+/* Smaller laptop screens. */
 @media only screen and (max-width: 1400px) {
 
   .head-shot  {
-    width: 18vw;
-    height: 18vw;
+    position: absolute;
+    top: 31%;
+    width: 15vw;
+    height: 15vw;
   }
 
-  .lead {
-    line-height: 2.2vw;
+  .story-body {
+    position: absolute;
+    top: 49.5%;
+  }
+}
+
+/* Cell phone styling */
+@media only screen and(max-width: 550px) and(max-height: 830px) {
+
+  .overlay  {
+    height: 440vw;
+    background-color: rgba(0, 0, 0, 0.5);
   }
 
+  .card {
+    width: 100%;
+    margin: 0;
+    background: transparent;
+  }
+
+  .card-title {
+    color: white;
+    font-size: 11vw;
+    padding-bottom: 3vw;
+    text-decoration: underline;
+    text-decoration-color: grey;
+  }
+
+  .card-body  {
+    margin: 0;
+    width: 100%;
+    font-size: 4.65vw;
+    height: auto;
+    color: white;
+  }
+
+  .card-img-top {
+    width: 78%;
+    margin: 10vw 0 1vw 5%;
+    height: auto;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.38);
+  }
+
+  .aboutPage-bg  {
+    width: 100%;
+    height: 100%;
+  }
+
+  .social-mediaBox  {
+    position: absolute;
+    bottom: 1vw;
+    height: auto;
+    padding: .5vw;
+  }
+
+  .facebook-link  {
+    float: left;
+    margin-left: 1%;
+    padding: 1.5vw;
+    font-size: 11vw;
+    color: #295093;
+  }
+
+  .instagram-link {
+    float: left;
+    padding: 1.5vw;
+    font-size: 11vw;
+    color: deeppink;
+  }
+
+  .linkedIn-link  {
+    float: left;
+    padding: 1.5vw;
+    font-size: 11vw;
+    color: #0271ae;
+  }
+
+  .googlePlus-link  {
+    float: left;
+    padding: 1.5vw;
+    font-size: 11vw;
+    color: red;
+  }
+
+  .github-link  {
+    float: left;
+    padding: 1.5vw;
+    font-size: 11vw;
+    color: darkgray;
+  }
+}
+
+/* Tablet styling*/
+@media screen and(min-width: 650px) and(max-width: 1075px)  {
+
+  .overlay  {
+    height: 310vw;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  .card {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+  }
+
+  .aboutPage-bg  {
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+  }
+
+  .social-mediaBox  {
+    visibility: hidden;
+  }
+
+  .media-links  {
+    position: absolute;
+    top: 1vw;
+    right: 1vw;
+    width: 57%;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.50);
+    border-radius: 25px;
+  }
+
+  .github-link  {
+    float: right;
+    margin-right: 2vw;
+    padding: 1vw;
+    font-size: 8vw;
+    color: darkgray;
+  }
+
+  .googlePlus-link  {
+    float: right;
+    padding: 1vw;
+    font-size: 8vw;
+    color: red;
+  }
+
+  .linkedIn-link  {
+    float: right;
+    padding: 1vw;
+    font-size: 8vw;
+    color: #0271ae;
+  }
+
+  .instagram-link {
+    float: right;
+    padding: 1vw;
+    font-size: 8vw;
+    color: deeppink;
+  }
+
+  .facebook-link  {
+    float: right;
+    margin: 0;
+    padding: 1vw 1vw 1vw 0;
+    font-size: 8vw;
+    color: #295093;
+  }
+
+  .card-title {
+    color: white;
+    font-size: 11vw;
+    text-align: center;
+    margin-bottom: 2vw;
+  }
+
+  .card-text  {
+    color: white;
+    font-size: 4vw;
+  }
 }

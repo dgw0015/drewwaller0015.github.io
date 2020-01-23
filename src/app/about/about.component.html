@@ -1,13 +1,123 @@
 <div class="overlay"></div>
-<img [src] = 'aboutBg' alt="Lightning storm" class="aboutPage-bg" />
+<img [src] = 'aboutBg' alt="ai patterns with a face" class="aboutPage-bg" />
 
-<div class="aboutMe-txtBox">
-   <h1 class="display-4">About Me</h1>
+<!--Laptop screens-->
+<div *ngIf="getScreenWidth() >= 1200" class="pc-container">
 
-   <!-- creates circular portrait image -->
-   <img [src] ='selfPortrait' alt="Portrait image of Drew" class="head-shot"/>
+   <!-- All my social media links which include facebook, instagram, linkedIn, googlePlus, and Github. -->
+   <div class="social-mediaBox">
+      <div class="link">
+         <a class="facebook-link" target="_blank" href="https://www.facebook.com/drew.waller.73">
+            <i class="fab fa-facebook"></i>
+         </a>
+      </div>
+      <div class="link">
+         <a class="instagram-link" target="_blank" href="https://www.instagram.com/dwaller_45/">
+            <i class="fab fa-instagram"></i>
+         </a>
+      </div>
+      <div class="link">
+         <a class="linkedIn-link" target="_blank" href="https://www.linkedin.com/in/drew-waller-100371192/">
+            <i class="fab fa-linkedin"></i>
+         </a>
+      </div>
+      <div class="link">
+         <a class="googlePlus-link" target="_blank" href="https://aboutme.google.com/?hl=en">
+            <i class="fab fa-google-plus"></i>
+         </a>
+      </div>
+      <div class="link">
+         <a class="github-link" target="_blank" href="https://github.com/dgw0015">
+            <i class="fab fa-github"></i>
+         </a>
+      </div>
+   </div>
 
-   <div class="story-body">
-      <p class="lead">{{myStory}}</p>
+   <div class="aboutMe-txtBox">
+      <h1 class="display-4">About Me</h1>
+
+      <!-- creates circular portrait image -->
+      <img [src] ='selfPortrait' alt="Portrait image of Drew" class="head-shot"/>
+
+      <div class="story-body">
+         <p class="lead">{{myStory}}</p>
+      </div>
+   </div>
+</div>
+
+<!--Tablet devices-->
+<div *ngIf="getScreenWidth() > 650 && getScreenWidth() < 1100" class="card">
+   <img [src]="aboutBg" alt="ai face and design symbols." class="aboutPage-bg"/>
+
+   <!--Social media links.-->
+   <div class="media-links">
+      <a class="github-link" target="_blank" href="https://github.com/dgw0015">
+         <i class="fab fa-github"></i>
+      </a>
+
+      <a class="googlePlus-link" target="_blank" href="https://aboutme.google.com/?hl=en">
+         <i class="fab fa-google-plus"></i>
+      </a>
+
+      <a class="linkedIn-link" target="_blank" href="https://www.linkedin.com/in/drew-waller-100371192/">
+         <i class="fab fa-linkedin"></i>
+      </a>
+
+      <a class="instagram-link" target="_blank" href="https://www.instagram.com/dwaller_45/">
+         <i class="fab fa-instagram"></i>
+      </a>
+
+      <a class="facebook-link" target="_blank" href="https://www.facebook.com/drew.waller.73">
+         <i class="fab fa-facebook"></i>
+      </a>
+   </div>
+   <img [src]="selfPortrait" alt="head shot picture of Drew" class="card-img-top"
+        style="width: 50%; height: auto;
+         border-radius: 50%;
+         margin: 20vw 0 2vw 25%;
+         border: 2px solid lightgray;
+         background-color: rgba(0,0,0,0.53)"/>
+   <div class="card-body">
+      <h5 class="card-title">About Me</h5>
+      <p class="card-text">{{myStory}}</p>
+   </div>
+</div>
+
+<!--mobile devices-->
+<div *ngIf="getScreenWidth() <= 600 && getScreenHeight() <= 950" class="card">
+   <img [src] = 'aboutBg' alt="ai patterns with a face" class="aboutPage-bg" />
+   <img [src]="selfPortrait" alt="Portrait of Drew" class="card-img-top" />
+   <div class="card-body">
+      <h5 class="card-title">About Me</h5>
+      <p class="card-text">{{myStory}}</p>
+   </div>
+</div>
+
+<!-- All my social media links which include facebook, instagram, linkedIn, googlePlus, and Github. -->
+<div class="social-mediaBox">
+   <div class="link">
+      <a class="facebook-link" target="_blank" href="https://www.facebook.com/drew.waller.73">
+         <i class="fab fa-facebook"></i>
+      </a>
+   </div>
+   <div class="link">
+      <a class="instagram-link" target="_blank" href="https://www.instagram.com/dwaller_45/">
+         <i class="fab fa-instagram"></i>
+      </a>
+   </div>
+   <div class="link">
+      <a class="linkedIn-link" target="_blank" href="https://www.linkedin.com/in/drew-waller-100371192/">
+         <i class="fab fa-linkedin"></i>
+      </a>
+   </div>
+   <div class="link">
+      <a class="googlePlus-link" target="_blank" href="https://aboutme.google.com/?hl=en">
+         <i class="fab fa-google-plus"></i>
+      </a>
+   </div>
+   <div class="link">
+      <a class="github-link" target="_blank" href="https://github.com/dgw0015">
+         <i class="fab fa-github"></i>
+      </a>
    </div>
 </div>

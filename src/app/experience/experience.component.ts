@@ -15,11 +15,13 @@ export class ExperienceComponent implements OnInit {
   cokeExp: string;
   auburnPersonalTrainerExp: string;
   hotelAtAUExp: string;
+  mobileBg: string;
   internshipExp: string;
-
+  screenWidth: number;
 
   constructor(private renderer: Renderer2) {
     this.google = './assets/images/GoogleMonitor.png';
+    this.mobileBg = './assets/images/expMobileBg.png';
     this.resumeDownloadLink = './assets/Website-Version-Resume-2019.pdf';
     this.winnDixieExp = 'I worked at Winn-Dixie in Lake City, Florida for my last two years of high school and as a weekend job while working full-time at Columbia Bank. Started as a cashier, then was promoted many times from,' +
         ' cashier, customer service lead, in-store coordinator, and frontend manager.';
@@ -47,13 +49,21 @@ export class ExperienceComponent implements OnInit {
   }
 
   ngOnInit() {
+    this.screenWidth = innerWidth;
   }
 
+  /* Returns the screen width at page load time.*/
+  getScreenWidth(): number  {
+    return this.screenWidth;
+  }
+
+  /* Flips the card when the front side is showing.*/
   flipCard(cardID: string): void  {
     const element: HTMLElement = document.getElementById(cardID);
     this.renderer.setStyle(element, 'transform', 'rotateY(180deg)');
   }
 
+  /* Flips the card when the back side is showing.*/
   flipCardBack(cardID: string): void {
     const element: HTMLElement = document.getElementById(cardID);
     this.renderer.setStyle(element, 'transform', 'rotateY(0deg)')

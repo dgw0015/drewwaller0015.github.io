@@ -1,111 +1,292 @@
 /* Styles the background image on the welcome component page. */
 
+.container  {
+   width: 100%;
+   height: 100%;
+   margin: 0;
+   padding: 0;
+}
+
 .home-bg  {
-  position: fixed;
-  height: 100%;
-  width: 100%;
-  z-index: -2;
+   position: fixed;
+   height: 100%;
+   width: 100%;
+   z-index: -2;
 }
 
 .center-txtBox  {
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  margin: 0;
-  padding: 0;
-  color: white;
+   position: absolute;
+   top: 40%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   text-align: center;
+   margin: 0;
+   padding: 0;
+   color: white;
 }
 
 .center-txtBox p  {
-  margin-top: 0.5vw;
-  padding: 0;
-  font-size: 1vw;
+   margin-top: 0.5vw;
+   padding: 0;
+   font-size: 1vw;
 }
 
 .display-2  {
-  margin-bottom: 0;
-  padding-bottom: 0;
-  font-size: 6vw;
-  color: white;
+   margin-bottom: 0;
+   padding-bottom: 0;
+   font-size: 6vw;
+   color: white;
 }
 
-hr {
-  margin: -5px 0 -5px -1.5vw;
-  padding: 0;
-  border: 2.5px solid #57d2de;
-  width: 108%;
+.desktop {
+   margin: -5px 0 -5px -1.5vw;
+   padding: 0;
+   border: 2px solid #57d2de;
+   width: 108%;
 }
 
 .center-txtBox .lead {
-  font-size: 1.75vw;
-  margin: 0;
-  padding: 0;
+   font-size: 1.75vw;
+   margin: 0;
+   padding: 0;
 }
 
 .social-mediaBox  {
-  position: absolute;
-  bottom: 20px;
-  width: 99.8%;
-  height: 60px;
-  z-index: 0;
+   position: absolute;
+   bottom: 20px;
+   width: 99.8%;
+   height: 60px;
+   z-index: 0;
 }
 
 .facebook-link  {
-  float: left;
-  font-size: 1.8vw;
-  margin-left: 32.2%;
-  margin-top: 10px;
-  color: white;
+   float: left;
+   font-size: 1.8vw;
+   margin-left: 32.2%;
+   margin-top: 10px;
+   color: white;
 }
 
 .instagram-link {
-  float: left;
-  font-size: 1.8vw;
-  margin-top: 10px;
-  margin-left: 7vw;
-  color: white;
+   float: left;
+   font-size: 1.8vw;
+   margin-top: 10px;
+   margin-left: 7vw;
+   color: white;
 }
 
 .linkedIn-link  {
-  float: left;
-  font-size: 1.8vw;
-  margin-top: 10px;
-  margin-left: 7vw;
-  color: white;
+   float: left;
+   font-size: 1.8vw;
+   margin-top: 10px;
+   margin-left: 7vw;
+   color: white;
 }
 
 .googlePlus-link  {
-  float: left;
-  font-size: 1.8vw;
-  margin-top: 10px;
-  margin-left: 7vw;
-  color: white;
+   float: left;
+   font-size: 1.8vw;
+   margin-top: 10px;
+   margin-left: 7vw;
+   color: white;
 }
 
 .github-link {
-  float: left;
-  font-size: 1.8vw;
-  margin-top: 10px;
-  margin-left: 7vw;
-  color: white;
+   float: left;
+   font-size: 1.8vw;
+   margin-top: 10px;
+   margin-left: 7vw;
+   color: white;
 }
 
 .link a:hover {
-  color: aqua;
+   color: aqua;
 }
 
+/* Styling for smaller laptops*/
 @media only screen and (max-width: 1400px) {
 
-  .social-mediaBox  {
-    position: absolute;
-    bottom: 5px;
-  }
-
+   .social-mediaBox  {
+      position: absolute;
+      bottom: 5px;
+   }
 
 }
 
+/* Styling for the mobile device view HTML */
+@media only screen and(max-width: 600px) {
 
+   .mobile-container {
+      width: 100%;
+      height: auto;
+      margin: 0;
+      padding: 0;
+   }
 
+   .mobile-container .mobile-bg  {
+      position: relative;
+      width: 100%;
+      height: auto;
+      z-index: -2;
+   }
 
+   .mobile-container .jumbotron  {
+      position: relative;
+      width: 100%;
+      height: 108vw;
+      margin: 0;
+      padding-top: 2vw;
+      background-color: #e4e4e4;
+   }
+
+   .mobile-container .jumbotron #mobile {
+      text-align: center;
+      font-size: 14vw;
+   }
+
+   .mobile-container .jumbotron .lead {
+      text-align: center;
+      font-size: 7vw;
+      line-height: 10vw;
+   }
+
+   .mobile-container .social-mediaBox  {
+      position: fixed;
+      bottom: 5px;
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: auto;
+      z-index: 1;
+   }
+
+   .mobile-container .social-mediaBox .link .facebook-link  {
+      float: left;
+      font-size: 12vw;
+      margin-left: 2%;
+      padding: 1vw;
+      color: #295093;
+   }
+
+   .mobile-container .social-mediaBox .link .instagram-link {
+      float: left;
+      font-size: 12vw;
+      padding: 1vw;
+      color: deeppink;
+   }
+
+   .mobile-container .social-mediaBox .link .linkedIn-link  {
+      float: left;
+      font-size: 12vw;
+      padding: 1vw;
+      color: #0271ae;
+   }
+
+   .mobile-container .social-mediaBox .link .googlePlus-link  {
+      float: left;
+      font-size: 12vw;
+      padding: 1vw;
+      color: red;
+   }
+
+   .mobile-container .social-mediaBox .link .github-link {
+      float: left;
+      font-size: 12vw;
+      padding: 1vw;
+      color: darkgrey;
+   }
+
+   /* XL mobile devices*/
+   @media only screen and(max-width: 450px) and(min-height: 800px) {
+
+      .mobile-container .jumbotron  {
+         height: 147vw;
+      }
+   }
+}
+
+/* Styling for the tablet device view HTML */
+@media only screen and(max-width: 1050px) and(max-height: 1380px) {
+
+   .tablet-container {
+      width: 100%;
+      height: 100%;
+      z-index: -2;
+   }
+
+   .tablet-bg  {
+      position: relative;
+      width: 100%;
+      height: 70vw;
+      z-index: -2;
+   }
+
+   .jumbotron  {
+      position: relative;
+      width: 100%;
+      height: 63vw;
+      margin: 0;
+      padding-top: 2vw;
+      padding-bottom: 2vw;
+      line-height: 7vw;
+      background-color: #e4e4e4;
+   }
+
+   #tablets {
+      text-align: center;
+      font-size: 10.5vw;
+      margin-top: 0;
+      padding-top: 0;
+   }
+
+   .lead {
+      text-align: center;
+      font-size: 4vw;
+      padding: 0;
+   }
+
+   .social-mediaBox  {
+      position: fixed;
+      bottom: 5px;
+      width: 100%;
+      height: auto;
+      margin: 0;
+      padding: 0;
+   }
+
+   .facebook-link  {
+      float: left;
+      font-size: 11vw;
+      margin-left: 5%;
+      padding: 1vw;
+      color: #295093;
+   }
+
+   .instagram-link {
+      float: left;
+      font-size: 11vw;
+      padding: 1vw;
+      color: deeppink;
+   }
+
+   .linkedIn-link  {
+      float: left;
+      font-size: 11vw;
+      padding: 1vw;
+      color: #0271ae;
+   }
+
+   .googlePlus-link  {
+      float: left;
+      font-size: 11vw;
+      padding: 1vw;
+      color: red;
+   }
+
+   .github-link {
+      float: left;
+      font-size: 11vw;
+      padding: 1vw;
+      color: darkgrey;
+   }
+}

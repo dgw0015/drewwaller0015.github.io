@@ -5,11 +5,11 @@ import { Component, OnInit, Renderer2 } from '@angular/core';
 @Component({
    selector: 'app-header',
    template: `       
-             
+       
        <div id="fullNav" class="overlay">
           <a href="javascript:void(0)" class="close-btn" 
              (click)="closeNav('fullNav')">&times;</a>
-
+          
           <!--Screen when the Home page is the active page.-->
           <div class="nav-links" *ngIf="getActive() === 'home'">
              <div class="link" >
@@ -229,20 +229,25 @@ export class HeaderComponent implements OnInit  {
    ngOnInit(): void {
    }
 
+   /* Closed the full screen navigation when the X is clicked. */
    closeNav(nav: string): void  {
       const element: HTMLElement = document.getElementById(nav);
       this.renderer.setStyle(element, 'height', '0');
    }
 
+   /* Opens the full screen navigation when the menu button is clicked.*/
    openNav(nav: string): void   {
       const element: HTMLElement = document.getElementById(nav);
       this.renderer.setStyle(element, 'height', '100%');
    }
 
+   /* Sets the currently active too highlight on the navigation screen.*/
    setActive(activePg: string): void {
       this.active = activePg;
+      this.closeNav('fullNav');
    }
 
+   /* Returns the currently active screen.*/
    getActive(): string {
       return this.active;
    }

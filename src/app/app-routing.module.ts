@@ -8,6 +8,7 @@ import { ExperienceComponent } from "./experience";
 import { SkillsComponent } from "./skills";
 import { EducationComponent } from "./education";
 
+/* Routing to each of the site pages.*/
 const ROUTES: Routes = [
   {
         path: '', redirectTo: 'welcome', pathMatch: 'full'

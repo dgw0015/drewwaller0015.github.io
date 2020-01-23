@@ -1,110 +1,297 @@
-<div class="overlay"></div>
-<img [src] = 'skills_bg' alt="Tablet Background Image" class="cnn"/>
+<div *ngIf="getScreenWidth() > 1100" class="computer-container">
+   <div class="overlay"></div>
+   <img [src] = 'skills_bg' alt="Tablet Background Image" class="cnn"/>
 
-<h1 class="display-1">Skills</h1>
-
-<!-- The start of the skill bars. -->
-
-<div class="skillsBox">
-
-   <blockquote class="blockquote">Languages & Frameworks</blockquote>
-   <hr>
-
-   <p class="lead">Java</p>
-   <div class="progress">
-      <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
-           style="width: 95%" aria-valuenow="95"
-           aria-valuemin="0" aria-valuemax="100"><b>95%</b></div>
+   <!-- All my social media links which include facebook, instagram, linkedIn, googlePlus, and Github. -->
+   <div class="social-mediaBox">
+      <div class="link">
+         <a class="facebook-link" target="_blank" href="https://www.facebook.com/drew.waller.73">
+            <i class="fab fa-facebook"></i>
+         </a>
+      </div>
+      <div class="link">
+         <a class="instagram-link" target="_blank" href="https://www.instagram.com/dwaller_45/">
+            <i class="fab fa-instagram"></i>
+         </a>
+      </div>
+      <div class="link">
+         <a class="linkedIn-link" target="_blank" href="https://www.linkedin.com/in/drew-waller-100371192/">
+            <i class="fab fa-linkedin"></i>
+         </a>
+      </div>
+      <div class="link">
+         <a class="googlePlus-link" target="_blank" href="https://aboutme.google.com/?hl=en">
+            <i class="fab fa-google-plus"></i>
+         </a>
+      </div>
+      <div class="link">
+         <a class="github-link" target="_blank" href="https://github.com/dgw0015">
+            <i class="fab fa-github"></i>
+         </a>
+      </div>
    </div>
-   <p class="lead">Python</p>
-   <div class="progress">
-      <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+
+   <h1 class="display-1">Skills</h1>
+   <p class="lead" id="title">Languages & Frameworks</p>
+
+   <!-- The start of the skill bars. -->
+   <div class="skillsBox">
+
+      <p class="lead">Java</p>
+      <div class="progress">
+         <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+              style="width: 95%" aria-valuenow="95"
+              aria-valuemin="0" aria-valuemax="100"><b>95%</b></div>
+      </div>
+      <p class="lead">Python</p>
+      <div class="progress">
+         <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+              style="width: 90%" aria-valuenow="90"
+              aria-valuemin="0" aria-valuemax="100"><b>90%</b></div>
+      </div>
+      <p class="lead">C++</p>
+      <div class="progress">
+         <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+              style="width: 90%" aria-valuenow="90"
+              aria-valuemin="0" aria-valuemax="100"><b>90%</b></div>
+      </div>
+      <p class="lead">C#</p>
+      <div class="progress">
+         <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
            style="width: 90%" aria-valuenow="90"
            aria-valuemin="0" aria-valuemax="100"><b>90%</b></div>
+      </div>
+      <p class="lead">Angular</p>
+      <div class="progress">
+         <div class="progress-bar progress-bar-striped bg-info progress-bar-animated" role="progressbar"
+              style="width: 90%" aria-valuenow="90"
+              aria-valuemin="0" aria-valuemax="100"><b>90%</b></div>
+      </div>
+      <p class="lead">React</p>
+      <div class="progress">
+         <div class="progress-bar progress-bar-striped bg-info progress-bar-animated" role="progressbar"
+              style="width: 95%" aria-valuenow="95"
+              aria-valuemin="0" aria-valuemax="100"><b>95%</b></div>
+      </div>
+      <p class="lead">Javascript</p>
+      <div class="progress">
+         <div class="progress-bar progress-bar-striped bg-info progress-bar-animated" role="progressbar"
+              style="width: 90%" aria-valuenow="90"
+              aria-valuemin="0" aria-valuemax="100"><b>90%</b></div>
+      </div>
+      <p class="lead">Typescript</p>
+      <div class="progress">
+         <div class="progress-bar progress-bar-striped bg-info progress-bar-animated" role="progressbar"
+              style="width: 90%" aria-valuenow="90"
+              aria-valuemin="0" aria-valuemax="100"><b>90%</b></div>
+      </div>
+      <p class="lead">HTML</p>
+      <div class="progress">
+         <div class="progress-bar progress-bar-striped bg-success progress-bar-animated" role="progressbar"
+              style="width: 95%;" aria-valuenow="95"
+              aria-valuemin="0" aria-valuemax="100"><b>95%</b></div>
+      </div>
+      <p class="lead">CSS, SCSS, SASS</p>
+      <div class="progress">
+         <div class="progress-bar progress-bar-striped bg-success progress-bar-animated" role="progressbar"
+              style="width: 95%;" aria-valuenow="95"
+              aria-valuemin="0" aria-valuemax="100"><b>95%</b></div>
+      </div>
+      <p class="lead">Docker</p>
+      <div class="progress">
+         <div class="progress-bar progress-bar-striped bg-success progress-bar-animated" role="progressbar"
+              style="width: 70%;" aria-valuenow="70"
+              aria-valuemin="0" aria-valuemax="100"><b>70 %</b></div>
+      </div>
+      <p class="lead">SQL</p>
+      <div class="progress">
+         <div class="progress-bar progress-bar-striped bg-success progress-bar-animated" role="progressbar"
+              style="width: 90%;" aria-valuenow="90"
+              aria-valuemin="0" aria-valuemax="100"><b>90%</b></div>
+      </div>
+      <p class="lead">API Development</p>
+      <div class="progress">
+         <div class="progress-bar progress-bar-striped bg-dark progress-bar-animated" role="progressbar"
+              style="width: 90%;" aria-valuenow="90"
+              aria-valuemin="0" aria-valuemax="100"><b>90%</b></div>
+      </div>
+      <p class="lead">Mobile Development</p>
+      <div class="progress">
+         <div class="progress-bar progress-bar-striped bg-dark progress-bar-animated" role="progressbar"
+              style="width: 90%;" aria-valuenow="90"
+              aria-valuemin="0" aria-valuemax="100"><b>90%</b></div>
+      </div>
+      <p class="lead">Windows PowerShell/OS</p>
+      <div class="progress">
+         <div class="progress-bar progress-bar-striped bg-dark progress-bar-animated" role="progressbar"
+              style="width: 75%;" aria-valuenow="75"
+              aria-valuemin="0" aria-valuemax="100"><b>75%</b></div>
+      </div>
+      <p class="lead">Linux Operating System</p>
+      <div class="progress">
+         <div class="progress-bar progress-bar-striped bg-dark progress-bar-animated" role="progressbar"
+              style="width: 85%;" aria-valuenow="85"
+              aria-valuemin="0" aria-valuemax="100"><b>85%</b></div>
+      </div>
    </div>
-   <p class="lead">C++</p>
-   <div class="progress">
-      <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
-           style="width: 90%" aria-valuenow="90"
-           aria-valuemin="0" aria-valuemax="100"><b>90%</b></div>
+   <div class="quoteBox">
+      <p class="lead">
+         <em>
+            You do not eat foods that you dislike, you do not date people you cannot stand to
+            be around. As I child we did not play with toys that bored us but rather the ones that allowed us to
+            imagine a world better than the real one. So why do we now work jobs that we dislike and cannot
+            stand to spend our time at? Why do we allow that priceless quality of imagination to fade away?
+         </em>
+         <br>
+         <br>
+         <em>Do what you LOVE. Do what you IMAGINE yourself doing.</em>
+      </p>
    </div>
-   <p class="lead">C#</p>
-   <div class="progress">
-      <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
-        style="width: 90%" aria-valuenow="90"
-        aria-valuemin="0" aria-valuemax="100"><b>90%</b></div>
+
+</div>
+
+<!-- HTML for mobile devices.-->
+<div *ngIf="getScreenWidth() <= 1100" class="mobile-container">
+
+   <div class="mobile-overlay"></div>
+   <img [src]="mobileBanner" alt="abstract banner mostly black with some blue dots" class="mobileBanner" />
+   <img [src]="mobileBg" alt="an art canvas in a chair, the canvas reads, 'think outside of the box" class="mobileBg-img" />
+
+   <h1 class="display-1">Skills</h1>
+   <p class="lead" id="sub-title">
+      Languages & Frameworks
+   </p>
+
+   <!-- Start of the skill bars for mobile container.-->
+   <div class="mobileSkill-bars">
+      <p class="lead">Java</p>
+      <div class="progress">
+         <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+              style="width: 95%" aria-valuenow="95"
+              aria-valuemin="0" aria-valuemax="100"><b>95%</b></div>
+      </div>
+      <p class="lead">Python</p>
+      <div class="progress">
+         <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+              style="width: 90%" aria-valuenow="90"
+              aria-valuemin="0" aria-valuemax="100"><b>90%</b></div>
+      </div>
+      <p class="lead">C++</p>
+      <div class="progress">
+         <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+              style="width: 90%" aria-valuenow="90"
+              aria-valuemin="0" aria-valuemax="100"><b>90%</b></div>
+      </div>
+      <p class="lead">C#</p>
+      <div class="progress">
+         <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+              style="width: 90%" aria-valuenow="90"
+              aria-valuemin="0" aria-valuemax="100"><b>90%</b></div>
+      </div>
+      <p class="lead">Angular</p>
+      <div class="progress">
+         <div class="progress-bar progress-bar-striped bg-info progress-bar-animated" role="progressbar"
+              style="width: 90%" aria-valuenow="90"
+              aria-valuemin="0" aria-valuemax="100"><b>90%</b></div>
+      </div>
+      <p class="lead">React</p>
+      <div class="progress">
+         <div class="progress-bar progress-bar-striped bg-info progress-bar-animated" role="progressbar"
+              style="width: 95%" aria-valuenow="95"
+              aria-valuemin="0" aria-valuemax="100"><b>95%</b></div>
+      </div>
+      <p class="lead">Javascript</p>
+      <div class="progress">
+         <div class="progress-bar progress-bar-striped bg-info progress-bar-animated" role="progressbar"
+              style="width: 90%" aria-valuenow="90"
+              aria-valuemin="0" aria-valuemax="100"><b>90%</b></div>
+      </div>
+      <p class="lead">Typescript</p>
+      <div class="progress">
+         <div class="progress-bar progress-bar-striped bg-info progress-bar-animated" role="progressbar"
+              style="width: 90%" aria-valuenow="90"
+              aria-valuemin="0" aria-valuemax="100"><b>90%</b></div>
+      </div>
+      <p class="lead">HTML</p>
+      <div class="progress">
+         <div class="progress-bar progress-bar-striped bg-success progress-bar-animated" role="progressbar"
+              style="width: 95%;" aria-valuenow="95"
+              aria-valuemin="0" aria-valuemax="100"><b>95%</b></div>
+      </div>
+      <p class="lead">CSS, SCSS, SASS</p>
+      <div class="progress">
+         <div class="progress-bar progress-bar-striped bg-success progress-bar-animated" role="progressbar"
+              style="width: 95%;" aria-valuenow="95"
+              aria-valuemin="0" aria-valuemax="100"><b>95%</b></div>
+      </div>
+      <p class="lead">Docker</p>
+      <div class="progress">
+         <div class="progress-bar progress-bar-striped bg-success progress-bar-animated" role="progressbar"
+              style="width: 70%;" aria-valuenow="70"
+              aria-valuemin="0" aria-valuemax="100"><b>70 %</b></div>
+      </div>
+      <p class="lead">SQL</p>
+      <div class="progress">
+         <div class="progress-bar progress-bar-striped bg-success progress-bar-animated" role="progressbar"
+              style="width: 90%;" aria-valuenow="90"
+              aria-valuemin="0" aria-valuemax="100"><b>90%</b></div>
+      </div>
+      <p class="lead">API Development</p>
+      <div class="progress">
+         <div class="progress-bar progress-bar-striped bg-dark progress-bar-animated" role="progressbar"
+              style="width: 90%;" aria-valuenow="90"
+              aria-valuemin="0" aria-valuemax="100"><b>90%</b></div>
+      </div>
+      <p class="lead">Mobile Development</p>
+      <div class="progress">
+         <div class="progress-bar progress-bar-striped bg-dark progress-bar-animated" role="progressbar"
+              style="width: 90%;" aria-valuenow="90"
+              aria-valuemin="0" aria-valuemax="100"><b>90%</b></div>
+      </div>
+      <p class="lead">Windows PowerShell/OS</p>
+      <div class="progress">
+         <div class="progress-bar progress-bar-striped bg-dark progress-bar-animated" role="progressbar"
+              style="width: 75%;" aria-valuenow="75"
+              aria-valuemin="0" aria-valuemax="100"><b>75%</b></div>
+      </div>
+      <p class="lead">Linux Operating System</p>
+      <div class="progress">
+         <div class="progress-bar progress-bar-striped bg-dark progress-bar-animated" role="progressbar"
+              style="width: 85%;" aria-valuenow="85"
+              aria-valuemin="0" aria-valuemax="100"><b>85%</b></div>
+      </div>
    </div>
-   <p class="lead">Angular</p>
-   <div class="progress">
-      <div class="progress-bar progress-bar-striped bg-info progress-bar-animated" role="progressbar"
-           style="width: 90%" aria-valuenow="90"
-           aria-valuemin="0" aria-valuemax="100"><b>90%</b></div>
+   <div class="quoteBox">
+      <p class="lead">
+         <em>
+            You do not eat foods that you dislike, you do not date people you cannot stand to
+            be around. As I child we did not play with toys that bored us but rather the ones that allowed us to
+            imagine a world better than the real one. So why do we now work jobs that we dislike and cannot
+            stand to spend our time at? Why do we allow that priceless quality of imagination to fade away?
+         </em>
+         <br>
+         <br>
+         <em>Do what you LOVE. Do what you IMAGINE yourself doing.</em>
+      </p>
    </div>
-   <p class="lead">React</p>
-   <div class="progress">
-      <div class="progress-bar progress-bar-striped bg-info progress-bar-animated" role="progressbar"
-           style="width: 95%" aria-valuenow="95"
-           aria-valuemin="0" aria-valuemax="100"><b>95%</b></div>
-   </div>
-   <p class="lead">Javascript</p>
-   <div class="progress">
-      <div class="progress-bar progress-bar-striped bg-info progress-bar-animated" role="progressbar"
-           style="width: 90%" aria-valuenow="90"
-           aria-valuemin="0" aria-valuemax="100"><b>90%</b></div>
-   </div>
-   <p class="lead">Typescript</p>
-   <div class="progress">
-      <div class="progress-bar progress-bar-striped bg-info progress-bar-animated" role="progressbar"
-           style="width: 90%" aria-valuenow="90"
-           aria-valuemin="0" aria-valuemax="100"><b>90%</b></div>
-   </div>
-   <p class="lead">HTML</p>
-   <div class="progress">
-      <div class="progress-bar progress-bar-striped bg-success progress-bar-animated" role="progressbar"
-           style="width: 95%;" aria-valuenow="95"
-           aria-valuemin="0" aria-valuemax="100"><b>95%</b></div>
-   </div>
-   <p class="lead">CSS, SCSS, SASS</p>
-   <div class="progress">
-      <div class="progress-bar progress-bar-striped bg-success progress-bar-animated" role="progressbar"
-           style="width: 95%;" aria-valuenow="95"
-           aria-valuemin="0" aria-valuemax="100"><b>95%</b></div>
-   </div>
-   <p class="lead">Docker</p>
-   <div class="progress">
-      <div class="progress-bar progress-bar-striped bg-success progress-bar-animated" role="progressbar"
-           style="width: 70%;" aria-valuenow="70"
-           aria-valuemin="0" aria-valuemax="100"><b>70 %</b></div>
-   </div>
-   <p class="lead">SQL</p>
-   <div class="progress">
-      <div class="progress-bar progress-bar-striped bg-success progress-bar-animated" role="progressbar"
-           style="width: 90%;" aria-valuenow="90"
-           aria-valuemin="0" aria-valuemax="100"><b>90%</b></div>
-   </div>
-   <p class="lead">API Development</p>
-   <div class="progress">
-      <div class="progress-bar progress-bar-striped bg-dark progress-bar-animated" role="progressbar"
-           style="width: 90%;" aria-valuenow="90"
-           aria-valuemin="0" aria-valuemax="100"><b>90%</b></div>
-   </div>
-   <p class="lead">Mobile Development</p>
-   <div class="progress">
-      <div class="progress-bar progress-bar-striped bg-dark progress-bar-animated" role="progressbar"
-           style="width: 90%;" aria-valuenow="90"
-           aria-valuemin="0" aria-valuemax="100"><b>90%</b></div>
-   </div>
-   <p class="lead">Windows PowerShell/OS</p>
-   <div class="progress">
-      <div class="progress-bar progress-bar-striped bg-dark progress-bar-animated" role="progressbar"
-           style="width: 75%;" aria-valuenow="75"
-           aria-valuemin="0" aria-valuemax="100"><b>75%</b></div>
-   </div>
-   <p class="lead">Linux Operating System</p>
-   <div class="progress">
-      <div class="progress-bar progress-bar-striped bg-dark progress-bar-animated" role="progressbar"
-           style="width: 85%;" aria-valuenow="85"
-           aria-valuemin="0" aria-valuemax="100"><b>85%</b></div>
+
+   <!-- HTML for mobile devices social media links.-->
+   <div class="links">
+      <a class="facebook-link" target="_blank" href="https://www.facebook.com/drew.waller.73">
+         <i class="fab fa-facebook"></i>
+      </a>
+      <a class="instagram-link" target="_blank" href="https://www.instagram.com/dwaller_45/">
+         <i class="fab fa-instagram"></i>
+      </a>
+      <a class="linkedIn-link" target="_blank" href="https://www.linkedin.com/in/drew-waller-100371192/">
+         <i class="fab fa-linkedin"></i>
+      </a>
+      <a class="googlePlus-link" target="_blank" href="https://aboutme.google.com/?hl=en">
+         <i class="fab fa-google-plus"></i>
+      </a>
+      <a class="github-link" target="_blank" href="https://github.com/dgw0015">
+         <i class="fab fa-github"></i>
+      </a>
    </div>
 
 </div>

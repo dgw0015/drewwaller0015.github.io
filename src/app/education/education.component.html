@@ -1,73 +1,170 @@
 <!-- Top banner of the page. -->
-<div class="banner">
-   <h1 class="display-4">Education</h1>
+<div *ngIf="getScreenWidth() > 1100" class="pc-container">
+   <div class="banner">
+      <h1 class="display-4">Education</h1>
+   </div>
+
+   <!-- Links that will take you to Auburn University or Coastal Alabama CC website. -->
+   <a target="_blank" class="auburnUniversity-link" href="http://www.auburn.edu/">
+      <img [src] = 'auburnLogo' alt="Auburn University Logo"
+           class="auburnLogo" />
+   </a>
+
+   <a target="_blank" href="http://www.coastalalabama.edu/">
+      <img [src]="ccLogo" alt="coastal alabama community college logo" class="cc-logo" />
+   </a>
+
+   <!-- All my social media links which include facebook, instagram, linkedIn, googlePlus, and Github. -->
+   <div class="social-mediaBox">
+       <div class="link">
+            <a class="facebook-link" target="_blank" href="https://www.facebook.com/drew.waller.73">
+               <i class="fab fa-facebook"></i>
+            </a>
+         </div>
+         <div class="link">
+            <a class="instagram-link" target="_blank" href="https://www.instagram.com/dwaller_45/">
+               <i class="fab fa-instagram"></i>
+            </a>
+         </div>
+         <div class="link">
+            <a class="linkedIn-link" target="_blank" href="https://www.linkedin.com/in/drew-waller-100371192/">
+               <i class="fab fa-linkedin"></i>
+            </a>
+         </div>
+         <div class="link">
+            <a class="googlePlus-link" target="_blank" href="https://aboutme.google.com/?hl=en">
+               <i class="fab fa-google-plus"></i>
+            </a>
+         </div>
+         <div class="link">
+            <a class="github-link" target="_blank" href="https://github.com/dgw0015">
+               <i class="fab fa-github"></i>
+            </a>
+         </div>
+   </div>
+
+   <!-- Used as a hr, but since <hr> cannot have a border: linear-gradient I just made a small div. -->
+   <div class="bottom-border"></div>
+
+   <img [src]="stadium" alt="auburn university football stadium" class="stadium" />
+
+   <!-- Page content container. -->
+   <div class="educationBox">
+
+      <!-- Content. -->
+      <div class="education-content">
+
+         <div class="cc-college">
+            <h1 class="display-3">Coastal Alabama Community College</h1>
+            <ul>
+               <li>
+                  <p class="lead">Bay Minette, Alabama.</p>
+               </li>
+               <li>
+                  <p class="lead">Transferred to Auburn University after 2 years.</p>
+               </li>
+               <li>
+                  <p class="lead">GPA: 3.7.</p>
+               </li>
+            </ul>
+         </div>
+
+         <div class="AU">
+            <h1 class="display-3">Auburn University</h1>
+            <ul>
+               <li>
+                  <p class="lead">Class of 2020.</p>
+               </li>
+               <li>
+                  <p class="lead">Bachelors Degree: Computer Science/Computer Engineering.</p>
+               </li>
+               <li>
+                  <p class="lead">Auburn GPA: 3.0.</p>
+               </li>
+               <li>
+                  <p class="lead">In Major GPA: 3.0.</p>
+               </li>
+               <li>
+                  <p class="lead">Overall GPA: 3.35.</p>
+               </li>
+            </ul>
+         </div>
+      </div>
+   </div>
 </div>
 
-<!-- Link that will take you to Auburn university website. -->
-<a target="_blank" class="auburnUniversity-link" href="http://www.auburn.edu/">
-   <img [src] = 'auburnLogo' alt="Auburn University Logo"
-        class="auburnLogo" />
-</a>
+<!--Mobile & tablet screens-->
+<div *ngIf="getScreenWidth() <= 1100" class="mobile-tablet-container">
 
-<a target="_blank" href="http://www.coastalalabama.edu/">
-   <img [src]="ccLogo" alt="coastal alabama community college logo" class="cc-logo" />
-</a>
+   <div class="card">
+      <img [src]="samfordHall" class="card-img-top" alt="Auburn University football stadium">
+      <div class="card-body">
+         <h1 class="display-2">Education</h1>
 
-<!-- All my social media links which include facebook, instagram, linkedIn, googlePlus, and Github. -->
-<div class="social-mediaBox">
-    <div class="link">
+         <h5 class="card-title">Coastal Alabama Community College</h5>
+         <hr class="my-4" style="border: 1px solid blue;">
+
+         <ul>
+            <li>
+               <p class="card-text">Bay Minette, Alabama.</p>
+            </li>
+            <li>
+               <p class="card-text">Transferred to Auburn University in the fall of 2017.</p>
+            </li>
+            <li>
+               <p class="card-text" style="padding-bottom: 2vw;">GPA: 3.7.</p>
+            </li>
+         </ul>
+         <hr class="my-4" style="border: 1px solid lightgray">
+
+         <h5 class="card-title" style="padding-top: 5vw;">Auburn University</h5>
+         <hr class="my-4" style="border: 1px solid blue;">
+         <ul>
+            <li>
+               <p class="card-text">Class of 2020.</p>
+            </li>
+            <li>
+               <p class="card-text">Bachelors Degree: Computer Science/Computer Engineering.</p>
+            </li>
+            <li>
+               <p class="card-text">Auburn GPA: 3.0.</p>
+            </li>
+            <li>
+               <p class="card-text">In Major GPA: 3.0.</p>
+            </li>
+            <li>
+               <p class="card-text" style="padding-bottom: 2vw;">Overall GPA: 3.35.</p>
+            </li>
+         </ul>
+         <hr class="my-4" style="border: 1px solid lightgray; margin: 0; padding: 0;">
+      </div>
+
+      <!-- Media links. -->
+      <div class="links">
+         <a target="_blank" class="auburnUniversity-link" href="http://www.auburn.edu/">
+            <img [src] = 'auburnLogo' alt="Auburn University Logo"
+                 class="AU-link" />
+         </a>
+         <a target="_blank" href="http://www.coastalalabama.edu/">
+            <img [src]="ccLogo" alt="coastal alabama community college logo" class="cc-link" />
+         </a>
+         <br>
          <a class="facebook-link" target="_blank" href="https://www.facebook.com/drew.waller.73">
             <i class="fab fa-facebook"></i>
          </a>
-      </div>
-      <div class="link">
          <a class="instagram-link" target="_blank" href="https://www.instagram.com/dwaller_45/">
             <i class="fab fa-instagram"></i>
          </a>
-      </div>
-      <div class="link">
          <a class="linkedIn-link" target="_blank" href="https://www.linkedin.com/in/drew-waller-100371192/">
             <i class="fab fa-linkedin"></i>
          </a>
-      </div>
-      <div class="link">
          <a class="googlePlus-link" target="_blank" href="https://aboutme.google.com/?hl=en">
             <i class="fab fa-google-plus"></i>
          </a>
-      </div>
-      <div class="link">
          <a class="github-link" target="_blank" href="https://github.com/dgw0015">
             <i class="fab fa-github"></i>
          </a>
       </div>
    </div>
-
-<!-- Used as a hr, but since <hr> cannot have a border: linear-gradient I just made a small div. -->
-<div class="bottom-border"></div>
-
-<img [src]="stadium" alt="auburn university football stadium" class="stadium" />
-
-<!-- Page content container. -->
-<div class="educationBox">
-
-   <!-- Content. -->
-   <div class="education-content">
-
-      <div class="cc-college">
-         <h1 class="display-3">Coastal Alabama Community College</h1>
-         <p class="lead">Bay Minette, Alabama</p>
-         <p class="lead">Transferred to Auburn University after 2 years.</p>
-         <p class="lead">GPA: 3.7</p>
-      </div>
-      <div class="AU">
-         <h1 class="display-3">Auburn University</h1>
-         <p class="lead">Auburn, Alabama</p>
-         <p class="lead">Class of 2020</p>
-         <p class="lead">Bachelors Degree: Computer Science/Computer Engineering</p>
-         <p class="lead">Auburn GPA: 3.0</p>
-         <p class="lead">Overall GPA: 3.35</p>
-      </div>
-   </div>
-
 
 </div>

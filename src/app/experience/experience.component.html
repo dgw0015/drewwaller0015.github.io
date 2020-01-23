@@ -1,157 +1,340 @@
-<img [src] = 'google' alt="Computer with google logo displayed on screen" class="experience-bg"/>
-<div class="overlay"></div>
+<div *ngIf="getScreenWidth() > 1100" class="computer-screens-container">
+   <img [src] = 'google' alt="Computer with google logo displayed on screen" class="experience-bg"/>
+   <div class="overlay"></div>
 
-<a class="resume-link" [href]="resumeDownloadLink" download>
-   <i class="far fa-file-pdf" id="pdf-icon"></i> Download My Resume
-</a>
+   <a class="resume-link" [href]="resumeDownloadLink" download>
+      <i class="far fa-file-pdf" id="pdf-icon"></i> Download My Resume
+   </a>
 
-<!-- All my social media links which include facebook, instagram, linkedIn, googlePlus, and Github. -->
-<div class="social-mediaBox">
-   <div class="link">
+   <!-- All my social media links which include facebook, instagram, linkedIn, googlePlus, and Github. -->
+   <div class="social-mediaBox">
+      <div class="link">
+         <a class="facebook-link" target="_blank" href="https://www.facebook.com/drew.waller.73">
+            <i class="fab fa-facebook"></i>
+         </a>
+      </div>
+      <div class="link">
+         <a class="instagram-link" target="_blank" href="https://www.instagram.com/dwaller_45/">
+            <i class="fab fa-instagram"></i>
+         </a>
+      </div>
+      <div class="link">
+         <a class="linkedIn-link" target="_blank" href="https://www.linkedin.com/in/drew-waller-100371192/">
+            <i class="fab fa-linkedin"></i>
+         </a>
+      </div>
+      <div class="link">
+         <a class="googlePlus-link" target="_blank" href="https://aboutme.google.com/?hl=en">
+            <i class="fab fa-google-plus"></i>
+         </a>
+      </div>
+      <div class="link">
+         <a class="github-link" target="_blank" href="https://github.com/dgw0015">
+            <i class="fab fa-github"></i>
+         </a>
+      </div>
+   </div>
+
+
+   <h1 class="display-1">Experience</h1>
+
+   <div class="flip-box">
+      <div class="flip-box-inner" id="box1">
+         <div class="flip-box-front">
+            <h1 class="display-3">Winn-Dixie</h1>
+            <p class="lead">2009-2012</p>
+            <i class="fas fa-arrow-right" id="front-flipArrow" (click)="flipCard('box1')"></i>
+         </div>
+         <div class="flip-box-back">
+            <p class="lead" style="font-size: 1.5vw; color: white;">{{winnDixieExp}}</p>
+            <i class="fas fa-arrow-left" id="back-flipArrow" (click)="flipCardBack('box1')"></i>
+         </div>
+      </div>
+   </div>
+   <br>
+   <br>
+   <div class="flip-box">
+      <div class="flip-box-inner" id="box2">
+         <div class="flip-box-front">
+            <h1 class="display-3">Timco Aviation</h1>
+            <p class="lead">2011-2012</p>
+            <i class="fas fa-arrow-right" id="front-flipArrow2" (click)="flipCard('box2')"></i>
+         </div>
+         <div class="flip-box-back">
+            <p class="lead" style="font-size: 1.5vw; color: white;">{{aviationExp}}</p>
+            <i class="fas fa-arrow-left" id="back-flipArrow2" (click)="flipCardBack('box2')"></i>
+         </div>
+      </div>
+   </div>
+   <br>
+   <br>
+   <div class="flip-box">
+      <div class="flip-box-inner" id="box3">
+         <div class="flip-box-front">
+            <h1 class="display-3">Columbia Bank</h1>
+            <p class="lead">2012-2014</p>
+            <i class="fas fa-arrow-right" id="front-flipArrow3" (click)="flipCard('box3')"></i>
+         </div>
+         <div class="flip-box-back">
+            <p class="lead" style="font-size: 1.35vw; color: white;">{{columbiaBankExp}}</p>
+            <i class="fas fa-arrow-left" id="back-flipArrow3" (click)="flipCardBack('box3')"></i>
+         </div>
+      </div>
+   </div>
+   <br>
+   <br>
+   <div class="flip-box">
+      <div class="flip-box-inner" id="box4">
+         <div class="flip-box-front">
+            <h1 class="display-3">Pen Air Federal Credit Union</h1>
+            <p class="lead">2014-2016</p>
+            <i class="fas fa-arrow-right" id="front-flipArrow4" (click)="flipCard('box4')"></i>
+         </div>
+         <div class="flip-box-back">
+            <p class="lead" style="font-size: 1.5vw; color: white;">{{moveToAl_penAirExp}}</p>
+            <i class="fas fa-arrow-left" id="back-flipArrow4" (click)="flipCardBack('box4')"></i>
+         </div>
+      </div>
+   </div>
+   <br>
+   <br>
+   <div class="flip-box">
+      <div class="flip-box-inner" id="box5">
+         <div class="flip-box-front">
+            <h1 class="display-3">Coca-Cola Bottling Consolidated</h1>
+            <p class="lead">2016-2017</p>
+            <i class="fas fa-arrow-right" id="front-flipArrow5" (click)="flipCard('box5')"></i>
+         </div>
+         <div class="flip-box-back">
+            <p class="lead" style="font-size: 1.35vw; color: white;">{{cokeExp}}</p>
+            <i class="fas fa-arrow-left" id="back-flipArrow5" (click)="flipCardBack('box5')"></i>
+         </div>
+      </div>
+   </div>
+   <br>
+   <br>
+   <div class="flip-box">
+      <div class="flip-box-inner" id="box6">
+         <div class="flip-box-front">
+            <h1 class="display-3">The Auburn Hotel</h1>
+            <p class="lead">2017-2019</p>
+            <i class="fas fa-arrow-right" id="front-flipArrow6" (click)="flipCard('box6')"></i>
+         </div>
+         <div class="flip-box-back">
+            <p class="lead" style="font-size: 1.35vw; color: white;">{{hotelAtAUExp}}</p>
+            <i class="fas fa-arrow-left" id="back-flipArrow6" (click)="flipCardBack('box6')"></i>
+         </div>
+      </div>
+   </div>
+   <br>
+   <br>
+   <div class="flip-box">
+      <div class="flip-box-inner" id="box7">
+         <div class="flip-box-front">
+            <h1 class="display-3">Personal Trainer at Maxx Fitness</h1>
+            <p class="lead">2018</p>
+            <i class="fas fa-arrow-right" id="front-flipArrow7" (click)="flipCard('box7')"></i>
+         </div>
+         <div class="flip-box-back">
+            <p class="lead" style="font-size: 1.35vw; color: white">{{auburnPersonalTrainerExp}}</p>
+            <i class="fas fa-arrow-left" id="back-flipArrow7" (click)="flipCardBack('box7')"></i>
+         </div>
+      </div>
+   </div>
+   <br>
+   <br>
+   <div class="flip-box">
+      <div class="flip-box-inner" id="box8">
+         <div class="flip-box-front">
+            <h1 class="display-3">J.B. Hunt Transportation</h1>
+            <p class="lead">Summer 2019</p>
+            <i class="fas fa-arrow-right" id="front-flipArrow8" (click)="flipCard('box8')"></i>
+         </div>
+         <div class="flip-box-back">
+            <p class="lead" style="font-size: 1.3vw; color: white;">{{internshipExp}}</p>
+            <i class="fas fa-arrow-left" id="back-flipArrow8" (click)="flipCardBack('box8')"></i>
+         </div>
+      </div>
+   </div>
+</div>
+
+<!--HTML for mobile devices and tablet size devices.-->
+<div *ngIf="getScreenWidth() <= 1100 " class="mobileDevice-container">
+
+   <img [src]="mobileBg" alt="circuits that are tinted black as a background" class="mobileDevices-bg" />
+   <h1 class="display-1">Experience</h1>
+
+   <div class="accordion" id="accordionTopParent">
+      <div class="card">
+         <div class="card-header" id="headingOne">
+            <h2 class="mb-0">
+               <button class="btn btn-primary btn-block" type="button" data-toggle="collapse"
+                       data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                  Winn-Dixie
+                  <br>
+                  (2009-2012)
+               </button>
+            </h2>
+         </div>
+
+         <!-- Collapsible tab1 -->
+         <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionTopParent">
+            <div class="card-body">
+               {{winnDixieExp}}
+            </div>
+         </div>
+      </div>
+
+      <!-- Collapsible tab2 -->
+      <div class="card">
+         <div class="card-header" id="headingTwo">
+            <h2 class="mb-0">
+               <button class="btn btn-primary btn-block collapsed" type="button" data-toggle="collapse"
+                       data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Timco Aviation
+                  <br>
+                  (2011-2012)
+               </button>
+            </h2>
+         </div>
+         <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionTopParent">
+            <div class="card-body">
+               {{aviationExp}}
+            </div>
+         </div>
+      </div>
+
+      <!-- Collapsible tab3 -->
+      <div class="card">
+         <div class="card-header" id="headingThree">
+            <h2 class="mb-0">
+               <button class="btn btn-primary btn-block collapsed" type="button" data-toggle="collapse"
+                       data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Columbia Bank
+                  <br>
+                  (2012-2014)
+               </button>
+            </h2>
+         </div>
+         <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionTopParent">
+            <div class="card-body">
+               {{columbiaBankExp}}
+            </div>
+         </div>
+      </div>
+
+      <!-- Collapsible tab4 -->
+      <div class="card">
+         <div class="card-header" id="headingFour">
+            <h2 class="mb-0">
+               <button class="btn btn-primary btn-block collapsed" type="button" data-toggle="collapse"
+                       data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                  Pen Air Federal Credit Union
+                  <br>
+                  (2014-2016)
+               </button>
+            </h2>
+         </div>
+         <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionTopParent">
+            <div class="card-body">
+               {{moveToAl_penAirExp}}
+            </div>
+         </div>
+      </div>
+
+      <!-- Collapsible tab5 -->
+      <div class="card">
+         <div class="card-header" id="headingFive">
+            <h2 class="mb-0">
+               <button class="btn btn-primary btn-block collapsed" type="button" data-toggle="collapse"
+                       data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                  Coca-Cola Bottling Consolidated
+                  <br>
+                  (2016-2017)
+               </button>
+            </h2>
+         </div>
+         <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionTopParent">
+            <div class="card-body">
+               {{cokeExp}}
+            </div>
+         </div>
+      </div>
+
+      <!-- Collapsible tab6 -->
+      <div class="card">
+         <div class="card-header" id="headingSix">
+            <h2 class="mb-0">
+               <button class="btn btn-primary btn-block collapsed" type="button" data-toggle="collapse"
+                       data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                  The Auburn Hotel @ Auburn University
+                  <br>
+                  (2017-2019)
+               </button>
+            </h2>
+         </div>
+         <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionTopParent">
+            <div class="card-body">
+               {{hotelAtAUExp}}
+            </div>
+         </div>
+      </div>
+
+      <!-- Collapsible tab7 -->
+      <div class="card">
+         <div class="card-header" id="headingSeven">
+            <h2 class="mb-0">
+               <button class="btn btn-primary btn-block collapsed" type="button" data-toggle="collapse"
+                       data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                  Personal Trainer @ Maxx Fitness
+                  <br>
+                  (2018)
+               </button>
+            </h2>
+         </div>
+         <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordionTopParent">
+            <div class="card-body">
+               {{auburnPersonalTrainerExp}}
+            </div>
+         </div>
+      </div>
+
+      <!-- Collapsible tab8 -->
+      <div class="card">
+         <div class="card-header" id="headingEight">
+            <h2 class="mb-0">
+               <button class="btn btn-primary btn-block collapsed" type="button" data-toggle="collapse"
+                       data-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                  J.B. Hunt Transport Services Inc.
+                  <br>
+                  (Summer 2019)
+               </button>
+            </h2>
+         </div>
+         <div id="collapseEight" class="collapse" aria-labelledby="headingEight" data-parent="#accordionTopParent">
+            <div class="card-body">
+               {{internshipExp}}
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <!-- Links to my social media accounts. -->
+   <div class="socialMedia-links">
       <a class="facebook-link" target="_blank" href="https://www.facebook.com/drew.waller.73">
          <i class="fab fa-facebook"></i>
       </a>
-   </div>
-   <div class="link">
       <a class="instagram-link" target="_blank" href="https://www.instagram.com/dwaller_45/">
          <i class="fab fa-instagram"></i>
       </a>
-   </div>
-   <div class="link">
       <a class="linkedIn-link" target="_blank" href="https://www.linkedin.com/in/drew-waller-100371192/">
          <i class="fab fa-linkedin"></i>
       </a>
-   </div>
-   <div class="link">
       <a class="googlePlus-link" target="_blank" href="https://aboutme.google.com/?hl=en">
          <i class="fab fa-google-plus"></i>
       </a>
-   </div>
-   <div class="link">
       <a class="github-link" target="_blank" href="https://github.com/dgw0015">
          <i class="fab fa-github"></i>
       </a>
-   </div>
-</div>
-
-
-<h1 class="display-1">Experience</h1>
-
-<div class="flip-box">
-   <div class="flip-box-inner" id="box1">
-      <div class="flip-box-front">
-         <h1 class="display-3">Winn-Dixie</h1>
-         <p class="lead">2009-2012</p>
-         <i class="fas fa-arrow-right" id="front-flipArrow" (click)="flipCard('box1')"></i>
-      </div>
-      <div class="flip-box-back">
-         <p class="lead" style="font-size: 1.5vw; color: white;">{{winnDixieExp}}</p>
-         <i class="fas fa-arrow-left" id="back-flipArrow" (click)="flipCardBack('box1')"></i>
-      </div>
-   </div>
-</div>
-<br>
-<br>
-<div class="flip-box">
-   <div class="flip-box-inner" id="box2">
-      <div class="flip-box-front">
-         <h1 class="display-3">Timco Aviation</h1>
-         <p class="lead">2011-2012</p>
-         <i class="fas fa-arrow-right" id="front-flipArrow2" (click)="flipCard('box2')"></i>
-      </div>
-      <div class="flip-box-back">
-         <p class="lead" style="font-size: 1.5vw; color: white;">{{aviationExp}}</p>
-         <i class="fas fa-arrow-left" id="back-flipArrow2" (click)="flipCardBack('box2')"></i>
-      </div>
-   </div>
-</div>
-<br>
-<br>
-<div class="flip-box">
-   <div class="flip-box-inner" id="box3">
-      <div class="flip-box-front">
-         <h1 class="display-3">Columbia Bank</h1>
-         <p class="lead">2012-2014</p>
-         <i class="fas fa-arrow-right" id="front-flipArrow3" (click)="flipCard('box3')"></i>
-      </div>
-      <div class="flip-box-back">
-         <p class="lead" style="font-size: 1.35vw; color: white;">{{columbiaBankExp}}</p>
-         <i class="fas fa-arrow-left" id="back-flipArrow3" (click)="flipCardBack('box3')"></i>
-      </div>
-   </div>
-</div>
-<br>
-<br>
-<div class="flip-box">
-   <div class="flip-box-inner" id="box4">
-      <div class="flip-box-front">
-         <h1 class="display-3">Pen Air Federal Credit Union</h1>
-         <p class="lead">2014-2016</p>
-         <i class="fas fa-arrow-right" id="front-flipArrow4" (click)="flipCard('box4')"></i>
-      </div>
-      <div class="flip-box-back">
-         <p class="lead" style="font-size: 1.5vw; color: white;">{{moveToAl_penAirExp}}</p>
-         <i class="fas fa-arrow-left" id="back-flipArrow4" (click)="flipCardBack('box4')"></i>
-      </div>
-   </div>
-</div>
-<br>
-<br>
-<div class="flip-box">
-   <div class="flip-box-inner" id="box5">
-      <div class="flip-box-front">
-         <h1 class="display-3">Coca-Cola Bottling Consolidated</h1>
-         <p class="lead">2016-2017</p>
-         <i class="fas fa-arrow-right" id="front-flipArrow5" (click)="flipCard('box5')"></i>
-      </div>
-      <div class="flip-box-back">
-         <p class="lead" style="font-size: 1.35vw; color: white;">{{cokeExp}}</p>
-         <i class="fas fa-arrow-left" id="back-flipArrow5" (click)="flipCardBack('box5')"></i>
-      </div>
-   </div>
-</div>
-<br>
-<br>
-<div class="flip-box">
-   <div class="flip-box-inner" id="box6">
-      <div class="flip-box-front">
-         <h1 class="display-3">The Auburn Hotel</h1>
-         <p class="lead">2017-2019</p>
-         <i class="fas fa-arrow-right" id="front-flipArrow6" (click)="flipCard('box6')"></i>
-      </div>
-      <div class="flip-box-back">
-         <p class="lead" style="font-size: 1.35vw; color: white;">{{hotelAtAUExp}}</p>
-         <i class="fas fa-arrow-left" id="back-flipArrow6" (click)="flipCardBack('box6')"></i>
-      </div>
-   </div>
-</div>
-<br>
-<br>
-<div class="flip-box">
-   <div class="flip-box-inner" id="box7">
-      <div class="flip-box-front">
-         <h1 class="display-3">Personal Trainer at Maxx Fitness</h1>
-         <p class="lead">2018</p>
-         <i class="fas fa-arrow-right" id="front-flipArrow7" (click)="flipCard('box7')"></i>
-      </div>
-      <div class="flip-box-back">
-         <p class="lead" style="font-size: 1.35vw; color: white">{{auburnPersonalTrainerExp}}</p>
-         <i class="fas fa-arrow-left" id="back-flipArrow7" (click)="flipCardBack('box7')"></i>
-      </div>
-   </div>
-</div>
-<br>
-<br>
-<div class="flip-box">
-   <div class="flip-box-inner" id="box8">
-      <div class="flip-box-front">
-         <h1 class="display-3">J.B. Hunt Transportation</h1>
-         <p class="lead">Summer 2019</p>
-         <i class="fas fa-arrow-right" id="front-flipArrow8" (click)="flipCard('box8')"></i>
-      </div>
-      <div class="flip-box-back">
-         <p class="lead" style="font-size: 1.3vw; color: white;">{{internshipExp}}</p>
-         <i class="fas fa-arrow-left" id="back-flipArrow8" (click)="flipCardBack('box8')"></i>
-      </div>
    </div>
 </div>
