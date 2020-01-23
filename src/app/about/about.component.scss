@@ -38,16 +38,15 @@
 .story-body {
   width: 98%;
   position: absolute;
-  top: 54%;
+  top: 52%;
   left: 1%;
   background-color: rgba(0, 0, 0, 0.52);
   border-radius: 25px;
 }
 
 .lead {
-  padding: 2vw 1vw .5vw 1vw;
+  padding: 1vw 1vw .5vw 1vw;
   color: white;
-  font-family: Arial, serif;
   font-size: 1.2vw;
 }
 
@@ -211,7 +210,7 @@ a:hover {
 @media screen and(min-width: 650px) and(max-width: 1075px)  {
 
   .overlay  {
-    height: 310vw;
+    height: 335vw;
     background-color: rgba(0, 0, 0, 0.5);
   }
 

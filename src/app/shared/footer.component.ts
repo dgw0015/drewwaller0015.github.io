@@ -5,8 +5,9 @@ import {Component, OnInit} from '@angular/core';
 @Component({
    selector: 'app-footer',
    template: `
-      <footer class="footer">
-      </footer>
+      <div class="footer">
+         <p class="lead" id="footer">&copy;copyright</p>
+      </div>
    `,
    styleUrls: ['./headerFooter.scss']
 })
