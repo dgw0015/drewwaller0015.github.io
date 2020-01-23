@@ -28,11 +28,10 @@ export class ExperienceComponent implements OnInit {
     this.columbiaBankExp = 'I started working at Columbia Bank part-time as a bank teller while I was still working at Winn-Dixie on the weekends as an In-Store Coordinator, ' +
         ' and working the night shift at TIMCO. After a few months I left TIMCO and moved into a full-time position here.' +
         ' I was promoted many times from teller to customer service rep, and then lending officer where I process multiple times of consumer loans.';
-    this.aviationExp = 'After graduating from high school I was not a 100% sure what I wanted to do. I wanted to try something different. So I started working full-time at TIMCO in Lake City, Florida ' +
+    this.aviationExp = 'I wanted to try something different. So I started working full-time at TIMCO in Lake City, Florida ' +
         'as an aviation mechanic. I performed many repairs on multiple different type of commercial airliners such as,' +
         ' Boeing 737, 747, and Airbus 319, 320.';
-    this.moveToAl_penAirExp = 'I made a hard decision to move back in with my parents who lived in Daphne, Alabama and' +
-        ' eventually start college for a computer science degree. I started at PenAir Federal Credit Union as a member advisor. This position was' +
+    this.moveToAl_penAirExp = 'I started at PenAir Federal Credit Union as a member advisor. This position was' +
         ' truly a universal banker. I could do anything from a simple withdrawal/deposit to a mortgage loan.';
     this.cokeExp = 'I worked for Coca Cola Bottling Consolidated in Orange Beach, Florida. In this position I was a FLEX merchandiser, I effectively placed special sale items' +
         ' throughout many stores based on the patterns of guests as they entered and walked around the store.' +
