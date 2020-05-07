@@ -7,7 +7,6 @@ import {Component} from '@angular/core';
       <!-- header Component -->
       <app-header></app-header>
      <router-outlet></router-outlet>
-     <app-footer></app-footer>
   `
 })
 // @ts-ignore
